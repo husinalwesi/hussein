@@ -1,0 +1,56 @@
+.thrill-section {
+  @apply relative w-full hidden xl:flex xl:h-[80vh] xl:max-h-[800px] xl:items-center overflow-hidden;
+
+  .event-type-part-container {
+    @apply flex w-fit flex-col items-center text-white text-center;
+
+    .event-handler-wrapper {
+      @apply bg-light-gray inline-flex p-1 relative rounded-xl mt-4;
+
+      .btn-toggle-container {
+        @apply rounded-lg relative z-10 px-7;
+
+        &#exploring {
+          @apply rounded-tr-none;
+          clip-path: polygon(100% 0, 100% 0, 95% 100%, 0 100%, 0 0);
+        }
+
+        &#challenged {
+          @apply rounded-bl-none;
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%, 5% 0);
+        }
+
+        .btn-toggle {
+          @apply ltr:font-druk-text-heavy-italic rtl:font-adapter text-1rem py-[0.813rem] text-dark-gray uppercase;
+
+          &.not-active {
+            transition: 0.4s;
+            @apply text-opacity-50 hover:text-opacity-100;
+          }
+        }
+      }
+    }
+  }
+
+  &::before {
+    @apply -top-2.3 border-1 border-dashed border-white content-none h-[54.5rem] left-0 mx-auto opacity-20 ltr:right-0 rtl:left-0 rounded-full w-[54.5rem] z-10 absolute;
+  }
+
+  &::after {
+    @apply -top-28 absolute border-1 border-dashed border-white content-none h-[68.5rem] left-0 mx-auto opacity-10 ltr:right-0 rtl:left-0 rounded-full w-[68.5rem] z-10;
+  }
+
+  .lottie-active {
+    @apply w-full h-auto scale-[1.25];
+
+    transition: all 0.61s ease-in-out;
+  }
+
+  .lottie-inactive {
+    @apply scale-[0.95] opacity-40;
+  }
+
+  .background-slider {
+    @apply absolute rounded-lg top-1 ltr:right-1 rtl:left-1 h-10 left-1 bg-light-yellow;
+  }
+}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html {{ HTML_ATTRS }}>
+
+<head {{ HEAD_ATTRS }}>
+  <script type="text/javascript"
+          src="https://cdn.cookielaw.org/consent/0416f688-14f6-422e-8092-c29fe1b379e9/OtAutoBlock.js"></script>
+  <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true"
+          type="text/javascript" charset="UTF-8" data-domain-script="0416f688-14f6-422e-8092-c29fe1b379e9"></script>
+  <script>
+    (function () {
+      var g = function (e, h, f, g) {
+        this.get = function (a) {
+          for (
+            var a = a + "=", c = document.cookie.split(";"), b = 0, e = c.length;
+            b < e;
+            b++
+          ) {
+            for (var d = c[b]; " " == d.charAt(0);) d = d.substring(1, d.length);
+            if (0 == d.indexOf(a)) return d.substring(a.length, d.length);
+          }
+          return null;
+        };
+        this.set = function (a, c) {
+          var b = "",
+            b = new Date();
+          b.setTime(b.getTime() + 6048e5);
+          b = "; expires=" + b.toGMTString();
+          document.cookie = a + "=" + c + b + "; path=/; ";
+        };
+        this.check = function () {
+          var a = this.get(f);
+          if (a) a = a.split(":");
+          else if (100 != e)
+            "v" == h && (e = Math.random() >= e / 100 ? 0 : 100),
+              (a = [h, e, 0]),
+              this.set(f, a.join(":"));
+          else return !0;
+          var c = a[1];
+          if (100 == c) return !0;
+          switch (a[0]) {
+            case "v":
+              return !1;
+            case "r":
+              return (
+                (c = a[2] % Math.floor(100 / c)),
+                  a[2]++,
+                  this.set(f, a.join(":")),
+                  !c
+              );
+          }
+          return !0;
+        };
+        this.go = function () {
+          if (this.check()) {
+            var a = document.createElement("script");
+            a.type = "text/javascript";
+            a.src = g;
+            document.body && document.body.appendChild(a);
+          }
+        };
+        this.start = function () {
+          var t = this;
+          "complete" !== document.readyState
+            ? window.addEventListener
+              ? window.addEventListener(
+                "load",
+                function () {
+                  t.go();
+                },
+                !1
+              )
+              : window.attachEvent &&
+              window.attachEvent("onload", function () {
+                t.go();
+              })
+            : t.go();
+        };
+      };
+      try {
+        new g(
+          100,
+          "r",
+          "QSI_S_ZN_5hwKCj1iyMq8YWp",
+          "https://zn5hwkcj1iymq8ywp-greatmoments.siteintercept.qualtrics.com/SIE/?Q_ZID=ZN_5hwKCj1iyMq8YWp"
+        ).start();
+      } catch (i) {
+      }
+    })();
+  </script>
+  <script>
+    function getCookie(name) {
+      var value = "; " + document.cookie;
+      var parts = value.split("; " + name + "=");
+      if (parts.length == 2) {
+        return true;
+      }
+    }
+
+    function reloadOTBanner() {
+      var otConsentSdk = document.getElementById("onetrust-consent-sdk");
+      if (otConsentSdk) {
+        otConsentSdk.remove();
+      }
+
+      if ((window || {}).OneTrust) {
+        OneTrust.Init();
+
+        setTimeout(function () {
+          OneTrust.LoadBanner();
+
+          var toggleDisplay = document.getElementsByClassName(
+            "ot-sdk-show-settings"
+          );
+
+          for (var i = 0; i < toggleDisplay.length; i++) {
+            toggleDisplay[i].onclick = function (event) {
+              event.stopImmediatePropagation();
+              window.OneTrust.ToggleInfoDisplay();
+            };
+          }
+        }, 1000);
+      }
+    }
+  </script>
+  <script>
+    //SHOULD BE USED ONLY ON COOKIE POLICY. TRIGGER FUNCTION BELOW TO REMOVE DUPLICATE CATEGORIES
+    function clearDup() {
+      var sec = document.getElementById("ot-sdk-cookie-policy")
+      var tally = [];
+      for (var i = sec.length - 1; i >= 0; i--) {
+        if (tally[sec[i].firstChild.innerText] === undefined) {
+          tally[sec[i].firstChild.innerText] = 1;
+        } else {
+          //console.log(i,sec[i].firstChild.innerText);
+          sec[i].remove();
+          //return true;
+        }
+      }
+      //return false;
+    }
+  </script>
+
+
+  <script type="text/javascript"
+          src="{{process.env.NEW_RELIC_INTEGRATION_FILE_URL}}">
+  </script>
+  {{ HEAD }}
+</head>
+
+<body {{ BODY_ATTRS }}>
+<div id="ZN_5hwKCj1iyMq8YWp">
+  <!--DO NOT REMOVE-CONTENTS PLACED HERE-->
+</div>
+{{ APP }}
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+.reserved-event-container {
+  @apply mx-[0.9375rem] md:mx-[1.9375rem];
+
+  .event-name {
+    @apply text-dark-gray text-[2.5rem] ltr:font-druk-heavy-italic rtl:font-adapter leading-10 uppercase;
+  }
+
+  .reservation-details {
+    @apply flex mt-4 mb-6 flex-col md:flex-row;
+
+    .details-container {
+      @apply flex flex-col md:w-[206px];
+
+      .title {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060];
+      }
+      .desc {
+        @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base rtl:mt-2 text-[#191919];
+      }
+
+      &.num-of-ticket {
+        @apply hidden md:block;
+      }
+    }
+  }
+
+  .event-activities-container {
+    @apply pt-6 border-t-1 border-dashed border-dark-gray border-opacity-10 flex flex-wrap
+             md:flex-nowrap gap-x-4 gap-y-6;
+
+    .activity-card {
+      @apply w-full flex flex-col flex-grow pb-7 md:pb-6 border-b-4 border-solid border-dark-blue;
+
+      &.indicator-card {
+        @apply md:max-w-[190px] min-700:max-h-full border-[#c4c4c4] border-opacity-20;
+      }
+      &.product-card {
+        @apply md:min-w-[190px] md:max-w-max;
+      }
+
+      .title {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base text-[#191919];
+      }
+
+      .reserved-activity-details {
+        @apply pt-3 flex flex-col gap-y-2 flex-grow;
+
+        .activity-details-container {
+          @apply flex items-start;
+
+          .guests {
+            @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler whitespace-nowrap min-w-[56px] ltr:mr-2 rtl:ml-2 text-xs text-[#606060] capitalize;
+          }
+          .reserved-times-container {
+            @apply flex flex-wrap md:grid md:grid-cols-2 gap-y-2 gap-x-3;
+
+            .time-wrapper {
+              @apply px-1 flex justify-center bg-light-yellow rounded-[4px];
+
+              .time {
+                @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:not(:first-child) {
+    @apply pt-8 md:pt-10;
+  }
+  &:not(:last-child) {
+    @apply border-b-1 border-dashed pb-8 md:pb-10 border-dark-gray border-opacity-20;
+  }
+}

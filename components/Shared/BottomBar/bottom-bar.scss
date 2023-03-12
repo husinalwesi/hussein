@@ -1,0 +1,26 @@
+.bottom-bar {
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 16%);
+  z-index: 11;
+  @apply bg-[#f6f6f6] bottom-0 fixed h-fit py-4 w-full;
+
+  .content-container {
+    @apply flex flex-wrap h-fit items-center justify-between lg:px-15 max-w-1xl mx-auto px-4 xl:px-43;
+
+    .submit-btn {
+      @apply bg-light-yellow leading-4 ltr:font-inter-bold px-6 py-4 rounded-2xl rtl:font-noto-sans-arabic-bold text-base;
+    }
+
+    .text-btn {
+      @apply leading-[14px] lg:hover:cursor-pointer ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-dark-black text-sm;
+    }
+
+    button,
+    .submit-btn,
+    .text-btn {
+      &:disabled,
+      &[disabled] {
+        @apply lg:hover:cursor-not-allowed opacity-50;
+      }
+    }
+  }
+}

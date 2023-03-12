@@ -1,0 +1,43 @@
+.breadcrumbs {
+  //position: absolute;
+  width: 100%;
+  justify-content: flex-start;
+  font-size: 11px;
+  display: flex;
+  @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+
+  li {
+    color: var(--text-color);
+    text-transform: uppercase;
+    cursor: pointer;
+
+    &:nth-child(n+2) {
+      &:before {
+        content: "‣";
+        color: var(--text-color);
+        padding-left: 2px;
+        padding-right: 2px;
+
+        @apply rtl:rotate-180;
+      }
+    }
+
+    &.active {
+      a {
+        color: #FAD903
+      }
+    }
+  }
+
+  &.black-text {
+    li {
+      color: #000;
+    }
+
+    &:nth-child(n+2) {
+      &:before {
+        color: #000;
+      }
+    }
+  }
+}

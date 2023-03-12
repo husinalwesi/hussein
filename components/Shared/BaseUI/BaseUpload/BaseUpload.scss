@@ -1,0 +1,29 @@
+.file-upload-input-container {
+  @apply border-1 border-dashed border-[#1A1A1A1A] rounded-lg p-4 ltr:pr-7 rtl:pl-7 w-full min-550:min-w-[16.75rem] min-550:max-w-max relative;
+
+  .image-upload-wrapper {
+    @apply px-[14px] py-3 bg-[#142b73] rounded-[4px] ltr:mr-4 rtl:ml-4;
+  }
+  .upload-text {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+  }
+
+  .uploaded-image {
+    @apply w-10 h-10 rounded-[4px] ltr:mr-4 rtl:ml-4;
+  }
+
+  .btn-close {
+    @apply absolute top-2 ltr:right-2 rtl:left-2 w-4 h-4 flex items-center justify-center bg-dark-blue rounded-full;
+  }
+
+  .attached-file-details-container {
+    .file-name {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+      word-break: break-word;
+    }
+
+    .details {
+      @apply mt-2 ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-4 text-dark-gray;
+    }
+  }
+}

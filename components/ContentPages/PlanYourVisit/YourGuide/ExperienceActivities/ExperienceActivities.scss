@@ -1,0 +1,77 @@
+.experience-activities-section {
+  @apply w-full relative h-fit flex justify-center;
+
+  .bg-gray-layer {
+    @apply absolute bg-[#F7F7F7] h-full min-550:right-[3.75rem] ltr:right-10 rtl:left-10 ltr:rounded-tr-[96px] rtl:rounded-tl-[96px]  ltr:rounded-br-3xl rtl:rounded-bl-3xl top-0 w-full;
+  }
+
+  .content-container {
+    @apply flex w-full flex-col px-4 xl:px-0 max-w-screen-ski-dubai-content-max py-16 min-700:py-[7.5rem] z-30 relative;
+
+    .header-container {
+      @apply flex flex-col lg:flex-row lg:justify-between gap-x-3 gap-y-4 flex-wrap w-full;
+
+      .title-wrapper {
+        @apply w-full min-550:max-w-[26.4375rem] max-w-[17.9375rem];
+
+        .title {
+          @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter text-2xl leading-6 min-550:leading-8 min-550:text-[2rem] text-dark-gray uppercase;
+        }
+      }
+
+      .description-wrapper {
+        @apply w-full max-w-[17.9375rem] min-550:max-w-[33.5rem];
+
+        .description {
+          @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 mb-6 text-[#606060] text-sm;
+        }
+      }
+
+      .cta-link {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-[#191919];
+      }
+    }
+
+    .experience-activities-cards-container {
+      @apply mt-20 flex flex-col gap-y-6;
+
+      .row-container {
+        @apply flex gap-6 flex-wrap w-full;
+
+        .card-container {
+          box-shadow: 0px 24px 32px -24px rgba(0, 0, 0, 0.64);
+          @apply w-full h-[343px] min-550:h-[360px] overflow-hidden relative rounded-3xl;
+
+          &.fixed-width-card {
+            @apply min-910:w-[424px];
+          }
+
+          &.flexible-card {
+            @apply min-910:min-w-[424px] min-910:flex-1;
+          }
+
+          .card-info {
+            @apply absolute flex flex-col h-full justify-end ltr:left-0 rtl:right-0  p-8 text-white top-0 w-full;
+
+            .title {
+              @apply ltr:leading-[48px] text-[56px] uppercase ltr:font-druk-heavy-italic rtl:font-adapter;
+            }
+
+            .description {
+              @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-6;
+            }
+          }
+
+          .overlay-shadow {
+            @apply absolute bottom-0 ltr:left-0 rtl:right-0 rounded-3xl w-full h-full;
+            background: linear-gradient(
+              180deg,
+              rgba(26, 26, 26, 0) 0%,
+              rgba(26, 26, 26, 0.8) 100%
+            );
+          }
+        }
+      }
+    }
+  }
+}

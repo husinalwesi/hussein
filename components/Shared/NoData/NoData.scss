@@ -1,0 +1,15 @@
+.no-data-main {
+  @apply w-full h-screen bg-center bg-cover bg-no-repeat;
+
+  .no-data-content-container {
+    @apply h-full w-full relative flex flex-col items-center justify-center mobiles:px-4;
+
+    .title {
+      @apply ltr:font-druk-text-wide-super-italic rtl:font-adapter text-center text-base text-light-yellow uppercase;
+    }
+  }
+
+  .gs-base-button-default-styles {
+    @apply pt-[21px] pb-[19px] px-[46px];
+  }
+}

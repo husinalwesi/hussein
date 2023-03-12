@@ -1,0 +1,53 @@
+.sustainability-main {
+  @apply overflow-hidden;
+
+  .text-container {
+    @apply flex-1 justify-center h-full flex flex-col;
+
+    .title {
+      @apply w-full min-900:text-6xl text-white uppercase ltr:font-druk-wide-heavy-italic rtl:font-adapter rtl:leading-[unset] min-320:text-[28px] min-700:text-5xl text-3xl;
+    }
+    .sub-title {
+      @apply ltr:font-caveat-bold rtl:font-noto-sans-arabic-semi-bold leading-6 text-2xl;
+    }
+
+    &.without-img {
+      @apply max-w-[872px];
+    }
+  }
+
+  .image-wrapper {
+    @apply hidden md:flex md:w-[20rem] min-900:w-[21.25rem] h-full items-end;
+  }
+
+  .tabs-list {
+    @apply bg-transparent flex h-full list-none m-0 overflow-x-auto;
+
+    .tab {
+      @apply opacity-60 text-base pb-3 whitespace-nowrap lg:cursor-pointer ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-white;
+
+      &.active {
+        @apply opacity-100 pb-2 border-b-4 border-light-yellow border-solid;
+      }
+
+      &:not(:last-child) {
+        @apply ltr:mr-12 rtl:ml-12;
+      }
+
+      @screen lg {
+        &:hover {
+          @apply pb-2 border-b-4 border-light-yellow border-solid opacity-100;
+        }
+      }
+    }
+
+    .plan-your-visit-section {
+      @apply 3xl:mx-auto flex items-center max-w-screen-3xl mb-[97px] min-700:mb-20 mobiles:mt-[4rem] mt-[8.5rem] w-full;
+    }
+
+    &::-webkit-scrollbar {
+      @apply hidden;
+    }
+    scrollbar-width: none;
+  }
+}

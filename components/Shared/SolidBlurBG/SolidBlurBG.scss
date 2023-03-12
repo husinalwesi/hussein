@@ -1,0 +1,7 @@
+.solid-bg {
+  @apply flex h-[20.5rem] justify-center md:h-[17.5rem] overflow-hidden relative w-full;
+
+  .section-img-wrapper {
+    @apply flex  h-full items-end max-w-screen-ski-dubai-content-max mx-auto px-4 w-full xl:px-0;
+  }
+}

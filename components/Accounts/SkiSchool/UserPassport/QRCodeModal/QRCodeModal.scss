@@ -1,0 +1,46 @@
+.qr-code {
+    &-modal-header-container {
+        @apply flex items-start;
+
+        .passport-name-wrapper {
+            @apply flex flex-1 justify-center ltr:-mr-8 rtl:-ml-8;
+
+            .passport-name {
+                @apply ltr:font-druk-heavy-italic rtl:font-adapter leading-10 md:text-[2.5rem] mobiles:max-w-[165px] text-[34px] text-dark-gray text-center uppercase;
+            }
+
+            @screen min-700 {
+                @apply ltr:mr-0 rtl:ml-0;
+            }
+        }
+
+        .btn-close {
+            @apply bg-[#142B73] flex h-8 items-center justify-center rounded-full w-8;
+
+            @screen min-700 {
+                @apply h-10 w-10;
+            }
+        }
+    }
+
+    &-image-wrapper {
+        border: 1px solid #0a14321a;
+        @apply rounded-2xl p-2 w-[256px]  h-[256px] md:w-[330px] md:h-[330px];
+    }
+}
+
+.user {
+    &-details-container {
+        @apply mt-4 mb-6 text-center;
+    }
+    &-full-name {
+        @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold leading-6 md:text-[18px] md:tracking-[-0.4px] text-[20px] text-dark-black;
+    }
+    &-ak {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base mt-2 text-black opacity-40;
+    }
+}
+
+.note-text {
+    @apply text-black text-xs md:text-sm ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+}

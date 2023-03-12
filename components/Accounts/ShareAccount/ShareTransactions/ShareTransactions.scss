@@ -1,0 +1,200 @@
+.share-transactions-container {
+  .share-card-wrapper {
+    @apply mobile:px-2;
+
+    .shadow {
+      box-shadow: 0px 24px 32px -24px rgba(0, 0, 0, 0.24);
+      @apply absolute top-0 ltr:left-0 rtl:right-0 w-full h-full;
+    }
+
+    .share-card-container {
+      box-shadow: 0px 24px 32px -24px rgba(0, 0, 0, 0.24);
+      @apply relative flex items-center justify-between bg-[#b5064d] text-white px-8 py-6 rounded-3xl
+                 mobile:px-6 mobiles:flex-col mobiles:items-start mobiles:py-[20px] min-h-[10.625rem];
+
+      .user-name {
+        @apply ltr:font-marselis-pro rtl:font-noto-sans-arabic-reguler text-2xl h-fit mobiles:leading-7 mobiles:max-w-[154px];
+      }
+
+      .maf-share-logo-wrapper {
+        @apply absolute bg-center bg-cover bg-no-repeat flex h-[97px] justify-end md:w-[130px] md:h-[130px] ltr:pr-8 rtl:pl-8 pt-8 ltr:right-0 rtl:left-0 ltr:rounded-tr-3xl rtl:rounded-tl-3xl top-0 w-[97px];
+
+        img {
+          @apply w-[29px] h-[34px] md:w-10 md:h-12;
+        }
+      }
+
+      .share-points-text {
+        @apply ltr:font-marselis-pro rtl:font-noto-sans-arabic-reguler text-sm leading-4 tracking-[-0.01em];
+      }
+      .user-share-points {
+        @apply ltr:font-marselis-pro-bold rtl:font-noto-sans-arabic-bold mt-[2px] text-[20px] leading-6;
+      }
+
+      .bar-code-img-wrapper {
+        @apply pt-0 lg:pt-[4.5rem] relative z-[1] mobiles:ltr:pr-0 mobiles:rtl:pl-0 mt-6 lg:mt-0 mobiles:w-full;
+        & .bar-code-img-container {
+          @apply bg-white w-[13.625rem] h-[7.625rem] flex flex-col gap-2 items-center justify-center rounded-lg;
+          & img {
+            @apply w-[10.625rem] h-[3.125rem];
+          }
+          & p {
+            @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-center text-[#191919] tracking-[0.188rem];
+          }
+        }
+        & .share-id {
+          @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs ltr:text-left rtl:text-right  lg:text-center text-white;
+        }
+      }
+    }
+
+    .card-container {
+      @apply border-0;
+    }
+  }
+
+  .divider-dashed {
+    margin: 2.5rem 0 !important;
+
+    @screen md {
+      display: none !important;
+    }
+  }
+
+  .share-transaction-card {
+    @apply overflow-x-auto;
+
+    .title {
+      @apply uppercase ltr:font-druk-heavy-italic rtl:font-adapter text-[2.5rem] leading-10 text-dark-gray mobiles:text-[34px] mobiles:leading-8;
+    }
+
+    .description-wrapper {
+      @apply mt-2;
+
+      .description {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-6 text-[#606060];
+      }
+
+      @screen mobiles {
+        @apply max-w-[253px];
+
+        .description {
+          @apply text-xs;
+        }
+      }
+    }
+
+    .empty-transactions-title {
+      @apply ltr:font-roboto-bold rtl:font-noto-sans-arabic-bold text-[18px] text-black leading-5;
+    }
+    .empty-transactions-description-wrapper {
+      @apply mt-5 pt-4 border-t-1 border-dashed border-dark-gray border-opacity-20;
+
+      .description {
+        @apply ltr:font-roboto-regular rtl:font-noto-sans-arabic-reguler text-[18px] leading-7 text-dark-gray;
+      }
+    }
+
+    .month-transaction-records-container {
+      @apply mt-8;
+
+      .month-transaction-records {
+        .header {
+          @apply flex items-center md:ltr:pr-6 md:rtl:pl-10;
+
+          .month {
+            @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base text-dark-black w-[139px] md:min-w-[123px] md:max-w-max;
+          }
+          .empty-cell {
+            @apply hidden md:flex md:flex-[1.42];
+          }
+          .points-details-container {
+            @apply flex flex-[2] justify-between;
+
+            .points-earned-text,
+            .points-redeemed-text {
+              @apply ltr:flex ltr:flex-col ltr:font-inter-semi-bold md:w-fit min-550:ltr:flex-row opacity-60 rtl:font-noto-sans-arabic-semi-bold text-dark-black text-sm w-1/2;
+            }
+
+            .points-text {
+              @apply font-inter-reguler min-550:ml-2 text-xs rtl:hidden; // We hide it in the Arabic version
+            }
+
+            .amount-text {
+              @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold hidden md:block text-sm text-dark-black opacity-60;
+            }
+          }
+        }
+
+        .transaction-record {
+          @apply p-4 mt-2 border-1 border-solid border-[#040C251A] rounded-2xl lg:cursor-pointer;
+
+          .record-details-container {
+            @apply flex items-center;
+
+            .date {
+              @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs md:text-sm text-[#0A143299] md:text-dark-gray;
+            }
+            .location {
+              @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-dark-black md:ltr:font-inter-semi-bold md:rtl:font-noto-sans-arabic-semi-bold text-sm md:leading-4 md:text-dark-gray;
+            }
+            .points-earned {
+              @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold md:w-[100px] ltr:ml-1 rtl:mr-1 text-dark-black ltr:text-left rtl:text-right  text-xs md:text-sm w-1/2;
+            }
+            .points-redeemed {
+              @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold md:flex md:flex-1 md:justify-center md:ltr:ml-0 md:rtl:mr-0 md:text-center ltr:ml-3 rtl:mr-3 text-dark-black ltr:text-left rtl:text-right  text-sm w-1/2;
+            }
+            .amount {
+              @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold hidden md:block text-dark-black text-sm ltr:text-right rtl:text-left  w-[100px];
+            }
+          }
+
+          .tickets-list {
+            @apply md:ltr:ml-[110px] md:rtl:mr-[110px] mt-4 md:mt-2;
+
+            .ticket-item {
+              direction: ltr;
+              @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060];
+            }
+          }
+        }
+
+        .mobile-amount-container {
+          @apply w-full md:hidden;
+
+          .divider-dashed {
+            margin: 16px 0 !important;
+          }
+
+          .amount-text {
+            @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm text-dark-black;
+          }
+          .amount-value {
+            @apply text-dark-black text-xs ltr:font-inter-bold rtl:font-noto-sans-arabic-bold;
+          }
+        }
+      }
+    }
+
+    .view-more-container {
+      @apply mt-2;
+
+      .divider-dashed {
+        margin: 24px 0 !important;
+
+        @screen md {
+          display: block !important;
+          margin: 32px 0 !important;
+        }
+      }
+
+      .gs-base-button-default-styles {
+        @apply text-dark-black px-[47px] py-4 md:px-6;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      @apply hidden;
+    }
+  }
+}

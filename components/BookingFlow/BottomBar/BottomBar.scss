@@ -1,0 +1,42 @@
+.bottom-bar-wrapper {
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.16);
+  @apply bg-[#F7F7F7] bottom-0 fixed py-4 ltr:right-0 rtl:left-0 w-full z-30;
+
+  .content-container {
+    @apply md:px-10 1xl:px-43 w-full;
+  }
+
+  .bottom-bar-content-wrapper {
+    @apply px-4 flex h-full items-center justify-end md:px-0 min-550:justify-between;
+
+    .download-ticket-link {
+      @apply flex ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold items-center leading-4 text-[0.875rem] text-dark-gray rtl:ml-8 ltr:mr-8;
+
+      &:disabled {
+        @apply lg:cursor-not-allowed text-opacity-30;
+      }
+    }
+
+    .price-details-container {
+      @apply flex flex-col items-end ltr:mr-6 rtl:ml-6 ltr:gap-0 rtl:gap-1.5;
+
+      .total-price-label {
+        @apply ltr:font-druk-heavy-italic rtl:font-adapter leading-6 text-[#191919] text-2xl uppercase;
+      }
+
+      .tax-label {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[#606060] text-xs;
+      }
+
+      .gs-base-button-default-styles {
+        @apply px-[1.438rem] md:px-8 pt-[1.125rem] pb-4 rounded-xl m-0;
+      }
+    }
+  }
+
+  .absolute-loader {
+    position: absolute;
+    left: -20px;
+    top: 1px;
+  }
+}

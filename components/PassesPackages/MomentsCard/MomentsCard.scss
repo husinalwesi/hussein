@@ -1,0 +1,43 @@
+.moments-card-container {
+  @apply flex flex-col justify-end h-passes-img lg:max-w-[352px] max-w-[343px] p-6 rounded-3xl border border-dark-gray border-dashed border-opacity-20;
+
+  .card-image-wrapper {
+    @apply w-[104px] h-[104px] mx-auto;
+
+    .card-image {
+      @apply h-full max-h-[104px] max-w-[104px] rounded-full w-full;
+    }
+  }
+
+  .card-header-container {
+    @apply mt-6;
+
+    .card-title {
+      @apply font-caveat-bold leading-6 text-2xl text-dark-gray text-center;
+    }
+
+    .description-wrapper {
+      @apply mt-4;
+
+      .description {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 text-[#606060] text-center text-sm;
+      }
+    }
+  }
+
+  .base-btn-wrapper {
+    @apply mt-6 relative w-full;
+
+    .gs-base-button-default-styles {
+      @apply w-full;
+    }
+  }
+
+  .cta-link {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-[14px] mt-6 lg:hover:cursor-pointer text-dark-gray text-sm;
+  }
+
+  &.without-form {
+    @apply justify-center;
+  }
+}

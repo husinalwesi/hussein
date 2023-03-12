@@ -1,0 +1,66 @@
+.addOnsItem::v-deep {
+    @apply bg-[#f9f9f9] border border-solid border-[#eeeeee] rounded-2xl h-full min-h-[136px];
+    & .addOnsItemContainer {
+        @apply flex flex-row gap-4 p-4 relative h-full min-h-[136px];
+        & .price-content-container {
+            @apply flex flex-col flex-1 gap-4 lg:gap-6;
+            & .content-container {
+                @apply flex flex-col flex-1 gap-2;
+                & .title {
+                    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-[#191919];
+                }
+                & .sub-title-container {
+                    @apply flex flex-col gap-2;
+                    & .sub-title {
+                        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060] max-w-[11.25rem];
+                    }
+                }
+            }
+        }
+        & .price-counter-container {
+            @apply flex flex-row lg:flex-col justify-between items-center lg:items-start;
+            & .price {
+                @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base ltr:text-right rtl:text-left  text-[#191919];
+            }
+            & .counter-container {
+                @apply  bottom-0 relative lg:absolute lg:ltr:right-4 lg:rtl:left-4 lg:bottom-4;
+                & .counter-buttons {
+                    @apply w-6 h-6;
+                    & svg {
+                        @apply h-2;
+                    }
+                }
+                & .counter-number {
+                    @apply text-xs w-[1.375rem];
+                }
+            }
+        }
+    }
+    &.active {
+        @apply bg-[#142B73];
+        & .addOnsItemContainer {
+            & .price-content-container {
+                & .content-container {
+                    & .title {
+                        @apply text-white;
+                    }
+                    & .sub-title-container {
+                        & .sub-title {
+                            @apply text-white opacity-70;
+                        }
+                    }
+                }
+            }
+            & .price-counter-container {
+                .price {
+                    @apply text-white;
+                }
+                & .counter-container {
+                    & .counter-number {
+                        @apply text-white;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+      - yarn install
+      - echo Logging into Amazon ECR ..
+      - aws ecr get-login-password --region $REGION | docker login --username AWS --password-stdin $ACCOUNT_ID.dkr.ecr.$REGION.amazonaws.com
+  build:
+    commands:
+      - echo Build started at `date`
+      - yarn run build
+      - echo Building the Docker image ..
+      - ls -la
+      - docker build -t lec-gs-$ENV-fe:latest .
+      - docker tag lec-gs-$ENV-fe:latest $ECR_REPO_URI:latest
+      - echo Build completed at `date`
+      - echo Pushing the Docker image ..
+      - docker push $ECR_REPO_URI:latest
+      - echo Image pushed to ECR, URI= $ECR_REPO_URI:latest
+  post_build:
+    commands:
+      - bash -c "if [ /"$CODEBUILD_BUILD_SUCCEEDING/" == /"0/" ]; then exit 1; fi"
+      - echo Start Service $ECS_SERVICE_NAME Rolling Deployment ..
+      - aws ecs update-service --cluster $ECS_CLUSTER_NAME --service $ECS_SERVICE_NAME --force-new-deployment
+      - aws ecs wait services-stable --cluster $ECS_CLUSTER_NAME --services $ECS_SERVICE_NAME
+      - echo Deployment Completed Successfully.

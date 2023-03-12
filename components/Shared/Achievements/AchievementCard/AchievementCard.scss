@@ -1,0 +1,11 @@
+.achievement-card-container {
+    display: flex !important;
+    @apply flex-col items-center;
+
+    .achievement-logo {
+        @apply bg-white flex h-[12.5rem] items-center justify-center rounded-full w-[12.5rem];
+    }
+    .title {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 mt-6 text-base text-center text-dark-black;
+    }
+}

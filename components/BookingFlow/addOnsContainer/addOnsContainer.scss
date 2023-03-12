@@ -1,0 +1,22 @@
+.add-ons-container {
+    @apply px-0 lg:px-8;
+    & .add-ons-container-content {
+        & .addons-ul {
+            @apply flex flex-row flex-wrap gap-4;
+            & li{
+                @apply w-[17.687rem];
+            }
+        }
+    }
+}
+#add-ons-carousel::v-deep {
+    @apply overflow-hidden ltr:pl-4 rtl:pr-4;
+    & .slick-slider {
+        & .slick-list {
+            @apply max-w-[18.75rem] overflow-visible;
+            & .slick-slide {
+                @apply ltr:pr-4 rtl:pl-4;
+            }
+        }
+    }
+}

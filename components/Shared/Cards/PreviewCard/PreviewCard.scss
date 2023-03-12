@@ -1,0 +1,37 @@
+.preview-card-container {
+  box-shadow: 0px 24px 32px -24px rgba(0, 0, 0, 0.64);
+  @apply min-550:h-[360px] overflow-hidden relative rounded-3xl h-[343px] w-full;
+
+  &.fixed-width-card {
+    @apply min-910:w-[424px];
+  }
+
+  &.flexible-card {
+    @apply min-910:flex-1 min-910:min-w-[424px];
+  }
+
+  .card-content {
+    @apply absolute flex flex-col h-full justify-end ltr:left-0 rtl:right-0 p-8 text-white top-0 w-full;
+
+    .card-label-text {
+      @apply bg-white ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler px-4 py-2 rounded-2xl text-xs text-dark-black w-fit;
+    }
+
+    .title {
+      @apply ltr:leading-[48px] text-[56px] uppercase ltr:font-druk-heavy-italic rtl:font-adapter;
+    }
+
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 text-sm rtl:mt-5;
+    }
+
+    &.with-label {
+      @apply justify-between;
+    }
+  }
+
+  .overlay-shadow {
+    @apply bottom-0 h-full ltr:left-0 rtl:right-0 rounded-3xl w-full absolute;
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.8) 100%);
+  }
+}

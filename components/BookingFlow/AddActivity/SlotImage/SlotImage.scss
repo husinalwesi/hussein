@@ -1,0 +1,15 @@
+.time-slot-image-container {
+    @apply relative;
+    & img {
+        @apply rounded-lg w-16 h-16 pointer-events-none;
+        user-drag: none;
+        -webkit-user-drag: none;
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    & figcaption {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold absolute bottom-0 text-center text-[0.5rem] bg-white leading-[0.5rem] text-dark-gray w-16 h-4 rounded-bl-lg rounded-br-lg border border-black border-opacity-10 flex items-center justify-center;
+    }
+}

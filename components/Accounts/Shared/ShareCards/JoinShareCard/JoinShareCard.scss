@@ -1,0 +1,67 @@
+.share-card-wrapper {
+  @apply mobile:px-2;
+
+  .shadow {
+    box-shadow: 0px 24px 32px -24px rgba(0, 0, 0, 0.24);
+    @apply absolute top-0 ltr:left-0 rtl:right-0 w-full h-full;
+  }
+
+  .share-card-content {
+    box-shadow: 0px 24px 32px -24px rgba(0, 0, 0, 0.24);
+    @apply mobiles:py-[20px] mobile:px-6 p-8 rounded-3xl bg-[#b5064d] text-white relative;
+
+    .title-wrapper {
+      @apply h-fit mobiles:max-w-[204px];
+
+      .title {
+        @apply ltr:font-marselis-pro rtl:font-noto-sans-arabic-reguler text-2xl mobiles:text-base mobiles:leading-[22.4px];
+      }
+    }
+
+    .join-share-container {
+      @apply flex flex-wrap gap-x-[38px] items-center my-6;
+
+      .btn-join {
+        @apply bg-white text-[#b5064d] flex ltr:font-marselis-pro-bold rtl:font-noto-sans-arabic-bold items-center justify-center px-[42px] py-3 rounded-[80px] text-base tracking-[-0.02em] relative;
+
+        &:disabled {
+          @apply lg:hover:cursor-not-allowed;
+        }
+
+        @screen mobiles {
+          @apply leading-[15px] px-[29px] py-[8.5px] rounded-[100px] text-sm tracking-[-0.01em] w-fit;
+        }
+      }
+
+      .terms-and-conditions {
+        @apply ltr:font-marselis-pro rtl:font-noto-sans-arabic-reguler text-sm;
+
+        &::v-deep {
+          .share-text {
+            @apply ltr:font-marselis-pro-bold rtl:font-noto-sans-arabic-bold;
+          }
+        }
+      }
+
+      @screen mobiles {
+        @apply items-start flex-col gap-y-4;
+      }
+    }
+
+    .description {
+      @apply text-white text-sm leading-6 ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler max-w-[620px] mobiles:text-xs mobiles:leading-[18px];
+    }
+
+    .maf-share-logo-wrapper {
+      @apply absolute bg-center bg-cover bg-no-repeat flex h-[97px] ltr:justify-end rtl:justify-start pr-6 ltr:right-0 rounded-tr-3xl md:h-[116px] md:w-[116px] pt-6 rtl:left-0 rtl:scale-x-[-1] top-0 w-[97px];
+
+      img {
+        @apply h-[34px] md:h-12 md:w-10 rtl:scale-x-[-1] w-[29px];
+      }
+    }
+  }
+
+  .card-container {
+    @apply border-0;
+  }
+}

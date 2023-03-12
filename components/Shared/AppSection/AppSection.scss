@@ -1,0 +1,35 @@
+.planing-your-visit-sec {
+  @apply flex flex-wrap w-full h-fit md:h-[36.5rem] rounded-3xl mx-4 lg:mx-15 py-12 md:py-0 bg-white;
+
+  .info-part {
+    @apply w-full md:w-1/2 flex md:items-center md:justify-center;
+
+    .title {
+      @apply ltr:font-druk-heavy-italic rtl:font-adapter uppercase text-white text-[55px] leading-[48px] lg:text-7xl lg:leading-[4.5rem] rtl:leading-[unset];
+    }
+
+    .sub-title {
+      @apply ltr:font-druk-text-wide-super-italic font-adapter text-sm leading-4 uppercase lg:text-base text-light-yellow mt-4 mb-7;
+    }
+
+    .base-button {
+      @apply w-full;
+    }
+  }
+
+  .mobile-img-part {
+    @apply w-full md:w-1/2 flex justify-center relative py-10 md:py-0;
+
+    .img-wrapper {
+      @apply w-fit max-w-[16.875rem] mini-tablets:max-w-[21.875rem] md:max-w-[30.188rem] md:absolute md:z-10 md:top-0;
+    }
+  }
+
+  &.content-bg {
+    @apply bg-no-repeat bg-center bg-cover bg-gradient-light-blue-noise-moible md:bg-gradient-light-blue-noise-desktop;
+  }
+
+  &.m-0 {
+    margin: 0;
+  }
+}

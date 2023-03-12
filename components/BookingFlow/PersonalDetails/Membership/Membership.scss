@@ -1,0 +1,59 @@
+.membership-section {
+  .card-header {
+    @apply flex justify-between items-center gap-4 flex-wrap;
+
+    .title {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold leading-6 w-fit normal-case text-[#191919] text-[20px] whitespace-pre-line;
+    }
+    .terms-conditions-info-wrapper {
+      @apply bg-[#0A14321A] flex ltr:pl-[6.9px]  rtl:pr-[6.9px] ltr:pr-[6px] rtl:pl-[6px] py-[8.8px] rounded-[18px] lg:cursor-pointer;
+
+      .terms-conditions-label {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-dark-black ltr:ml-1 rtl:mr-1 whitespace-nowrap lg:cursor-pointer;
+      }
+    }
+  }
+
+  .divider-dashed {
+    @apply h-px w-full opacity-20;
+    background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+    background-size: 8px 100%;
+  }
+  .membership-ticket-accordian {
+    @apply bg-[#C4C4C4] bg-opacity-10 border-0 border-solid border-[#E6E6E6] flex flex-col gap-x-4 gap-y-2 justify-between md:bg-[#F9F9F9]
+             md:bg-opacity-100 md:border-1 md:px-[23px] md:py-[15px] min-700:flex-row min-700:items-center px-4 py-[14px] rounded-2xl relative;
+
+    .minimum-age-text {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060] mt-1 md:mt-0;
+    }
+
+    .users-list-popup-indicator-opener {
+      @apply flex gap-x-2 items-center;
+
+      .loader-wrapper{
+        width: fit-content;
+      }
+
+      .membership-user-name {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold lg:cursor-pointer min-700:order-1 order-2 text-dark-gray text-xs;
+      }
+    }
+
+    .users-list-wrapper {
+      @apply absolute bg-white border-1 border-opacity-10 border-solid border-black ltr:left-4 rtl:right-4 rtl:left-0 max-h-[272px]
+             max-w-[292px] min-700:right-[23px] min-700:top-[55px] min-700:ltr:left-unset min-700:rtl:right-unset p-[15px] rounded-2xl top-[92px] w-[100%] z-[31];
+
+      .users-list {
+        @apply overflow-y-auto h-fit max-h-[192px] ltr:-mr-4  rtl:-ml-4 ltr:pr-4 rtl:pl-4;
+
+        .user {
+          @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold lg:cursor-pointer lg:hover:bg-[#142B73] lg:hover:text-white p-4 rounded-xl text-xs text-dark-gray;
+        }
+      }
+
+      .btn-add-sub-account {
+        @apply flex ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler gap-x-2 w-full items-center leading-4 mx-4 text-[#606060] text-sm;
+      }
+    }
+  }
+}

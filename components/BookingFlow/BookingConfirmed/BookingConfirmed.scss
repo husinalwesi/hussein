@@ -1,0 +1,288 @@
+.booking-confirmation-main {
+  &::v-deep {
+    .booking-confirmation {
+      margin-top: -110px;
+
+      .title-wrapper {
+        @apply mb-8;
+
+        .title {
+          @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter text-[2rem] ltr:leading-8 rtl:leading-[unset] text-white uppercase;
+
+          @screen mobiles {
+            @apply text-[22px] ltr:leading-6 rtl:leading-[unset];
+          }
+        }
+      }
+
+      & .unavailable-ticket {
+        @apply bg-[#ff6d03] rounded px-1 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-white inline-block mt-1;
+      }
+
+      .cards-container {
+        @apply flex justify-between flex-wrap gap-6;
+
+        .booking-details-card-container {
+          @apply flex-grow flex-shrink w-full lg:w-[40.5rem] h-fit rounded-3xl;
+
+          .card-header {
+            @apply flex flex-wrap items-start justify-between mb-8 gap-4 px-[15px];
+
+            .general-info {
+              .card-title {
+                @apply ltr:font-druk-heavy-italic rtl:font-adapter ltr:leading-8 rtl:leading-[unset] md:text-[2.5rem] md:ltr:leading-10 text-dark-gray text-[34px] uppercase;
+              }
+
+              .share-balance {
+                &-wrapper {
+                  @apply mt-2;
+                }
+
+                &-text {
+                  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-4 text-dark-gray text-sm;
+                }
+              }
+            }
+
+            .booking-reference-info {
+              @apply flex flex-wrap gap-3 items-center justify-between mobiles:w-full;
+
+              .reservation-code-text {
+                @apply mt-1 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base text-[#191919];
+              }
+
+              .qr-code-image-wrapper {
+                @apply hidden mobiles:flex;
+
+                img {
+                  width: 69px;
+                  height: 69px;
+                }
+              }
+            }
+
+            @screen mobiles {
+              @apply mb-6 px-0;
+            }
+          }
+
+          .card-body {
+            .order-tickets-wrapper {
+              @apply mb-6;
+
+              .grid-view {
+                .table-header {
+                  @apply flex w-full border-none mb-2 mobiles:mb-[6px];
+
+                  .cell {
+                    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-black mobiles:text-[10px];
+                  }
+                }
+
+                .table-data {
+                  background: rgba(196, 196, 196, 0.1);
+                  color: #191919;
+                  @apply w-full mb-2 flex rounded-2xl py-4;
+
+                  .cell {
+                    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[#191919] text-xs leading-6;
+
+                    @screen mobiles {
+                      @apply text-[10px] leading-4;
+                    }
+                  }
+                }
+
+                .cell {
+                  @apply px-4 mobiles:px-2 border-none;
+                }
+              }
+            }
+
+            .payment-details {
+              @apply flex flex-row justify-between px-[15px] mobiles:px-0;
+
+              .key {
+                @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base text-[#191919];
+              }
+
+              .value {
+                @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base text-[#191919];
+              }
+
+              &.extra-detials {
+                @apply mt-2;
+
+                .key {
+                  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060];
+
+                  .share-text {
+                    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-[#B5064D];
+                  }
+                }
+
+                .value {
+                  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs  text-[#606060];
+
+                  &.bold {
+                    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold;
+                  }
+                }
+              }
+            }
+
+            .total-price-details {
+              @apply px-[15px] mobiles:px-0;
+
+              .vat-text,
+              .vat-number {
+                @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060];
+              }
+
+              .total-amount {
+                @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-[20px] leading-6 text-[#191919];
+
+                &-text {
+                  @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base text-[#191919];
+
+                  span {
+                    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+                  }
+                }
+              }
+            }
+
+            .dashed-line {
+              @apply w-full h-px block opacity-20 my-6 mobiles:my-4;
+              background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+              background-size: 8px 100%;
+            }
+          }
+        }
+      }
+
+      .next-steps-wrapper {
+        @apply flex-grow flex-shrink h-fit lg:w-[26.5rem];
+
+        .card-container {
+          .card-content-wrapper {
+            padding: 0;
+          }
+
+          @screen xl {
+            border: none;
+          }
+        }
+
+        .card-header-container {
+          @apply p-[31px] pb-0;
+
+          .card-title {
+            @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[40px] leading-10 text-dark-gray uppercase;
+
+            @screen mobiles {
+              @apply text-[34px] leading-8;
+            }
+          }
+
+          .description-wrapper {
+            @apply mt-4;
+
+            .description {
+              @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm text-[#0A143299];
+            }
+          }
+        }
+
+        .steps-list-container {
+          @apply mt-6;
+
+          .steps-list {
+            @apply flex flex-col gap-y-2;
+
+            .steps-list-item {
+              @apply flex items-center py-6 bg-white rounded-2xl gap-6 p-6;
+              border: 1px solid rgba(10, 20, 50, 0.1);
+              box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+
+              .step-number-container {
+                @apply w-14 h-14 rounded-full flex justify-center items-center bg-white;
+                border: 1px solid rgba(10, 20, 50, 0.1);
+
+                .step-number {
+                  @apply ltr:font-druk-text-medium-italic rtl:font-adapter justify-center text-base;
+                  color: rgba(10, 20, 50, 0.2);
+                }
+              }
+
+              .step-details-container {
+                @apply flex-1 max-w-[229px];
+
+                .step-details-title {
+                  @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base text-dark-black;
+                }
+
+                .step-details-description {
+                  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs;
+                  color: rgba(10, 20, 50, 0.6);
+                }
+              }
+
+              &.active {
+                .step-details-container {
+                  @apply max-w-[167px];
+                }
+
+                .step-number-container {
+                  background: #0380c2;
+
+                  .step-number {
+                    @apply text-white;
+                  }
+
+                  &.dark-bg {
+                    @apply bg-[#142B73];
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .visit-note-wrapper {
+          @apply mt-2 w-full flex justify-center bg-[#0A14321A] rounded-bl-3xl rounded-br-3xl py-2;
+
+          .visit-note-text {
+            @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-center text-dark-black max-w-[311px] mobiles:max-w-max;
+          }
+        }
+      }
+
+      .uncertain-container {
+        .card-title {
+          @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[34px] leading-8 md:leading-10 text-dark-gray md:text-[2.5rem] uppercase;
+        }
+
+        .description-wrapper {
+          @apply mt-2;
+          .description {
+            @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-4 text-dark-gray text-sm;
+          }
+        }
+      }
+    }
+  }
+}
+
+.collection-name {
+  @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold mb-2;
+
+  font-size: 12px;
+  color: #0A1432;
+  padding-inline-start: 1rem;
+
+  &.add-on {
+    padding-inline-start: 0;
+
+  }
+}

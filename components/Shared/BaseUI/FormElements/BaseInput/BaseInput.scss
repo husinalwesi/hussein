@@ -1,0 +1,39 @@
+.base-input-container {
+  @apply relative flex-1;
+
+  .base-input {
+    @apply pb-1 pt-5;
+    
+    &:focus {
+      @apply outline-none;
+
+      & ~ label {
+        @apply top-1 text-xs;
+      }
+    }
+    &:not(:placeholder-shown) ~ label {
+      @apply top-1 text-xs;
+    }
+  }
+
+  label {
+    /* to handle transition in Safari browsers */
+    -webkit-transition-property: visibility, opacity;
+    -webkit-transition-duration: 300ms;
+    -webkit-transition-timing-function: ease-in-out;
+
+    @apply absolute block duration-300 ease-in-out ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-5 pointer-events-none px-4 text-[#AEAEAE] text-sm top-4 transition-all w-fit;
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}

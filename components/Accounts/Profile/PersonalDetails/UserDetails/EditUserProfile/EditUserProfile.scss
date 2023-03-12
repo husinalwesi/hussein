@@ -1,0 +1,22 @@
+.user-details-form-container {
+  @apply px-[15px] py-[23px] md:p-[31px];
+
+  .title {
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[34px] leading-8 md:text-[40px] md:leading-10 text-dark-gray uppercase;
+  }
+
+  .btns-action {
+    @apply mt-4 border-t-1 border-dashed border-dark-gray border-opacity-20 pt-6 flex flex-wrap w-full justify-end items-center gap-x-4 min-550:gap-x-7;
+
+    .btn-cancel {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+
+      &:disabled{
+        @apply cursor-not-allowed opacity-50;
+      }
+    }
+    .gs-base-button-default-styles {
+      @apply rounded-xl py-4;
+    }
+  }
+}

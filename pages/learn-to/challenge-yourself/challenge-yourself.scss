@@ -1,0 +1,54 @@
+.challenge-yourself-main {
+  .text-container {
+    @apply flex-1 justify-center h-full flex flex-col;
+
+    .title {
+      @apply w-full min-900:text-6xl text-white uppercase ltr:font-druk-wide-heavy-italic rtl:font-adapter  rtl:leading-[unset] min-320:text-[32px] min-700:text-5xl text-3xl;
+    }
+    .sub-title {
+      @apply ltr:font-caveat-bold rtl:font-noto-sans-arabic-semi-bold leading-6 text-2xl;
+    }
+
+    &.without-img {
+      @apply max-w-[872px];
+    }
+  }
+
+  .image-wrapper {
+    @apply hidden md:flex md:w-[20rem] min-900:w-[21.25rem] h-full items-end;
+  }
+
+  .our-community-section {
+    @apply bg-white h-fit py-10 min-700:pt-12 min-700:pb-14;
+
+    .content-container {
+      @apply flex flex-col items-center min-700:px-0 min-700:py-16 pb-8 pt-14 px-4 relative w-full;
+
+      .strokes-wrapper {
+        @apply absolute h-10 ltr:left-[-44px] rtl:right-[44px] mobiles:hidden top-[-44px] w-[37px];
+      }
+
+      .join-community-input-validator {
+        @apply relative w-full items-start flex justify-center gap-2 flex-wrap;
+
+        .btn-join-community {
+          @apply relative;
+          &.gs-base-button-default-styles {
+            @apply pt-[17px] pb-[15px];
+          }
+
+          &.not-joined.gs-base-button-default-styles {
+            @apply px-[27px] text-dark-black;
+          }
+          &.joined.gs-base-button-default-styles {
+            @apply px-[23px] text-white bg-[#0D4F94];
+          }
+        }
+      }
+    }
+  }
+
+  .shared-title-styles {
+    @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter leading-6 min-700:text-[2rem] min-700:leading-8 text-dark-gray text-2xl uppercase;
+  }
+}

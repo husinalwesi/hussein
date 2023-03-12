@@ -1,0 +1,11 @@
+.tabs-container {
+  @apply flex flex-col flex-wrap items-start justify-between min-700:flex-row min-700:items-end w-full;
+  
+  .timer-text-wrapper {
+    @apply bg-opacity-20 bg-white border-1 border-opacity-20 border-solid border-white flex h-8 items-center min-700:order-2 order-1 px-2 rounded-lg;
+
+    label {
+      @apply text-white uppercase ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 text-[0.688rem];
+    }
+  }
+}

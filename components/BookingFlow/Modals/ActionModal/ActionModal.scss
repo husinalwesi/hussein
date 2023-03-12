@@ -1,0 +1,15 @@
+.action-modal-wrapper {
+  .action-modal-header {
+    @apply ltr:font-inter-medium rtl:font-noto-sans-arabic-medium text-base text-center text-dark-gray md:ltr:text-left rtl:text-right ;
+  }
+  .action-modal-content {
+    // Add whatever styles you need to the content here.
+  }
+  &::v-deep {
+    .base-modal-wrapper {
+      .base-modal-body {
+        @apply p-10 min-320:p-10 min-550:p-10;
+      }
+    }
+  }
+}

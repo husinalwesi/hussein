@@ -1,0 +1,31 @@
+@import url('../fonts/fonts.scss');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.vue-notification-wrapper {
+  overflow: visible !important;
+}
+
+.disabled-btn {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.unicode-plain-text {
+  unicode-bidi: plaintext;
+}
+
+[dir = 'rtl'] {
+
+  .number-input {
+    direction: ltr;
+    text-align: right;
+  }
+}

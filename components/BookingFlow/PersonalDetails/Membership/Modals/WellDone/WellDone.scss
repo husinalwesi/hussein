@@ -1,0 +1,19 @@
+.memberships-terms-conditions-modal-wrapper {
+  &::v-deep {
+    .base-modal-wrapper {
+      .base-modal-body {
+        @apply w-full max-w-[39.5rem] py-10 px-4 min-700:px-10 min-700:py-8;
+      }
+      .gs-base-button-default-styles {
+        @apply leading-[14px] m-0 bg-light-yellow no-underline py-4 text-[#1A1A1A];
+      }
+    }
+  }
+
+  .description-wrapper {
+    @apply mt-13 pb-2;
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm text-dark-gray;
+    }
+  }
+}

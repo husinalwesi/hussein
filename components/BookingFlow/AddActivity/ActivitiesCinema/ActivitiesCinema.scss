@@ -1,0 +1,49 @@
+.age-type-activities-container {
+    @apply mt-6 mb-8 lg:my-8;
+    & .age-type-activities {
+        & .activities-head {
+            @apply flex flex-row justify-between pb-4 lg:pt-0 px-4 lg:px-8;
+            & .left-side {
+                @apply flex flex-row gap-2;
+            }
+            & .right-side {
+                @apply flex flex-wrap items-center gap-2;
+            }
+        }
+        & .activities-ul {
+            @apply mt-4 mb-8 flex flex-row flex-wrap gap-4 px-[1.937rem];
+        }
+    }
+    & .custom-title {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base leading-6 text-[#191919] lg:ltr:font-inter-bold lg:rtl:font-noto-sans-arabic-bold lg:text-xl capitalize;
+    }
+    & .circle-plus-minus-btn {
+        @apply w-6 h-6 bg-[#ececec] rounded-2xl;
+        & svg {
+            @apply mx-auto;
+        }
+    }
+    & .dashed-line {
+        @apply w-[calc(100%-2rem)] lg:w-[calc(100%-4rem)] h-px block opacity-20 mt-6 lg:mt-0 mx-auto;
+        background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+        background-size: 8px 100%;
+    }
+    &.cinemaBased {
+        @apply mb-0;
+        & .activities-ul {
+            @apply my-0;
+        }
+    }
+}
+
+#activities-carousel::v-deep {
+    @apply overflow-hidden ltr:pl-4 rtl:pr-4;
+    & .slick-slider {
+        & .slick-list {
+            @apply max-w-[300px] overflow-visible;
+            & .slick-slide {
+                @apply ltr:pr-4 rtl:pl-4;
+            }
+        }
+    }
+}

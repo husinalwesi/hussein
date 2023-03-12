@@ -1,0 +1,68 @@
+#hero-section {
+  @apply flex min-h-screen h-screen w-full lg:w-auto justify-center max-w-1xl mx-auto flex-col lg:flex-row;
+  & .hero-section-container {
+    @apply flex flex-col w-full items-center relative justify-center flex-auto lg:flex-none scale-75 xs:scale-100 lg:scale-85 xl:scale-100;
+    & #hero-title {
+      @apply uppercase ltr:font-druk-wide-heavy-italic rtl:font-bukra mobiles:rtl:text-[3rem] inline-flex flex-col text-4rem ltr:mr-px rtl:ml-px mt-0 lg:text-12.5rem lg:ltr:mr-1 lg:rtl:ml-1 lg:-mt-1 order-1;
+      & .highlighted {
+        @apply block -mt-4 p-2 text-light-yellow indent-5 lg:indent-46 invisible;
+      }
+
+      & .not-highlighted {
+        @apply inline-block p-2 text-white -mb-4 invisible;
+      }
+    }
+
+    & #hero-subtitle {
+      @apply inline-block lg:flex text-center uppercase ltr:font-druk-text-wide-super-italic rtl:font-adapter w-full text-0.875rem rtl:text-[2.25rem] rtl:mobiles:text-0.875rem pt-4 ltr:pl-px rtl:pr-px justify-center ltr:pr-0 rtl:pl-0 lg:text-1.25rem lg:pt-14 lg:ltr:pl-0 lg:rtl:pr-0 lg:ltr:pr-95 lg:rtl:pl-[33rem] order-2;
+      & .highlighted {
+        @apply inline-block text-light-yellow invisible;
+        & span {
+          @apply rtl:py-1.5 lg:rtl:py-0;
+        }
+      }
+
+      & .not-highlighted {
+        @apply inline-block text-white invisible;
+        & span {
+          @apply rtl:py-1.5 lg:rtl:py-0;
+        }
+      }
+    }
+
+    & .gs-skier-image-container {
+      @apply order-2 lg:order-3 relative lg:absolute inset-unset lg:inset-auto m-0 lg:m-auto mt-0 z-[1];
+
+      @screen lg {
+        @apply mt-6 ltr:right-[9.0625rem] rtl:left-[9.0625rem];
+      }
+
+      & .gs-skier-image {
+        @apply max-w-[22.1875rem] opacity-0 w-fit;
+
+        @screen lg {
+          @apply max-w-[31.5625rem] w-[31.5625rem];
+        }
+        &.isChristmasTheme {
+          @apply max-w-[19.063rem] mt-4.5 lg:mt-[24.813rem] ltr:ml-[-4.375rem] rtl:mr-[-4.375rem] w-auto;
+
+          @screen lg {
+            @apply max-w-[32.125rem] mt-[-0.938rem] ltr:-mr-0.5 rtl:-ml-0.5 w-auto;
+          }
+        }
+      }
+    }
+  }
+
+  .scroll-to-continue {
+    @apply relative lg:absolute bottom-[-4.25rem] lg:bottom-[5.5625rem] flex flex-col items-center mx-auto w-fit text-center order-4 opacity-0;
+
+    .scroll-text {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-xs text-white lg:cursor-pointer;
+    }
+
+    .indicator {
+      @apply h-8 mt-2 w-0.5 bg-white bg-opacity-20 relative;
+    }
+  }
+}

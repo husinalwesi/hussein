@@ -1,0 +1,24 @@
+.gs-base-button-default-styles {
+  @apply bg-light-yellow flex ltr:font-inter-bold rtl:font-noto-sans-arabic-bold items-center justify-center pb-5 pt-5.2 px-8 rounded-2xl text-1rem text-dark-gray;
+
+  &.mt-0 {
+    margin-top: 0 !important;
+  }
+
+  &:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+
+  &.max-w-full {
+    max-width: 100%;
+  }
+
+  &.w-full {
+    width: 100%;
+  }
+
+  &.text-btn {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold bg-transparent;
+    font-size: 14px;
+  }
+}

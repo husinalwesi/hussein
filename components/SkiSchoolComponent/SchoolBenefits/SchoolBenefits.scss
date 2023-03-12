@@ -1,0 +1,133 @@
+.body-title {
+  @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter text-[2rem] leading-8 uppercase text-[#1A1A1A] lg:px-0 px-4 lg:max-w-[54.5rem];
+  @screen mobiles {
+    @apply text-[1.5rem] leading-6 px-4;
+    max-width: 21.438rem;
+  }
+}
+
+.body-subtitle {
+  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[0.875rem] text-[#606060] leading-6 mt-4 lg:px-0 px-4 lg:max-w-[33.5rem];
+  max-width: 550px;
+
+  @screen mobiles {
+    max-width: 21.438rem;
+  }
+}
+
+.school-passport-link {
+  @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+}
+
+.binifit-cards-carousel-wrapper {
+  @apply w-full overflow-hidden;
+
+  .content-contianer {
+    // @apply w-full max-w-screen-ski-dubai-content-max relative;
+
+    .title {
+      @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter px-4 xl:px-0 text-dark-gray text-2xl leading-6 min-550:text-[2rem] min-550:leading-8 uppercase;
+    }
+
+    .cards-carousel-container {
+      @apply mt-8 min-700:px-4;
+
+      &::v-deep {
+        @apply transition-all;
+
+        .cards-carousel {
+          position: unset;
+
+          .slick-prev,
+          .slick-next {
+            @apply ltr:left-unset rtl:right-unset top-4 w-12 h-12 rounded-full;
+
+            &:before {
+              @apply opacity-100 block w-12 h-12 pt-[0.625rem];
+              content: url("data:image/svg+xml,%0A%3Csvg width='9' height='10' viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.68315 8.51155C4.30582 8.88886 3.69406 8.88886 3.31673 8.51155C2.9394 8.13424 2.9394 7.5225 3.31673 7.14519L5.46201 5L3.31673 2.85481C2.9394 2.4775 2.9394 1.86576 3.31673 1.48845C3.69406 1.11114 4.30582 1.11114 4.68315 1.48845L7.51164 4.31682C7.88897 4.69413 7.88897 5.30587 7.51164 5.68318L4.68315 8.51155Z' fill='%231A1A1A'/%3E%3C/svg%3E%0A");
+            }
+
+            &.slick-disabled {
+              @apply bg-lighter-gray cursor-not-allowed;
+            }
+
+            &:not(.slick-disabled) {
+              @apply bg-light-yellow;
+            }
+          }
+
+          .slick-prev {
+            @apply min-700:right-[4.5rem];
+
+            @media only screen and (min-width: 1280px) {
+              right: 3.5rem;
+            }
+
+            &::before {
+              @apply rotate-180;
+            }
+          }
+
+          .slick-next {
+            @apply min-700:right-4;
+
+            @media only screen and (min-width: 1280px) {
+              right: 0;
+            }
+          }
+
+          .slick-list {
+            @apply min-700:overflow-hidden min-700:pb-20 overflow-visible;
+
+            .slick-track {
+              @screen md {
+                max-width: 1100px;
+              }
+              @apply flex;
+              .slick-slide {
+                height: inherit !important;
+                max-width: calc(100% - 3.5rem);
+                &.slick-active {
+                  width: calc(21.438rem - 73px) !important;
+                  &:not(:first-child) {
+                    @apply xl:ml-[0.625rem];
+                  }
+                }
+                & > div {
+                  height: 100%;
+                }
+                &:not(.slick-active) {
+                  @apply transition-all;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .carousel-custom-dots-wrapper {
+        @apply w-full flex justify-center relative mt-5 min-700:hidden h-4;
+
+        .custom-dots-container {
+          @apply w-full max-w-[2.375rem] flex items-center overflow-hidden;
+
+          .dots {
+            @apply flex items-center transition-all duration-700;
+
+            span {
+              @apply h-1 bg-lightest-grey w-1 rounded-full mx-[3px] transition-all duration-700;
+
+              &.active {
+                @apply h-2 w-2 rounded-full opacity-100 bg-dark-blue transition-all duration-700;
+              }
+            }
+          }
+        }
+      }
+
+      @media only screen and (min-width: 1280px) {
+        padding: 0;
+      }
+    }
+  }
+}

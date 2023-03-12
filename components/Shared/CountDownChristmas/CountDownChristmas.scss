@@ -1,0 +1,40 @@
+.santa-section{
+    @apply w-[16.938rem] lg:w-[18.563rem] min-h-[5.5rem] lg:min-h-[6rem] self-start rounded-full lg:ltr:rounded-tr-none lg:ltr:rounded-br-none lg:rtl:rounded-tl-none lg:rtl:rounded-bl-none absolute lg:relative bg-[#FAD903] mx-auto lg:ltr:mr-0 lg:rtl:ml-0 mt-0 lg:mt-8 z-10 opacity-0 ltr:-left-8 rtl:-right-8 lg:ltr:left-0 lg:rtl:right-0 ltr:right-0 rtl:left-0 bottom-[-3.125rem] lg:bottom-0 lg:ltr:ml-[9%] lg:rtl:mr-[9%];
+
+    & .cherry-icon{
+      @apply absolute w-[4.688rem] h-[4.688rem] lg:w-20 lg:h-20 ltr:-left-7 rtl:-right-7 top-[-1.438rem];
+    }
+    & .santa-face{
+      @apply w-[6.688rem] h-[6.75rem] top-0 bottom-0 absolute lg:w-[7.375rem] lg:h-[7.563rem] ltr:right-[-3.125rem] lg:ltr:right-[-3.625rem] rtl:left-[-3.125rem] lg:rtl:left-[-3.625rem] my-auto;
+    }
+    & .santa-counter-section {
+      @apply flex flex-col;
+      & .santa-counter-title{
+        @apply px-12;
+        & p{
+          @apply ltr:ml-[-0.188rem] lg:ltr:ml-0 rtl:mr-[-0.188rem] lg:rtl:mr-0 ltr:font-inter-semi-bold lg:ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-xs text-[#1A1A1A] mt-[0.313rem] lg:mt-[0.563rem];
+        }
+      }
+      & .santa-counter-container{
+        @apply flex ltr:pl-[2.375rem] ltr:pr-[2.188rem] rtl:pr-[2.375rem] rtl:pl-[2.188rem] lg:px-11 mt-[0.438rem] lg:mt-1.5 pb-2.5 lg:pb-[0.813rem];
+        & > div{
+          @apply flex-1;
+          & .numbers-container span{
+            @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[1.938rem] leading-8 uppercase text-[#1A1A1A];
+          }
+          & .numbers-text-container{
+            @apply -mt-1.5;
+            & span{
+              @apply ltr:font-inter-semi-bold lg:ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-xs text-[#1A1A1A];
+            }
+          }
+        }
+      }
+    }
+    & .santa-here-container{
+      @apply flex h-full items-center px-9 lg:px-11 py-7 lg:py-8;
+      & .santa-here{
+        @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[#1A1A1A] uppercase text-[2rem] leading-8;
+      }        
+    }
+}

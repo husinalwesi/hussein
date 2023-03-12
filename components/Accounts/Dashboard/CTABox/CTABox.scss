@@ -1,0 +1,22 @@
+.cta-box-container {
+  @apply flex flex-wrap items-center w-full relative justify-between gap-x-3 gap-y-6 py-8 px-[0.9375rem] md:px-[1.9375rem];
+
+  .snowflake-image-wrapper {
+    @apply absolute lg:ltr:left-40 lg:rtl:right-40 ltr:right-0 rtl:left-0 top-0;
+  }
+
+  .box-text {
+    @apply flex flex-col relative z-[1];
+
+    .title {
+      @apply ltr:font-caveat-bold rtl:font-noto-sans-arabic-bold text-dark-gray text-2xl leading-6;
+    }
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-6 mt-4 md:mt-2 text-[#606060];
+    }
+  }
+
+  .gs-base-button-default-styles {
+    @apply leading-4 no-underline py-4 relative z-[1];
+  }
+}

@@ -1,0 +1,41 @@
+.card-nav {
+  .card-navigator {
+    @apply py-[1.25rem] px-[1.5rem] bg-[#F7F8F9] w-full flex items-center justify-between mb-2 last:mb-0;
+    border: 1px solid rgba(10, 20, 50, 0.1);
+    border-radius: 16px;
+
+    .navigator-title {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[1rem] leading-6 text-[#1A1A1A];
+    }
+
+    &.active {
+      @apply bg-[#FAD903];
+    }
+  }
+
+  .mobile-navigator {
+    @apply py-[1.25rem] px-[1.5rem] bg-[#F7F8F9] w-full mb-2;
+    border: 1px solid rgba(10, 20, 50, 0.1);
+    border-radius: 16px;
+
+    .navigator-title {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[1rem] leading-6 text-[#1A1A1A];
+    }
+
+    &.active {
+      @apply bg-[#FAD903];
+    }
+
+    .ski-card-content {
+      margin-top: 10px;
+      max-width: 100%;
+    }
+  }
+
+  .nav-margin {
+    margin-inline-end: 1.5rem;
+  }
+
+
+}
+

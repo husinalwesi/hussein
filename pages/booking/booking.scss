@@ -1,0 +1,23 @@
+.booking-flow-container {
+  @apply h-full min-h-screen relative w-full;
+
+  .content-container {
+    @apply max-w-screen-ski-dubai-content-max md:mt-[-124px] md:px-10 min-370:pb-24 mt-[-145px] pb-32 px-4 relative w-full xl:px-0;
+
+    .cards-container {
+      @apply flex flex-wrap gap-x-6 gap-y-4 justify-between md:mt-8 mt-6;
+
+      .workspace-tickets-container {
+        @apply flex-grow flex-shrink w-full lg:w-[40.5rem] h-fit rounded-3xl;
+      }
+
+      .summary-tickets-container {
+        @apply flex-grow flex-shrink h-fit sticky top-40 lg:w-[26.5rem];
+
+        &.vertical-view {
+          @apply relative top-0;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.booking-toast {
+    @apply flex gap-4 rounded mt-2;
+    box-shadow: 0px 0px 16px -24px rgba(0, 0, 0, 0.24);
+    &.toast-blue {
+        @apply bg-[#e7eff8] border border-solid border-[#a9c6ec] border-l-4 border-l-[#0669da];
+    }
+    &.toast-green {
+        @apply bg-[#ecf6ee] border border-solid border-[#c0e2c5] border-l-4 border-l-[#63b469];
+    }
+    &.toast-orange {
+        @apply bg-[#fdf7eb] border border-solid border-[#f4daaa] border-l-4 border-l-[#e19835];
+    }
+    &.toast-red {
+        @apply bg-[#f9edea] border border-solid border-[#efbfb3] border-l-4 border-l-[#dc593b];
+    }
+    &.toast-yellow {
+        @apply bg-[#fdf7d1] border border-solid border-[#f5d949] border-l-4 border-l-[#f5d949];
+    }
+    & .close-container {
+        @apply w-4 mt-2 ltr:mr-2 rtl:ml-2;
+        & .close {
+            @apply w-4 h-4 rounded-lg flex justify-center items-center;
+            background: rgba(26, 26, 26, 0.1);
+        }
+    }
+    & .content-container {
+        @apply flex-1 ltr:pl-3 rtl:pr-3 py-2;
+        & p {
+            @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-[#1a1a1a];
+        }
+    }
+}
+.vue-notification-group {
+    width: 26.625rem !important;
+    bottom: 6.5rem !important;
+    right: 3.75rem !important;
+}
+@media only screen and (max-width: 992px) {
+    .vue-notification-group {
+        width: calc(100% - 2rem) !important;
+        right: 0 !important;
+        margin: 0 auto;
+        left: 0;
+    }
+}

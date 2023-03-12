@@ -1,0 +1,35 @@
+.notification-modal {
+  &-wrapper {
+    &::v-deep {
+      .base-modal-wrapper {
+        .base-modal-body {
+          @apply mobiles:px-6 mobiles:py-10 p-12 w-full max-w-[648px];
+        }
+      }
+    }
+  }
+
+  &-header {
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter text-center min-700:ltr:text-left rtl:text-right  text-[40px] leading-10 text-dark-gray;
+  }
+  &-subtitle {
+    @apply mt-4 ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-center min-700:ltr:text-left rtl:text-right  text-sm leading-6 text-dark-gray;
+  }
+  &-content {
+    .actions-container {
+      @apply flex flex-wrap gap-x-8 gap-y-7 items-center justify-end mobiles:flex-col-reverse mobiles:mb-5 mobiles:mt-4 mt-6;
+
+      .btn-cancel {
+        @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base leading-4 text-dark-gray;
+
+        &:disabled {
+          @apply lg:hover:cursor-not-allowed opacity-50;
+        }
+      }
+
+      .gs-base-button-default-styles {
+        @apply py-5 px-[37px] m-0 rounded-2xl bg-light-yellow text-dark-gray mobiles:w-full;
+      }
+    }
+  }
+}

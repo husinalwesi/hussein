@@ -1,0 +1,24 @@
+.details-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  @apply p-[15px] bg-white rounded-2xl w-full min-700:max-w-[352px];
+
+  .card-body-container {
+    @apply mt-4 px-2 pb-2;
+
+    .title {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold rtl:leading-8 text-base text-[#191919];
+    }
+    .description {
+      @apply rtl:mt-3 ltr:mt-2 ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm text-[#606060] leading-6;
+
+      &::v-deep {
+        ul {
+          @apply ltr:pl-6 rtl:pr-6 list-disc;
+        }
+        ol {
+          @apply ltr:pl-6 rtl:pr-6 list-decimal;
+        }
+      }
+    }
+  }
+}

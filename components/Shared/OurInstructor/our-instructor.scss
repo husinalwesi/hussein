@@ -1,0 +1,51 @@
+.section-title {
+  @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter font-normal leading-6 md:text-[2rem] md:leading-8 text-2xl text-dark-gray uppercase;
+}
+
+.tabs-container {
+  @apply relative w-full flex mt-8 md:mt-10;
+
+  .tabs-list {
+    @apply w-fit bg-transparent flex h-full list-none m-0 overflow-x-auto;
+
+    .tab {
+      @apply opacity-50 text-[13px] relative z-[1] uppercase leading-4 pb-4 whitespace-nowrap lg:hover:cursor-pointer ltr:font-druk-text-wide-bold rtl:font-adapter font-normal text-dark-gray;
+
+      &.active {
+        @apply opacity-100 pb-3 border-b-4 border-light-yellow border-solid;
+      }
+
+      &:not(:last-child) {
+        @apply ltr:mr-12 rtl:ml-12;
+      }
+
+      @screen lg {
+        &:hover {
+          @apply pb-3 border-b-4 border-light-yellow border-solid opacity-100;
+        }
+      }
+    }
+
+    &::-webkit-scrollbar {
+      @apply hidden;
+    }
+
+    scrollbar-width: none;
+  }
+
+  .bottom-line {
+    @apply absolute bg-dark-gray bg-opacity-10 bottom-0 h-[1px] w-full;
+  }
+}
+
+.instructor-cards-container {
+  @apply mt-[36px] md:mt-12;
+
+  .instructor-cards-wrapper {
+    @apply flex flex-wrap justify-center lg:justify-start gap-2;
+  }
+
+  .gs-base-button-default-styles {
+    @apply text-dark-black py-[20px] px-[25px];
+  }
+}

@@ -1,0 +1,51 @@
+.payments-section {
+  .title {
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[34px] leading-8 md:text-[40px] md:leading-10 text-dark-gray uppercase;
+  }
+
+  .description {
+    @apply text-xs md:text-sm leading-6 mt-2 text-[#606060] ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+  }
+
+  .payment-methods-container {
+    @apply mt-6 md:mt-8 flex flex-col gap-y-2;
+
+    .payment-method-card-container {
+      @apply border-1 border-solid border-[#E6E6E6] px-[15px] md:px-[23px] rounded-2xl bg-[#F9F9F9];
+
+      &.add-new-card {
+        @apply py-[15px] md:py-[23px] relative;
+
+        .btn-close {
+          min-width: 2rem;
+          min-height: 2rem;
+          @apply bg-[#142B73] flex h-8 items-center justify-center rounded-full w-8;
+        }
+
+        .form-loader {
+          @apply absolute bg-[#ffffffcb] h-[100%] rounded-2xl z-10 inset-0;
+        }
+      }
+
+      &.selected {
+        @apply bg-[#0380c2] bg-opacity-5 border-[#0380C2];
+      }
+
+      .default-payment {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold hidden leading-4 md:block md:text-xs text-[10px] text-dark-gray;
+      }
+    }
+  }
+
+  .add-card-container {
+    @apply flex mt-6 min-700:mt-8 justify-start ltr:pr-0 rtl:pl-0 min-700:justify-end w-full min-700:ltr:pr-5 min-700:rtl:pl-5;
+
+    .btn-add-card {
+      @apply flex gap-x-2 items-center ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+
+      .icon-wrapper {
+        @apply border border-dashed border-dark-gray border-opacity-20 cursor-pointer flex h-6 items-center justify-center rounded w-[2.4375rem];
+      }
+    }
+  }
+}

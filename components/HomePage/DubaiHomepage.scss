@@ -1,0 +1,7 @@
+.ski-dubai-main {
+    @apply w-full h-full min-h-screen;
+
+    .bg-homepage {
+        @apply -z-1 bg-center bg-cover bg-gradient-light-blue-mobile bg-no-repeat fixed h-full ltr:left-0 rtl:right-0 min-429:bg-gradient-light-blue-desktop top-0 w-full;
+    }
+}

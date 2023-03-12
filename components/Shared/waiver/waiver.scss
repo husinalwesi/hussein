@@ -1,0 +1,328 @@
+.waiver {
+  width: 100%;
+
+  .card-title {
+    font-size: 40px;
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter uppercase;
+    .sub-title {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+      font-size: 14px;
+      text-transform: initial;
+      color: #606060;
+      @screen mobiles {
+        font-size: 12px;
+      }
+    }
+
+    @screen mobiles {
+      font-size: 34px;
+    }
+  }
+
+  .action-details {
+    color: #606060;
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+    font-size: 12px;
+
+    .sub-action {
+      color: #191919;
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+      font-size: 14px;
+    }
+  }
+
+  .guest-card {
+    @apply p-4 md:px-6 md:py-5;
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 16px;
+    min-height: 72px;
+
+    .name {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+      font-size: 16px;
+    }
+
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+      color: #606060;
+      font-size: 12px;
+    }
+
+    .badge-text-container {
+      @apply flex flex-col items-end mobiles:items-start;
+
+      .expires-text {
+        @apply ltr:font-inter-reguler mt-2 rtl:font-noto-sans-arabic-reguler text-[#606060] text-[10px];
+      }
+    }
+  }
+
+  .section-title {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-1rem leading-6 text-[#191919];
+    margin: 2.5rem 0 1rem 0;
+    @screen mobiles {
+      margin: 2rem 0 1rem 0;
+    }
+  }
+
+  .skill-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    color: #1a1a1a;
+  }
+
+  .requirement-title {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[0.875rem] leading-4  text-dark-gray ltr:text-left rtl:text-right;
+    margin-top: 40px;
+  }
+
+  .requirement-badge {
+    content: "";
+    width: 24px;
+    height: 24px;
+    background: #fad903;
+    border-radius: 16px;
+    position: relative;
+  }
+
+  .check-icon {
+    position: absolute;
+    margin: 6px auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .badge-subtitle {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[0.875rem] leading-4 text-[#1A1A1A];
+    margin-inline-start: 2.5rem;
+  }
+
+  .guardian-text {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[0.875rem] leading-4 text-[#1A1A1A];
+  }
+
+  .badge-title {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[0.875rem] leading-4  text-[#1A1A1A] ltr:text-left rtl:text-right;
+    padding-inline-start: 1rem;
+  }
+
+  .requirement-btn {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[1rem] leading-4 text-center text-[#1A1A1A];
+    padding: 6px 16px 8px;
+    border-radius: 8px;
+    min-width: 86px;
+
+    &.active {
+      @apply ltr:font-druk-text-heavy-italic rtl:font-noto-sans-arabic-semi-bold bg-[#142B73]  text-white;
+    }
+  }
+
+  .guardion-continer {
+    content: "";
+    height: 32px;
+    width: 32px;
+    border-radius: 17px;
+    background: #ececec;
+    position: relative;
+  }
+
+  .menu-btn {
+    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold leading-4 no-underline normal-case px-[1.375rem] pt-[1.063rem] pb-[0.938rem] text-[#0A1432] text-center bg-[#FAD903] rounded-[0.75rem];
+  }
+
+  .back-btn {
+    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold bg-[#ECECEC] text-dark-gray text-[1rem] leading-4 items-center;
+    padding: 0.563rem 1rem 0.438rem 1rem;
+    border-radius: 8px;
+  }
+
+  .signiture-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .guardian-card {
+    background: #ffffff;
+    border: 1px dashed rgba(26, 26, 26, 0.1);
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-bottom: 8px;
+    @screen mobiles {
+      padding: 24px 16px;
+    }
+  }
+
+  .grey-arrow-contienr {
+    content: "";
+    height: 32px;
+    width: 32px;
+    border-radius: 17px;
+    background: #ececec;
+    position: relative;
+    @screen mobiles {
+      position: absolute;
+      right: 3.5rem;
+    }
+  }
+
+  .guest-drop-down {
+    width: 292px;
+    background: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 16px;
+    z-index: 1;
+    max-height: 250px;
+    overflow-y: scroll;
+    top: 40px;
+    @screen mobiles {
+      right: 0;
+    }
+
+    .list-item {
+      padding: 16px 0;
+      cursor: pointer;
+
+      &.selected,
+      &:hover {
+        background: #142b73;
+        border-radius: 12px;
+        color: #fff;
+      }
+    }
+
+    .add-new {
+      border-top: 1px dashed #cccccc;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+  }
+
+  .adult-signiture {
+    @apply box-border flex h-[4.5rem] items-center justify-center lg:hover:cursor-pointer mb-2 mt-4 relative rounded-lg w-full;
+    background: rgba(3, 128, 194, 0.1);
+    border: 1px solid #0380c2;
+  }
+
+  .info-badge {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 text-[0.75rem];
+    display: flex;
+    margin: 0px 16px;
+    padding: 8px 10px;
+    border-radius: 18px;
+    position: absolute;
+    right: 6.2rem;
+    width: max-content;
+    z-index: 1;
+
+    &.success-bg {
+      background-color: #58b1501a;
+      color: #58b150;
+    }
+
+    &.error-bg {
+      background-color: #ff173d1a;
+      color: #ff173d;
+    }
+  }
+
+  .section-border {
+    opacity: 0.2;
+    border-bottom: 1px dashed #1a1a1a;
+  }
+}
+
+.modal-title {
+  @apply ltr:font-druk-heavy-italic rtl:font-adapter leading-[2.5rem] text-[2.5rem] text-center uppercase text-[#1A1A1A];
+}
+
+.modal-subtitle {
+  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[0.875rem] leading-6  text-center text-[#1A1A1A];
+}
+
+.requirement-inner-title {
+  @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[0.875rem] leading-[1.5rem] text-center;
+}
+
+.requirement-subtitle {
+  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[0.813rem] leading-[1.5rem] text-center mt-8;
+}
+
+.skip-btn {
+  @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold bg-[#FAD903] leading-4 text-[1rem] text-center;
+  padding: 1rem 3.469rem;
+  border-radius: 16px;
+}
+
+.sign-btn {
+  @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold bg-light-yellow rounded-2xl text-base leading-4 text-center h-12;
+  width: 176px;
+}
+
+.sign-title {
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 32px;
+  display: flex;
+  align-items: left;
+  text-transform: uppercase;
+}
+
+.complete-sign-title {
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.sign-second-btn {
+  @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+}
+
+.error-msg {
+  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[0.75rem] leading-4 text-[#FF173D];
+  @screen mobiles {
+    font-size: 14px;
+    margin-bottom: 32px;
+  }
+}
+
+.sign-section {
+  .gs-base-button-default-styles {
+    @apply leading-4 no-underline py-4 text-dark-black;
+  }
+}
+
+.badge {
+  @apply flex items-center ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs w-fit;
+  padding: 8px 10px;
+  border-radius: 18px;
+  @screen mobiles {
+    align-items: center;
+  }
+
+  &.success-bg {
+    background-color: #58b1501a;
+    color: #58b150;
+  }
+
+  &.error-bg {
+    background-color: #ff173d1a;
+    color: #ff173d;
+  }
+
+  &.warning-bg {
+    background-color: #ff96031a;
+    color: #ff9603;
+  }
+}
+
+.agreement-description {
+  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+  font-size: 12px;
+}

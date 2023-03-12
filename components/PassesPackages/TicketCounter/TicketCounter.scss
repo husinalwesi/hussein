@@ -1,0 +1,12 @@
+.counter-buttons {
+    @apply w-8 h-8 rounded-full -mt-1 transition-all;
+    &.disabled-button {
+        @apply cursor-default bg-lighter-gray;
+    }
+    &.active-button {
+        @apply cursor-pointer bg-light-yellow;
+    }
+    & svg {
+        @apply h-8 mx-auto;
+    }
+}

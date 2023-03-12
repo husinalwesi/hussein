@@ -1,0 +1,55 @@
+.find-your-booking-main {
+  .booking-ref {
+    @apply px-4 lg:px-0;
+
+    margin-top: -50px;
+
+    .card-header {
+      .title {
+        @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[34px] leading-8 md:text-[2.5rem] md:leading-10 text-dark-gray uppercase;
+      }
+
+      .subtitle-wrapper {
+        @apply ltr:mt-2 rtl:mt-4;
+
+        .subtitle {
+          @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm text-dark-gray;
+        }
+      }
+    }
+
+    .card-body {
+      .title {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+      }
+
+      .gs-base-button-default-styles {
+        @apply relative py-4 normal-case rounded-xl mobiles:w-full;
+      }
+
+      &.action-btns-container {
+        @apply flex flex-wrap gap-2 items-center;
+
+        .gs-base-button-default-styles {
+          @apply md:px-[50px] rounded-2xl;
+        }
+
+        .try-again-btn-wrapper {
+          @apply px-[45px];
+
+          .btn-try-again {
+            @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base leading-4 text-dark-black;
+          }
+        }
+      }
+    }
+
+    .error-msg {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[0.75rem] leading-4 text-[#FF173D];
+      @screen mobiles {
+        font-size: 14px;
+        margin-bottom: 32px;
+      }
+    }
+  }
+}

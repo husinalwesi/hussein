@@ -1,0 +1,22 @@
+.prepare-your-visit-section {
+  @apply w-full h-fit flex flex-col items-center py-16 min-700:pt-20 min-700:pb-[7.5rem] bg-[#F7F7F7];
+
+  .header-container {
+    @apply px-4 xl:px-0 max-w-screen-ski-dubai-content-max flex flex-col lg:flex-row lg:justify-between gap-x-3 gap-y-4 flex-wrap w-full;
+
+    .title {
+      @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter text-2xl leading-6 min-550:leading-8 min-550:max-w-[26.438rem] max-w-[17.938rem] min-550:text-[2rem] text-dark-gray uppercase;
+    }
+
+    .description {
+      @apply leading-6 max-w-[17.938rem] mb-6 min-550:max-w-[33.5rem] text-[#606060] text-sm ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+    }
+    .cta-link {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-[#191919];
+    }
+  }
+
+  .mobile-app-wrapper {
+    @apply w-full 3xl:mx-auto flex items-center max-w-screen-3xl md:mt-[72px] mt-12;
+  }
+}

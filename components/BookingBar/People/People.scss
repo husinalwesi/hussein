@@ -1,0 +1,84 @@
+#booking-bar-guest-ddl::v-deep {
+    @apply pt-[1.563rem] pb-4 px-0 lg:px-6 lg:py-6;
+    & .ticket-count-container {
+        @apply flex flex-row justify-between;
+        & > div:first-child {
+            @apply ltr:pr-0 rtl:pl-0 lg:ltr:pr-4 lg:rtl:pl-4 xl:ltr:pr-0 xl:rtl:pl-0;
+        }
+        & .ticket-counter-text {
+            @apply relative whitespace-nowrap;
+            & .booking-bar-age-text {
+                @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold
+                text-lg
+                lg:text-base
+                text-base
+                lg:leading-4
+                text-dark-gray ltr:text-left rtl:text-right
+                capitalize;
+            }
+        }
+        & .age-number {
+            @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler
+            text-sm
+            lg:text-xs
+            leading-[1.063rem]
+            lg:leading-4
+            text-dark-gray
+            lg:text-[#606060] ltr:text-left rtl:text-right
+            translate-y-1
+            lg:translate-y-0 py-1;
+        }
+        & .next-available-data-container {
+            @apply rounded-lg bg-lighter-gray w-36 -mt-1 ltr:text-left rtl:text-right  px-4 py-2;
+            & > p:first-child {
+                @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs leading-4 text-dark-gray pb-0.5;
+            }
+            & > p:last-child {
+                @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold
+                text-sm
+                leading-[0.875rem]
+                text-dark-gray;
+            }
+        }
+    }
+    & .ticket-counter-container {
+        @apply translate-x-[-0.438rem] translate-y-[0.188rem] ltr:mr-0 rtl:ml-0 lg:ltr:-mr-1.5 lg:rtl:-ml-1.5;
+        & .counter-number {
+            @apply w-12 lg:w-[2.188rem] translate-y-1 lg:translate-y-0;
+        }
+        & .counter-buttons {
+            @apply w-10 h-10 lg:w-8 lg:h-8;
+            &.minus-button svg {
+                @apply w-3 h-3 lg:w-1.5 lg:h-1.5;
+            }
+            &.plus-button svg {
+                @apply w-3 h-3 lg:w-2 lg:h-2;
+            }
+            &.active-button:first-child {
+                @apply bg-white border border-solid	border-[#d9d9d9];
+            }
+        }
+    }
+    &.booking-flow {
+        @apply p-6;
+        & li {
+            & .age-number {
+                @apply text-xs text-dark-gray opacity-70 py-0;
+            }
+            & .ticket-counter-container {
+                & .counter-number {
+                    @apply w-[2.188rem] translate-y-0;
+                }
+                & .counter-buttons {
+                    @apply w-8 h-8;
+                    & svg {
+                        @apply w-2;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                @apply py-4;
+            }
+        }
+    }
+}

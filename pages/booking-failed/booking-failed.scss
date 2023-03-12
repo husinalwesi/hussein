@@ -1,0 +1,31 @@
+.booking-faild-main {
+  @apply h-full relative w-full;
+
+  .content-container {
+    @apply md:px-10 1xl:px-43 px-4 mt-[-145px] md:mt-[-124px] relative w-full pb-32 min-370:pb-24;
+
+    .title {
+      @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter leading-6 lg:leading-8 lg:text-[2rem] md:text-[1.75rem] text-[1.375rem] text-white uppercase;
+    }
+
+    .faild-details-container {
+      @apply flex flex-col w-full h-fit md:mt-8 mt-6 lg:max-w-[40.5rem];
+
+      .card-title {
+        @apply ltr:font-druk-heavy-italic rtl:font-adapter ltr:text-[34px] rtl:text-[1.875rem] md:rtl:text-[1.875rem] leading-8 md:leading-10 text-dark-gray md:text-[2.5rem] uppercase;
+      }
+
+      .description-wrapper {
+        @apply mt-2;
+
+        .description {
+          @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-4 text-dark-gray text-sm;
+        }
+      }
+    }
+  }
+
+  &::v-deep .gs-base-button-default-styles {
+    @apply pb-4 pt-[18px] mt-6;
+  }
+}

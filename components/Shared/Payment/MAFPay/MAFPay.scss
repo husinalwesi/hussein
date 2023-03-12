@@ -1,0 +1,312 @@
+.head-content::v-deep {
+  @apply flex items-center flex-col min-1176:flex-row flex-wrap relative bg-white pt-0 min-1176:pt-2;
+  &.isPaymentDisabled {
+    @apply opacity-50 pointer-events-none;
+  }
+
+  &.disable {
+    @apply pointer-events-none;
+  }
+
+  & .dashed-line {
+    @apply w-full h-px block opacity-20;
+    background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+    background-size: 8px 100%;
+  }
+
+  & .title-head-content {
+    @apply w-full flex-none min-1176:flex-1 bg-white border border-solid border-black border-opacity-10 min-h-[3.5rem] rounded-2xl relative;
+    & .title-radio-conatiner {
+      @apply flex pt-4 px-6;
+      & .radio-btn-container {
+        @apply w-8;
+      }
+
+      & .title-container {
+        @apply flex-1;
+        & p {
+          @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base text-[#191919];
+        }
+      }
+    }
+
+    &.ddlEnabled {
+      @apply border-transparent min-1176:border-black;
+    }
+  }
+
+  & .drop-down-list-container {
+    @apply relative;
+    & .ddl-input {
+      @apply flex justify-between items-center px-4 cursor-pointer bg-white py-[15px] flex-1 relative;
+      border: 1px solid rgba(10, 20, 50, 0.1);
+      border-radius: 8px;
+    }
+
+    & .card-item {
+      @apply flex gap-2 items-center;
+      & .card-text {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[#0A143280];
+      }
+    }
+
+    & .arrow-container {
+      @apply z-30;
+      & svg {
+        @apply transition-all;
+      }
+    }
+
+    & .drop-down-list {
+      @apply relative min-1176:absolute bg-white rounded-lg border border-solid border-black border-opacity-10 -z-1 opacity-0 hidden -mt-14 mb-0 min-1176:mt-0 w-full lg:w-[70%] top-0 ltr:left-0 rtl:right-0;
+      & ul li {
+        @apply last:rounded-br-2xl last:rounded-bl-2xl bg-white;
+        & .card-info-content {
+          @apply flex justify-between items-center px-4 py-4 cursor-pointer;
+        }
+
+        &.add-card-list-item {
+          @apply pt-2 pb-6 px-4;
+          &.add-card-list-item-new {
+            @apply pb-4;
+          }
+
+          & .add-card-list-item-container {
+            @apply flex gap-2 items-center;
+            & .plus-btn {
+              @apply w-6
+              h-[15px]
+              rounded
+              border border-dashed border-[#1a1a1a] border-opacity-20
+              flex
+              items-center
+              justify-center
+              cursor-pointer;
+            }
+
+            & .add-card-list-item-title {
+              @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-[#1a1a1a];
+            }
+          }
+        }
+      }
+
+      &.ddlEnabled {
+        @apply z-20 min-1176:z-[1] opacity-100 block;
+      }
+    }
+  }
+
+  & .radio-btn {
+    @apply inline-block relative w-4 h-4 bg-white rounded-lg top-0.5 border border-solid border-black border-opacity-10 cursor-pointer;
+  }
+
+  & .social-login-content {
+    @apply w-full min-1176:w-auto z-10 flex gap-2 min-1176:gap-4 h-auto min-1176:h-[3.5rem] ltr:pl-0 rtl:pr-0 min-1176:ltr:pl-4 min-1176:rtl:pr-4 relative order-3 min-1176:order-[unset] mt-4 min-1176:mt-0;
+
+    & button {
+      @apply w-full min-1176:w-[8.125rem] h-14 bg-white border border-solid border-[#000000] border-opacity-10 rounded-2xl;
+      &#applePayBtn {
+        @apply bg-black h-12 mt-1 hover:bg-[#3c4043];
+      }
+    }
+  }
+
+  & .paymentContent {
+    @apply hidden w-full -mt-px bg-[#f9f9f9] rounded-tr-none min-1176:ltr:rounded-tr-2xl min-1176:rtl:rounded-tl-2xl ltr:rounded-bl-2xl rtl:rounded-br-2xl ltr:rounded-br-2xl rtl:rounded-bl-2xl border border-solid border-black border-opacity-10 pt-4 min-1176:pt-6 p-6;
+    & .card-info {
+      .card-content-details-container {
+        @apply flex gap-2 min-1176:gap-4 flex-col min-1176:flex-row;
+      }
+
+      & .input-group {
+        @apply flex-1 max-w-[unset] relative;
+        & input {
+          @apply outline-none w-full h-12 text-[#1a1a1a] py-4 text-sm leading-4 bg-white rounded-lg border border-solid border-black border-opacity-10 ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+          &.invalid {
+            @apply border-[#DD0028];
+          }
+
+          &::placeholder {
+            @apply text-[#AEAEAE];
+          }
+        }
+
+        & .invalid input {
+          @apply border-[#DD0028];
+        }
+
+        &.card-holder-name-input-container {
+          @apply mb-2;
+
+          input {
+            @apply w-full px-4;
+          }
+        }
+
+        & .card-number-input input {
+          direction: ltr;
+          @apply ltr:pl-12 ltr:pr-4 rtl:pr-12 rtl:pl-4 rtl:text-right;
+        }
+
+        & .card-validity-input input {
+          @apply ltr:pl-4 ltr:pr-4 rtl:pr-4 rtl:pl-4;
+        }
+
+        & .card-cvv-input input {
+          @apply ltr:pl-4 ltr:pr-9 rtl:pr-4 rtl:pl-9;
+        }
+
+        & .card-type {
+          @apply absolute ltr:left-4 rtl:right-4 top-4 flex gap-1;
+        }
+
+        &.card-number-input-container {
+          @apply xl:max-w-[16.75rem];
+        }
+
+        &.card-validity-input-container {
+          @apply xl:max-w-[5.875rem];
+        }
+
+        &.card-cvv-input-container {
+          @apply xl:max-w-[8.875rem];
+        }
+      }
+
+      & .card-info-cvv-date {
+        @apply flex gap-2 min-1176:gap-4;
+      }
+    }
+
+    & .save-details-row {
+      @apply flex justify-between mt-4 flex-col min-1176:flex-row gap-4;
+      & .btn-container {
+        @apply flex gap-4 justify-end min-1176:justify-start;
+        & .cancel-btn {
+          @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-[#1a1a1a];
+        }
+      }
+
+      &.row-hidden {
+        @apply hidden;
+      }
+    }
+
+    & .validation-container {
+      @apply flex pt-2;
+      & ul {
+        @apply text-xs text-[#DD0028] ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler ltr:pl-4 rtl:pr-4 list-disc;
+      }
+    }
+
+    & .ccicon {
+      @apply absolute top-4 ltr:left-4 rtl:right-4 w-6 h-[0.938rem];
+    }
+
+    & .error-message {
+      @apply hidden;
+    }
+
+    & .card-cvc-component {
+      & .cvc-help {
+        @apply absolute ltr:right-3 rtl:left-3 top-[0.438rem];
+        & .tooltip-label {
+          @apply relative block w-6 h-6 overflow-hidden text-white after:flex after:justify-center after:items-center after:bg-[#ececec] after:content-['?'] after:left-0 after:top-0 after:absolute after:text-[#1a1a1a] after:w-6 after:h-6 after:text-sm after:leading-4 after:font-inter-semi-bold after:rounded-full;
+        }
+      }
+
+      & .card-cvc-container svg {
+        @apply hidden;
+      }
+    }
+
+    & .card-submit {
+      @apply ltr:font-druk-text-super-italic rtl:font-adapter font-extrabold w-[3.625rem] h-8 bg-[#142b73] rounded-lg text-base leading-4 uppercase text-white px-4 pt-1.5 pb-1;
+    }
+  }
+
+  & .dashed-line {
+    @apply hidden mt-4 min-1176:mt-6 w-[calc(100%-2rem)] min-1176:w-[calc(100%-1.5rem)] mx-auto min-1176:ltr:mr-0;
+    // min-1176:rtl:ml-0
+  }
+
+  &.active {
+    & .radio-btn {
+      @apply after:content-[""];
+      &::after {
+        @apply absolute top-[0.188rem] left-[0.188rem] w-2 h-2 bg-[#142b73] rounded-lg;
+      }
+    }
+
+    & .paymentContent {
+      @apply block;
+    }
+
+    & .dashed-line {
+      @apply block;
+    }
+
+    & .title-head-content {
+      @apply bg-[#f9f9f9] border-b-0 h-auto min-1176:h-[4.5rem] rounded-br-none rounded-bl-none after:absolute after:content-[''] after:w-8 after:h-1.5 ltr:after:right-[-3.125rem] rtl:after:left-[-3.125rem] after:bottom-px after:z-20 after:bg-white before:absolute before:content-[''] before:w-4 before:h-8 before:bg-white ltr:before:right-[-1.063rem] rtl:before:left-[-1.063rem] before:bottom-4 before:z-20 before:hidden min-1176:before:block after:hidden min-1176:after:block;
+      & .title-radio-conatiner {
+        @apply pt-4 min-1176:pt-5;
+      }
+    }
+
+    & .social-login-content {
+      @apply h-auto min-1176:h-[4.5rem] after:absolute after:content-[''] after:w-8 after:h-8 after:bg-[#f9f9f9] ltr:after:-left-4 rtl:after:-right-4 after:-bottom-4 after:z-[-2] before:absolute before:content-[''] before:w-8 before:h-8 before:bg-white ltr:before:-left-px rtl:before:-right-px before:bottom-0 before:rounded-2xl before:z-[-1] ltr:before:border-l rtl:before:border-r before:border-b before:border-solid before:border-black before:border-opacity-10 before:hidden min-1176:before:block after:hidden min-1176:after:block;
+    }
+  }
+
+  & .tooltiptext {
+    &.visible {
+      @apply z-10;
+    }
+
+    .title {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold;
+    }
+
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+    }
+  }
+
+  &.onlyCC {
+    & .paymentContent {
+      @apply min-1176:ltr:rounded-tr-none min-1176:rtl:rounded-tl-none;
+    }
+
+    & .title-head-content {
+      @apply after:hidden before:hidden;
+    }
+  }
+}
+
+#applePayBtn {
+  @apply hidden;
+}
+
+#googlePayBtn {
+  @apply w-full min-1176:w-[17.25rem] h-14;
+}
+
+.isSafari {
+  #applePayBtn {
+    @apply block w-full min-1176:w-[8.125rem] h-12;
+  }
+
+  #googlePayBtn {
+    @apply w-full min-1176:w-[8.125rem];
+  }
+}
+
+.cvv {
+  @apply rounded-lg bg-white px-4 py-[14px] ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm outline-none w-full max-w-[unset] lg:max-w-[142px];
+  border: 1px solid rgba(10, 20, 50, 0.1);
+
+  &.isNotValidCVV {
+    @apply border-[#DD0028];
+  }
+}

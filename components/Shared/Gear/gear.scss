@@ -1,0 +1,111 @@
+.gear {
+  @apply pb-10;
+
+  .card-title {
+    font-size: 40px;
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter uppercase;
+    .sub-title {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+      font-size: 14px;
+      text-transform: initial;
+      color: #606060;
+      @screen mobiles {
+        font-size: 12px;
+      }
+    }
+
+    @screen mobiles {
+      font-size: 34px;
+    }
+  }
+
+  .action-details {
+    color: #606060;
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+    font-size: 12px;
+
+    .sub-action {
+      color: #191919;
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+      font-size: 14px;
+    }
+  }
+
+  .guest-card {
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 16px;
+    padding: 16px 24px;
+    min-height: 72px;
+    display: flex;
+    justify-content: center;
+
+    .user-name {
+      @apply text-[#191919] ltr:font-inter-semi-bold overflow-hidden rtl:font-noto-sans-arabic-semi-bold text-base w-full whitespace-nowrap;
+      max-width: 212px;
+      text-overflow: ellipsis;
+
+      &.fit-width {
+        @apply w-fit;
+      }
+    }
+
+    .primary-account-text {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[#191919] text-base;
+    }
+
+    .limit-text {
+      color: rgba(26, 26, 26, 0.5);
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-xs lg:hover:cursor-text;
+    }
+  }
+
+  .description {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+    color: #606060;
+    font-size: 12px;
+  }
+
+  .accordion-icons-wrapper {
+    @apply flex flex-1 justify-start md:justify-end;
+
+    &.open-gear {
+      svg {
+        transform: scale(-1);
+
+        circle {
+          fill: #0a1432;
+        }
+
+        path {
+          stroke: white;
+          fill: white;
+        }
+      }
+    }
+  }
+
+  .add-gear-text {
+    @apply ltr:font-inter-reguler opacity-50 rtl:font-noto-sans-arabic-reguler text-xs text-dark-gray;
+  }
+}
+
+.section-title {
+  @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-1rem leading-6 text-[#191919];
+  margin: 2.5rem 0 1rem 0;
+  @screen mobiles {
+    margin: 2rem 0 1rem 0;
+  }
+}
+
+.booking-reference {
+  @apply flex flex-col ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[#606060] text-xs;
+
+  .ref-num {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold pt-1 text-sm leading-4 text-[#191919];
+  }
+}
+
+.back-btn {
+  @apply bg-[#ECECEC] text-dark-gray ltr:font-inter-bold rtl:font-noto-sans-arabic-bold rounded-lg text-base leading-4 items-center;
+  padding: 0.563rem 1rem 0.438rem 1rem;
+}

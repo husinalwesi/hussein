@@ -1,0 +1,78 @@
+.hero-section::v-deep {
+  @apply h-screen w-full relative flex overflow-hidden flex-col justify-center items-center pt-[4.5rem] lg:pt-0;
+
+  .particles-video {
+    @apply -z-1 absolute h-full ltr:left-0 rtl:right-0 object-cover lg:object-fill top-0;
+  }
+
+  .content-container {
+    @apply max-w-[1161px] mx-auto px-4 xl:px-0;
+
+    .title {
+      @apply uppercase ltr:font-druk-wide-heavy-italic rtl:font-bukra inline-flex flex-col ltr:text-4rem lg:ltr:text-[136px] rtl:text-[57px] lg:rtl:text-[151px] lg:ltr:leading-[120px] lg:rtl:leading-[168px] text-white translate-x-0 translate-y-0 lg:translate-x-4 lg:translate-y-[-0.563rem];
+      .highlighted {
+        @apply text-light-yellow xl:ltr:ml-[-25px] xl:rtl:mr-0 px-2 py-4;
+      }
+      .not-highlighted {
+        @apply px-2 py-4 mb-[-1.125rem];
+      }
+    }
+
+    .subtitle-wrapper {
+      @apply ltr:mt-6 lg:ltr:mt-10 rtl:mt-0 lg:rtl:mt-0 flex w-full ltr:justify-start md:ltr:justify-end rtl:justify-start md:rtl:justify-start px-2 translate-x-0 translate-y-0 lg:translate-x-[0.438rem] lg:-translate-y-1;
+      .subtitle {
+        @apply ltr:text-sm lg:ltr:text-[20px] rtl:text-2xl lg:rtl:text-[36px] rtl:leading-6 lg:rtl:leading-6 ltr:font-druk-text-wide-super-italic rtl:font-adapter text-white uppercase;
+        & span{
+          @apply rtl:py-1.5;
+        }
+        .highlighted {
+          @apply text-light-yellow;
+        }
+      }
+    }
+  }
+
+  .image-wrapper {
+    @apply absolute flex h-full justify-end ltr:right-0 rtl:left-0 top-[4.5rem] md:top-0 w-full;
+
+    .ziplinner-img {
+      @apply h-fit max-h-[313px] w-full opacity-0;
+    }
+
+    @screen lg {
+      @apply top-10;
+
+      .ziplinner-img {
+        @apply h-full max-h-[550px] w-fit;
+      }
+    }
+  }
+
+  .scroll-to-continue {
+    @apply absolute bottom-[6.5rem] flex flex-col items-center lg:bottom-[5.5625rem] mx-auto w-fit text-center;
+
+    .scroll-text {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-xs text-white lg:cursor-pointer;
+    }
+
+    .indicator {
+      @apply h-8 mt-2 w-0.5 bg-white bg-opacity-20 relative;
+    }
+  }
+
+  // For modern safari browsers.
+  @media not all and (min-resolution: 0.001dpcm) {
+    .particles-video {
+      @apply lg:object-cover;
+    }
+
+    @screen lg {
+      .ziplinner-img {
+        height: fit-content !important;
+      }
+    }
+  }
+  .highlighted, .not-highlighted {
+    @apply invisible;
+  }
+}

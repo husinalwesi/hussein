@@ -1,0 +1,48 @@
+.logout-warning-modal-wrapper {
+  .base-modal-body {
+    padding: 10px !important;
+  }
+  .modal-header {
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter text-5xl uppercase;
+  }
+  .modal-content {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler max-w-[28rem] text-base text-center;
+
+    &::v-deep {
+      strong {
+        @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold;
+      }
+
+      ul {
+        @apply ltr:pl-3 rtl:pr-3 list-disc;
+
+        li::marker {
+          color: #142b73;
+        }
+      }
+
+      ol {
+        @apply ltr:pl-3 rtl:pr-3 list-decimal;
+      }
+    }
+  }
+  .actions-container {
+    @apply flex items-center mt-5 justify-center gap-x-6;
+
+    .btn {
+      &-keep {
+        @apply bg-white border-0 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 text-dark-gray text-sm w-fit;
+      }
+      &-clear {
+        @apply bg-light-yellow ltr:font-druk-text-heavy-italic rtl:font-adapter leading-4 px-10 py-4 rounded-xl text-base text-dark-gray uppercase;
+      }
+
+      &-keep,
+      &-clear {
+        &:disabled {
+          @apply opacity-50 cursor-not-allowed;
+        }
+      }
+    }
+  }
+}

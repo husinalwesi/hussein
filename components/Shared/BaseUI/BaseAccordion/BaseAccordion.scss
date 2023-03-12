@@ -1,0 +1,128 @@
+.guest-card {
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 16px;
+    padding: 16px 24px;
+    margin-bottom:8px;
+  }
+.card-item-title{
+  display: flex;
+  justify-content: space-between;
+
+}
+.column-view{
+  display: flex;
+  flex-direction:column;
+}
+  .arrow-continer{
+    content:'';
+    height: 32px;
+    width: 32px;
+    border-radius: 17px;
+    position: relative;
+    @screen mobiles{
+      position: absolute;
+      right: 3.5rem;
+    }
+
+    &.grey-arrow{
+      background: #ECECEC;
+    }
+    &.black-arrow{
+      background: #1A1A1A;
+    }
+  }
+
+  .wavier-arrow-continer{
+    content:'';
+    height: 32px;
+    width: 32px;
+    border-radius: 17px;
+    position: relative;
+    @screen mobiles{
+      position: relative;
+      // top:0.5rem;
+    }
+
+    &.grey-arrow{
+      background: #ECECEC;
+    }
+    &.black-arrow{
+      background: #1A1A1A;
+    }
+  }
+
+  .arrow-icon{
+    position: absolute;
+    top: 0.7rem;top: 0.7rem;
+    left: 0.5rem;
+  }
+  .arrow-icon-rotate{
+    top: 0.3rem;
+    left: 0.4rem;
+    transform: rotate(180deg);
+  }
+  .title-border::after{
+    border-bottom: 1px dashed #1A1A1A;
+    opacity: 0.2;
+    content: "";
+    position: absolute;
+    width: 33.5rem;
+    &:first-child::after{
+      margin-inline-start: -31.5rem;
+      top: 3.1rem;
+    }
+    &:not(:first-child)::after{
+      margin-inline-start:0rem;
+      top: 1.3rem;
+    }
+  }
+
+  .info-badge{
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 text-[0.75rem] items-center flex;
+    margin: 0px 16px;
+    padding: 8px 10px;
+    border-radius: 18px;
+    @screen mobiles{
+      margin: 3px 0;
+      align-items: center;
+      margin-inline-start: 0.5rem;
+
+    }
+    &.success-bg{
+      background-color: #58B1501A;
+      color: #58B150;
+    }
+    &.error-bg{
+      background-color: #FF173D1A;
+      color: #FF173D;;
+    }
+  }
+  .mobile-badge-continer{
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  .ac-subtitle{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #606060;
+  }
+  .divider-dashed{
+    @apply h-px w-full opacity-20;
+    background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #1a1a1a 50%
+    );
+    background-size: 8px 100%;
+  }
+
+  // .guardian-title{
+  //   font-weight: 600;
+  //   font-size: 16px;
+  //   line-height: 24px;
+  //   color: #191919;
+  // }

@@ -1,0 +1,30 @@
+.shared-modal-wrapper {
+  .base-modal-body {
+    padding: 10px !important;
+  }
+  .modal-header {
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter text-5xl uppercase;
+  }
+  .modal-content {
+    @apply flex flex-col max-w-[28rem]  text-base;
+  }
+  .actions-container {
+    @apply flex mt-5  gap-x-6;
+
+    .btn {
+      &-keep {
+        @apply bg-white border-0 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 text-dark-gray text-sm w-fit;
+      }
+      &-clear {
+        @apply bg-light-yellow ltr:font-druk-text-heavy-italic rtl:font-adapter leading-4 px-10 py-4 rounded-xl text-base text-dark-gray uppercase;
+      }
+
+      &-keep,
+      &-clear {
+        &:disabled {
+          @apply opacity-50 cursor-not-allowed;
+        }
+      }
+    }
+  }
+}

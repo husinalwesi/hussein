@@ -1,0 +1,55 @@
+.passes-packages-container {
+  @apply overflow-hidden;
+
+  .passes-packages-header-section {
+    @apply h-[20.5rem] bg-no-repeat bg-center bg-cover lg:h-[27rem] w-full relative;
+
+    .title-container {
+      @apply w-full flex justify-center items-center h-full px-4 lg:px-0;
+
+      .title {
+        @apply flex-col ltr:font-druk-wide-heavy-italic rtl:font-adapter inline-flex leading-6 lg:text-7.5xl md:text-[4.2rem] md:leading-[3.9rem] text-[1.6rem] tsm:text-2.375rem uppercase overflow-hidden text-center;
+
+        .second-part {
+          @apply text-white indent-5 lg:indent-36 md:indent-28 tsm:indent-6;
+        }
+      }
+    }
+
+    .tabs-wrapper {
+      @apply w-full flex justify-center z-10 absolute bottom-0 h-30 ltr:left-0 rtl:right-0;
+
+      .tabs-list {
+        @apply w-fit bg-transparent flex ltr:font-druk-text-wide-bold rtl:font-adapter h-full leading-4 lg:justify-center lg:px-0 list-none m-0 overflow-x-auto pt-[5.25rem] px-4 relative  text-[0.813rem] uppercase;
+
+        .tab {
+          @apply text-white opacity-50 pb-5 whitespace-nowrap cursor-pointer ltr:mr-8 md:ltr:mr-12 rtl:ml-8 md:rtl:ml-12;
+
+          &.active {
+            @apply opacity-100 pb-4;
+          }
+
+          @screen lg {
+            &:hover {
+              transition: 0.33s;
+              opacity: 1 !important;
+            }
+          }
+
+          &.last-child {
+            margin: 0;
+          }
+        }
+
+        .line-indicator {
+          @apply absolute bg-light-yellow bottom-0 h-1;
+        }
+
+        &::-webkit-scrollbar {
+          @apply hidden;
+        }
+        scrollbar-width: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.anti-fraud-disclaimer-main {
+  .title-wrapper {
+    @apply w-full max-w-[872px];
+
+    .title {
+      @apply w-full min-900:text-6xl text-white uppercase ltr:font-druk-wide-heavy-italic rtl:font-adapter rtl:leading-[unset] min-320:text-[32px] min-700:text-5xl text-3xl;
+    }
+  }
+
+  .anti-fraud-disclaimer {
+    @apply w-full h-fit;
+
+    .anti-fraud-disclaimer-description-text {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-dark-gray;
+
+      &::v-deep {
+        ul {
+          @apply ltr:pl-6 rtl:pr-6 list-disc;
+        }
+        ol {
+          @apply ltr:pl-6 rtl:pr-6 list-decimal;
+        }
+      }
+    }
+  }
+
+  &::v-deep {
+    h1 {
+      @apply text-2xl rtl:leading-[unset];
+    }
+
+    strong {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold;
+    }
+  }
+}

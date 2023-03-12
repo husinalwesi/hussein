@@ -1,0 +1,13 @@
+.update-msg-container {
+  @apply w-full bg-light-yellow flex gap-2 items-center leading-3 lg:px-15 px-4 py-[0.625rem] text-black text-[0.6875rem];
+
+  .update-msg {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler flex-1 text-center;
+
+    &::v-deep {
+      strong {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+      }
+    }
+  }
+}

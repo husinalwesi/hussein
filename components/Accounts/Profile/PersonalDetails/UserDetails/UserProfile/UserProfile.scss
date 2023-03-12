@@ -1,0 +1,45 @@
+.user-profile-container {
+  @apply px-[15px] py-[23px] md:p-[31px];
+
+  .title {
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[34px] leading-8 md:text-[40px] md:leading-10 text-dark-gray uppercase;
+  }
+
+  .btn-change {
+    @apply rounded-lg ltr:font-druk-text-heavy-italic rtl:font-adapter text-base leading-4 text-dark-gray bg-[#ECECEC] pt-[9px] pb-[7px] px-4;
+  }
+
+  .description {
+    @apply text-xs md:text-sm max-w-[214px] min-550:max-w-max leading-6 mt-2 text-[#606060] ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+  }
+
+  .user-details-list {
+    @apply flex flex-col gap-y-4 mt-8;
+
+    .row {
+      @apply flex justify-between md:justify-start flex-wrap gap-y-3;
+
+      .name {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-6 text-sm  md:text-base text-dark-black md:flex-1;
+      }
+
+      .value {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-6 text-sm md:text-base text-dark-black md:flex-1;
+      }
+
+      &:not(:first-child) {
+        @apply border-t-1 border-dashed border-dark-gray border-opacity-20 pt-4;
+      }
+
+      &.row-hidden {
+        @apply hidden;
+      }
+    }
+  }
+
+  .btn-remove-user {
+    box-shadow: 0px 0px 16px -24px rgba(0, 0, 0, 0.24);
+    @apply mt-6 flex items-center w-full justify-center rounded-lg border-1 border-solid border-[#0669DA4D] bg-[#E5EFF9]
+    text-dark-gray text-xs ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold py-[7px] uppercase;
+  }
+}

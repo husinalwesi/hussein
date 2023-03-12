@@ -1,0 +1,41 @@
+.remove-modal-header {
+  @apply ltr:font-druk-heavy-italic rtl:font-adapter ltr:leading-8 text-[34px] text-dark-gray ltr:text-left rtl:text-right uppercase;
+
+  @screen min-700 {
+    text-align: center !important;
+    @apply text-[2.5rem] leading-10;
+  }
+}
+
+.remove-modal-content {
+  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler ltr:text-left rtl:text-right text-xs text-dark-gray mt-6 max-w-[287px];
+
+  @screen min-700 {
+    text-align: center !important;
+    @apply leading-6 max-w-full mb-10 text-sm;
+  }
+}
+
+.actions-container {
+  @apply flex items-center justify-end md:justify-center gap-x-6;
+
+  .btn {
+    &-close {
+      @apply bg-white border-0 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 text-dark-gray text-sm w-fit;
+    }
+    &-remove {
+      @apply bg-light-yellow ltr:font-inter-bold rtl:font-noto-sans-arabic-bold leading-4 pb-[15px] pt-[17px] px-[22px] rounded-xl text-base text-dark-gray relative;
+    }
+
+    &-close {
+      &:disabled {
+        @apply opacity-50 lg:hover:cursor-not-allowed;
+      }
+    }
+  }
+}
+
+.divider-dashed {
+  @apply md:hidden;
+  margin: 24px 0 !important;
+}

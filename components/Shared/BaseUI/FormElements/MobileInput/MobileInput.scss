@@ -1,0 +1,12 @@
+.mobile-input-container {
+  direction: ltr !important;
+  @apply flex flex-1 flex-col min-360:flex-row min-w-[12.5rem];
+
+  .country-code-box {
+    @apply border-1 border-black border-opacity-10 border-solid cursor-pointer flex h-12 items-center justify-between min-360:justify-start min-360:mr-2 min-360:w-fit mr-0 p-4 relative rounded-lg w-full;
+
+    .selected-country-code {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-4 text-dark-gray pl-2 pr-4;
+    }
+  }
+}

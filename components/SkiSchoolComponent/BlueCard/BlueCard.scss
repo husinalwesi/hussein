@@ -1,0 +1,131 @@
+.lessons-tabs-wrapper {
+  @apply w-full flex relative;
+
+  .tabs-list {
+    @apply ltr:font-druk-text-wide-bold rtl:font-adapter w-fit bg-transparent overflow-x-auto flex text-[0.813rem] leading-4 uppercase text-white h-full lg:justify-center lg:px-0 list-none m-0 gap-x-4 relative;
+    .tab {
+      @apply opacity-50 whitespace-nowrap lg:hover:cursor-pointer;
+
+      &.active {
+        @apply opacity-100 pb-[0.6rem];
+        border-bottom: 4px solid #FAD903;
+      }
+
+      &:not(:last-child) {
+        @apply ltr:mr-8 md:ltr:mr-12 rtl:ml-8 md:rtl:ml-12;
+      }
+
+      &:hover {
+        opacity: 1 !important;
+      }
+    }
+
+    &::-webkit-scrollbar {
+      @apply hidden;
+    }
+
+    scrollbar-width: none;
+  }
+
+  .tab-border {
+    position: absolute;
+    border: 1px solid #FFFFFF;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.1;
+  }
+}
+
+.main-container {
+  @apply lg:py-[7.5rem] pb-16;
+  .title {
+    @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter text-[2rem] leading-8 uppercase text-[#FFFFFF];
+    max-width: 40.5rem;
+    @screen mobiles {
+      @apply pt-8 text-[1.5rem] leading-6;
+      max-width: 17.938rem;
+    }
+    .yellow-text {
+      @apply text-[#FAD903];
+    }
+
+    @screen tablet {
+      @apply pt-8 text-[1.5rem] leading-6;
+      max-width: 17.938rem;
+    }
+
+    &::v-deep {
+      strong {
+        @apply text-light-yellow;
+      }
+    }
+  }
+
+  .passport-img {
+    width: 165.72px;
+    height: 232.66px;
+  }
+
+  .description {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[0.875rem] leading-6 pt-6;
+    max-width: 54.5rem;
+  }
+
+  .body-title {
+    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold mt-12;
+    font-size: 1.25rem;
+    margin-top: 2.75rem;
+    @screen mobiles {
+      @apply text-[1.5rem];
+    }
+  }
+
+  .body-btn {
+    font-size: 11px;
+    line-height: 14px;
+    width: 147px;
+    height: 32px;
+    background: #FAD903;
+    border-radius: 8px;
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-black;
+  }
+
+  .nav-body {
+    margin-top: 1.75rem;
+  }
+}
+
+.blue-continer {
+  background: #142B73;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+}
+
+[dir="rtl"] {
+  .blue-continer {
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 0.7rem;
+
+    @screen xl {
+      left: 60px;
+      border-top-left-radius: 3rem;
+      border-bottom-left-radius: 0.7rem;
+    }
+  }
+}
+
+[dir="ltr"] {
+  .blue-continer {
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 0.7rem;
+
+    @screen xl {
+      right: 60px;
+      border-top-right-radius: 3rem;
+      border-bottom-right-radius: 0.7rem;
+    }
+  }
+}

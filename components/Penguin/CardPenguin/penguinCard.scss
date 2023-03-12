@@ -1,0 +1,20 @@
+.penguin-card {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  @apply p-4 pb-[33px] w-full min-700:w-fit min-700:pb-6 bg-white rounded-3xl shadow-dark-black;
+
+  .image-container {
+    @apply w-full h-[311px] min-700:h-[320px];
+
+    .penguin-image {
+      @apply w-full h-full;
+    }
+  }
+  .title {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm mt-6 leading-6 text-dark-gray opacity-80;
+  }
+  .number {
+    @apply ltr:font-druk-text-medium-italic rtl:font-adapter text-[7rem] mt-8 leading-[6rem] flex items-center uppercase;
+    color: rgba(20, 43, 115, 0.2);
+  }
+}

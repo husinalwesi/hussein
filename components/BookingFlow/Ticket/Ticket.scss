@@ -1,0 +1,72 @@
+li {
+    & .ticket-details {
+        & .ticket-main-row {
+            @apply flex flex-row flex-wrap justify-between pb-1 items-center;
+            & .ticket-title {
+                @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base text-[#191919] flex-1;
+            }
+            & .price-container {
+                @apply relative flex items-center gap-2;
+                & .price-txt {
+                    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base text-right uppercase text-[#191919];
+                }
+                & .guest-ddl-button {
+                    @apply w-6 h-6 bg-[#ececec] rounded-full;
+                    & svg {
+                        @apply rotate-180 mx-auto transition-all;
+                    }
+                    &.idDDLEnabled svg {
+                        @apply rotate-[360deg];
+                    }
+                }
+            }
+        }
+        & .ticket-guest-row {
+            @apply flex flex-row flex-wrap items-center gap-2;
+            & .guest-title {
+                @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060] min-h-[1rem];
+            }
+            & .time-slot {
+                @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-black min-w-[3.375rem] min-h-[1rem] bg-[#fad903] rounded inline-block text-center px-1;
+            }
+        }
+        & .multiple-time-slots {
+            @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-black min-w-[3.375rem] min-h-[1rem] bg-[#fad903] rounded inline-block text-center px-1;
+        }
+    }
+    & .unavailable-ticket {
+        @apply bg-[#ff6d03] rounded px-1 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-white inline-block mt-1;
+    }
+    & .drop-down-list {
+        @apply bg-[#F9F9F9] border border-solid border-[#EEEEEE] hidden rounded-2xl mt-4 mb-8;
+        &.ddlEnabled {
+            @apply block;
+        }
+        & .ticket-detailed-list {
+            @apply p-4;
+            & li {
+                @apply flex justify-between pb-4;
+                &:last-child {
+                    @apply pb-0;
+                }
+                & .age-type {
+                    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray capitalize;
+                }
+                & .slot-container {
+                    @apply flex flex-wrap flex-1 items-center gap-2 px-2;
+                    & .slot {
+                        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-black px-1 h-4 bg-[#fad903] rounded-[0.25rem];
+                    }
+                }
+                & .price {
+                    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+                }
+            }
+        }
+    }
+    & .dashed-line {
+        @apply w-full h-px block opacity-20;
+        background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+        background-size: 8px 100%;
+    }
+}

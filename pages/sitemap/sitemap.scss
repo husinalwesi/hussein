@@ -1,0 +1,25 @@
+.sitemap-main {
+  @apply min-h-screen bg-[#FAFAFA] pb-10 min-700:pb-[120px];
+
+  .title {
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter uppercase text-3xl leading-8 md:text-[40px] md:leading-10 text-dark-gray;
+  }
+
+  .category-title {
+    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-[20px] leading-6 text-[#191919];
+  }
+
+  .cta-link {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-6 text-dark-gray normal-case;
+
+    &.bold {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+    }
+  }
+
+  .dashed-line {
+    @apply w-full h-px block opacity-20 my-8;
+    background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+    background-size: 8px 100%;
+  }
+}

@@ -1,0 +1,49 @@
+.mobile-breadcrumb-container {
+  .breadcrumb-list {
+    @apply flex ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-[0.875rem] flex-wrap list-none text-[0.688rem] text-white;
+
+    .breadcrumb-item {
+      @apply flex items-center;
+
+      .crumb-link {
+        @apply uppercase text-dark-gray;
+
+        &.active {
+          @apply opacity-30;
+        }
+      }
+    }
+  }
+
+  .nested-routes-container {
+    @apply relative w-full mt-5;
+
+    .selected-route-box {
+      box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.08);
+      @apply border-1 border-[#0A14321A] border-solid flex items-center justify-between px-4 py-[19px] rounded-2xl bg-white;
+
+      .selected-route-name {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base capitalize text-dark-black;
+      }
+    }
+
+    .nested-routes-list {
+      filter: drop-shadow(0px 5px 10px rgba(0, 0, 0, 0.08))
+        drop-shadow(0px 15px 25px rgba(0, 0, 0, 0.08));
+      @apply bg-white border-1 border-[#0A14321A] border-solid h-fit ltr:left-0 rtl:right-0 p-4 rounded-3xl top-[4.5rem] w-full absolute z-[1];
+
+      .route-item {
+        @apply capitalize ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold px-6 py-5 text-base text-dark-black;
+
+        &.active {
+          @apply py-[19px] bg-[#0D4F941A] px-[23px] border-[#0380C2] border-1 border-solid rounded-2xl;
+        }
+      }
+    }
+  }
+
+  // TODO: Remove this arrow when Sergey export the indicator arrow icon as SVG.
+  .right {
+    transform: rotate(270deg);
+  }
+}

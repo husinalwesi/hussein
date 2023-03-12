@@ -1,0 +1,10 @@
+.date-popup-container {
+  @apply py-2 absolute w-full max-w-md ltr:left-0 rtl:right-0 top-14 bg-white border border-solid border-black border-opacity-10 -z-1 opacity-0 hidden rounded-lg shadow-light-black;
+
+  &.active {
+    @apply z-[1] opacity-100 block;
+  }
+  &.with-input-title {
+    @apply top-20;
+  }
+}

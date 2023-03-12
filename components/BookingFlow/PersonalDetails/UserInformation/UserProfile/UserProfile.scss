@@ -1,0 +1,37 @@
+.user-profile-container {
+  @apply w-full h-full flex flex-wrap relative;
+
+  .user-general-details-container {
+    @apply flex gap-x-6 items-start flex-wrap w-full;
+
+    .user-img-container {
+      @apply w-24 h-24 rounded-full bg-[#142b73] bg-opacity-5 bg-center bg-cover bg-no-repeat;
+    }
+
+    .user-name {
+      @apply uppercase ltr:font-druk-heavy-italic rtl:font-adapter leading-10 min-700:ltr:text-[2.5rem] ltr:text-[2.125rem] min-700:rtl:text-[2rem] rtl:text-[1.75rem] text-dark-gray;
+    }
+    .user-age {
+      @apply bg-dark-blue ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 min-w-max mt-1 px-2 py-1 rounded-[4px] text-white text-xs w-fit;
+    }
+  }
+
+  .user-contact-details-container {
+    @apply border-t-1 border-dark-gray border-dashed border-opacity-20 flex flex-wrap justify-between min-700:mt-0 min-700:ltr:pl-[7.5rem] min-700:rtl:pr-[7.5rem] min-700:border-0 min-700:pt-0 mt-6 pt-6 w-full;
+
+    p {
+      @apply leading-6 text-[#191919] text-sm ltr:font-inter-bold rtl:font-noto-sans-arabic-semi-bold;
+    }
+
+    .edit-profile-btn-wrapper {
+      @apply flex items-end justify-center min-550:mt-0 min-550:w-fit mt-8 w-full;
+
+      .gs-base-button-default-styles {
+        @apply bg-[#ececec] rounded-lg px-4 py-[9px];
+      }
+    }
+  }
+}
+.loader-container {
+  @apply bg-[#ffffffba] w-full h-full absolute z-[11] flex justify-center items-center rounded-bl-3xl rounded-br-3xl;
+}

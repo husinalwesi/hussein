@@ -1,0 +1,27 @@
+.payment-card-container {
+  @apply bg-[#F9F9F9] border-[#E6E6E6] border-1 border-solid md:px-[23px] px-[15px] relative rounded-2xl;
+
+  .card-masked-number {
+    @apply flex flex-col ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-dark-gray md:text-base md:text-[#191919];
+
+    .card-expiry-date {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060];
+    }
+  }
+
+  .btn-close {
+    @apply bg-[#142B73] flex h-6 items-center justify-center min-700:h-8 min-700:w-8 rounded-full w-6;
+  }
+
+  &.selected {
+    @apply bg-[#0380c2] bg-opacity-5 border-[#0380C2];
+  }
+
+  &::v-deep {
+    .base-modal-wrapper {
+      .base-modal-body {
+        @apply py-8 px-4 md:p-10 w-full max-w-[648px];
+      }
+    }
+  }
+}

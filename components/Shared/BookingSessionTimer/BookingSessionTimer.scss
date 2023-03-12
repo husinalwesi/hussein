@@ -1,0 +1,12 @@
+.booking-session-timer-container {
+  .base-modal-body {
+    @apply max-w-[40.5rem] min-320:py-10 min-550:py-10 py-10;
+    
+    .modal-header {
+      @apply max-w-full text-center;
+    }
+    .gs-base-button-default-styles {
+      @apply min-w-[8.25rem] max-w-[15.625rem] text-center pt-[17px] pb-[15px] px-4 leading-4 mt-6 bg-light-yellow text-dark-gray;
+    }
+  }
+}

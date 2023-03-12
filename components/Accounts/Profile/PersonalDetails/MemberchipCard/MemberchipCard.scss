@@ -1,0 +1,80 @@
+.membership-card-container {
+  @apply py-[23px] px-[15px] md:p-[31px] relative;
+
+  .card-header {
+    @apply flex gap-x-2 items-start justify-between min-550:gap-x-0;
+
+    .memberships-details-container {
+      @apply flex-1;
+
+      .title {
+        max-width: calc(100% - 80px);
+        @apply rtl:leading-[3rem] leading-8 text-[34px] text-dark-gray uppercase ltr:font-druk-heavy-italic rtl:font-adapter;
+
+        @screen md {
+          max-width: calc(100% - 90px);
+          @apply text-[2.5rem] leading-10;
+        }
+      }
+
+      .content-wrapper {
+        @apply mb-[20px] md:mb-8 md:mt-2 mt-4 rtl:mt-4;
+
+        .user-membership,
+        .no-memberships-description {
+          @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler md:leading-6 md:text-sm text-xs text-dark-gray;
+        }
+      }
+    }
+
+    .card-image {
+      @apply absolute ltr:right-4 rtl:left-4 -mt-10 h-fit max-h-[4.5rem] max-w-[4.5rem] w-fit;
+
+      @screen md {
+        @apply -mt-12 ltr:right-8 max-h-[81px] max-w-[81px] rtl:left-8;
+      }
+    }
+  }
+
+  .memberships-list {
+    @apply w-full;
+
+    .membership-item {
+      @apply flex items-center w-full;
+
+      .image-wrapper {
+        @apply w-10 h-10 justify-center items-center flex ltr:mr-2 md:ltr:mr-4 rtl:ml-2 md:rtl:ml-4 rounded-lg;
+      }
+
+      .body {
+        @apply flex gap-x-6 md:gap-x-4 items-center flex-wrap flex-1;
+
+        .details-container {
+          @apply flex flex-col justify-center gap-2 flex-1 flex-wrap;
+
+          .title {
+            @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs md:text-base text-[#191919] max-w-[160px] min-550:max-w-full flex-1 w-full;
+          }
+          .price {
+            @apply min-550:w-28 text-[#191919] text-xs md:text-base ltr:font-inter-bold rtl:font-noto-sans-arabic-bold;
+          }
+          .text-includes {
+            @apply w-fit text-xs text-dark-gray ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold lg:hover:cursor-pointer;
+          }
+
+          @screen min-550 {
+            @apply flex-row items-center justify-start;
+          }
+        }
+      }
+
+      &:not(:first-child) {
+        @apply border-t-1 border-dark-gray border-dashed border-opacity-10 mt-[26px] md:mt-[20px] pt-6 md:pt-[20px];
+      }
+
+      .gs-base-button-default-styles {
+        @apply py-[9px] px-[23px] text-white rounded-lg bg-dark-blue;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.side-list-wrapper {
+  @apply hidden lg:block w-fit;
+
+  .side-list {
+    @apply pt-6;
+
+    &-category {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-[#191919] text-[20px] leading-6;
+
+      .list {
+        @apply flex flex-col gap-y-6 mt-6;
+
+        .link-container {
+          @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+
+          .link {
+            @apply opacity-50 lg:hover:opacity-100;
+
+            &.active {
+              @apply opacity-100;
+            }
+          }
+
+          .sub-list {
+            @apply ltr:pl-[15px] rtl:pr-[15px] flex flex-col mt-4 gap-y-6;
+
+            .sub-link {
+              @apply opacity-50 lg:hover:opacity-100;
+
+              &.active {
+                @apply opacity-100;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .divider-dashed {
+      width: 8rem !important;
+    }
+  }
+}

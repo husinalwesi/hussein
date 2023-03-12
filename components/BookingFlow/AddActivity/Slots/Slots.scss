@@ -1,0 +1,16 @@
+.time-slot-list {
+    @apply flex flex-row flex-wrap gap-x-[0.375rem] gap-y-2 lg:gap-[0.4rem];
+    & li a {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold block  p-2 h-8 bg-[#ececec] rounded-2xl text-xs text-center text-dark-gray ltr:w-[4.438rem] rtl:w-20;
+        &.active {
+            @apply bg-[#142b73] text-white;
+        }
+        &.disabled {
+            @apply text-opacity-50 pointer-events-none;
+        }
+        &.cancel-button{
+            @apply bg-[#F7F8F9] border border-solid;
+            border-color: rgba(10, 20, 50, 0.4);
+        }
+    }
+}

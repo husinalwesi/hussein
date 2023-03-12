@@ -1,0 +1,32 @@
+.time-slot-table-container {
+    @apply my-6 lg:my-8 px-4 lg:px-8;
+    & .time-slot-table {
+        @apply bg-[#f9f9f9] border border-solid border-[#eeeeee] rounded-2xl my-6 lg:mt-4 lg:mb-8 flex flex-row p-[0.9rem] lg:p-4 flex-wrap lg:flex-nowrap;
+        & .content-holder {
+            @apply px-4 flex-1;
+            & > p:first-child {
+                @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 lg:text-base text-[#191919] capitalize;
+            }
+            & > p:last-child {
+                @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060] pt-2 lg:pt-0;
+            }
+        }
+        & .slot-list-container {
+            @apply relative w-full lg:w-[18.75rem] pt-4 lg:pt-0;
+            & .unavailable-date-message {
+                @apply w-[calc(100%+2rem)] lg:w-[19.75rem] h-36 absolute -bottom-4 lg:bottom-0 -right-4 top-[unset] lg:-top-4 bg-white opacity-[0.97] border border-solid border-[#eeeeee]  flex items-center justify-center rounded-tr-none rounded-br-2xl rounded-bl-2xl lg:rounded-tr-2xl lg:rounded-br-2xl lg:rounded-bl-none lg:border-t-0 lg:border-r-0;
+                & p {
+                    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 flex text-[#dd0028] text-center max-w-[12.75rem];
+                }
+            }
+        }
+    }
+    & .custom-title {
+        @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-xl leading-6 text-[#191919] hidden lg:block;
+    }
+    & .dashed-line {
+        @apply w-full h-px block opacity-20;
+        background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+        background-size: 8px 100%;
+    }
+}

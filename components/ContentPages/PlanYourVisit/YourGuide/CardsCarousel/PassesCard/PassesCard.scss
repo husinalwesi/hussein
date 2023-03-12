@@ -1,0 +1,29 @@
+.passes-event-card {
+  display: flex !important;
+  flex-direction: column !important;
+  @apply bg-white border-1 border-solid border-dark-gray lg:border-white border-opacity-10 h-fit max-w-[calc(100%-0.5rem)] p-[0.9375rem] pb-[1.9375rem] rounded-2xl w-full shadow-dark-black lg:shadow-none;
+
+  .card-image {
+    @apply w-full h-[12.6875rem] min-550:h-[13.5rem] rounded-xl;
+  }
+
+  .card-body-container {
+    @apply mt-4 mb-6 px-2;
+
+    .title {
+      @apply text-base ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[#191919];
+    }
+
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 text-[#606060] text-sm mt-2;
+    }
+  }
+
+  .cta-link {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 px-2 text-dark-gray flex flex-col justify-end flex-grow;
+  }
+
+  &:hover {
+    @apply border-dark-gray border-opacity-10 shadow-dark-black;
+  }
+}

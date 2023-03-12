@@ -1,0 +1,67 @@
+.come-prepared-main {
+  &::v-deep {
+    .hero-section {
+      @apply h-fit items-center min-550:h-[27rem];
+
+      .content-container {
+        @apply flex flex-col flex-wrap gap-x-2 justify-center min-550:py-0 min-900:flex-row min-900:h-full min-900:justify-between pb-10 pt-[7.75rem] px-4;
+
+        .title-wrapper {
+          @apply flex max-w-[40.5rem] min-900:flex-1 min-900:h-full min-900:items-center;
+
+          .title {
+            @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter text-3xl min-320:text-[2.375rem] rtl:leading-[unset]  min-550:text-5xl  min-900:text-6xl text-white uppercase w-full;
+          }
+        }
+
+        .extra-text-container {
+          @apply flex w-full max-w-sm mt-8 min-900:mt-0 min-900:pt-40;
+
+          .vertical-line {
+            @apply w-[1px] h-48 bg-white opacity-10 ltr:mr-16 rtl:ml-16 hidden min-900:inline;
+          }
+
+          .extra-text-header {
+            @apply ltr:font-caveat-bold rtl:font-noto-sans-arabic-bold text-2xl leading-6;
+          }
+
+          .extra-text-description {
+            @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 mt-2 opacity-70 text-sm text-white;
+          }
+        }
+      }
+    }
+  }
+
+  .categories-cards-container {
+    @apply flex gap-x-16 justify-between max-w-screen-ski-dubai-content-max md:py-20 pb-16 pt-10 px-4 relative w-full xl:gap-x-[11.313rem] xl:px-0;
+
+    .sticky-list-wrapper {
+      @apply sticky top-40 w-full max-w-[267px] h-fit;
+
+      li {
+        @apply inline-block w-full no-underline;
+      }
+
+      .sub-category-links-container {
+        @apply ltr:border-l-1 rtl:border-r-1 border-solid border-dark-gray border-opacity-10 flex flex-col gap-y-4 h-fit list-none mb-2 mt-4 ltr:pl-[15px] rtl:pr-[15px] py-2 relative;
+
+        .sub-category-link {
+          @apply cursor-pointer ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler hover:opacity-100 leading-4 opacity-50 relative text-dark-gray text-sm;
+
+          &.is-active {
+            @apply opacity-100;
+          }
+        }
+      }
+
+      .sliderLinks {
+        @apply absolute top-0 ltr:left-[-1px] rtl:right-[-1px] w-1 bg-dark-blue h-[34px] opacity-100;
+      }
+    }
+
+    .category-title {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base text-[#191919];
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.user-access-bar-container {
+  @apply bg-[#606060] bg-opacity-5 flex flex-wrap gap-x-2 gap-y-4 items-center justify-between  min-550:px-8 px-[1.438rem] py-4 w-full;
+
+  .booking-label {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-4 text-dark-gray text-sm;
+  }
+
+  .access-btns-container {
+    @apply flex flex-wrap gap-x-4 gap-y-2 items-center min-550:gap-x-6 min-550:w-fit w-full;
+
+    .create-account-btn {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 min-550:text-sm text-dark-gray text-xs cursor-pointer;
+    }
+    .gs-base-button-default-styles {
+      @apply flex-1 min-550:px-[1.594rem] no-underline pb-3 pt-[0.875rem] rounded-xl whitespace-nowrap;
+    }
+  }
+}

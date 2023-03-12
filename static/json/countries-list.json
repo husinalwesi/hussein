@@ -1,0 +1,1969 @@
+{
+    "data": [
+      {
+        "name_en": "United Arab Emirates",
+        "name_ar": "الإمارات العربية المتحدة",
+        "iso2": "ae",
+        "dialCode": "971",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ARE",
+        "ie": "501234567"
+      },
+      {
+        "name_en": "Afghanistan",
+        "name_ar": "أفغانستان",
+        "iso2": "af",
+        "dialCode": "93",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "AFG",
+        "ie": "701234567"
+      },
+      {
+        "name_en": "Albania",
+        "name_ar": "ألبانيا",
+        "iso2": "al",
+        "dialCode": "355",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ALB",
+        "ie": "672123456"
+      },
+      {
+        "name_en": "Algeria",
+        "name_ar": "الجزائر",
+        "iso2": "dz",
+        "dialCode": "213",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "DZA",
+        "ie": "551234567"
+      },
+      {
+        "name_en": "Angola",
+        "name_ar": "أنغولا",
+        "iso2": "ao",
+        "dialCode": "244",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "AGO",
+        "ie": "923123456"
+      },
+      {
+        "name_en": "Antigua and Barbuda",
+        "name_ar": "أنتيغوا وبربودا",
+        "iso2": "ag",
+        "dialCode": "1268",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ATG",
+        "ie": "2684641234"
+      },
+      {
+        "name_en": "Andorra",
+        "name_ar": "أندورا",
+        "iso2": "and",
+        "dialCode": "376",
+        "priority": 0,
+        "areaCodes": null
+      },
+      {
+        "name_en": "Argentina",
+        "name_ar": "الأرجنتين",
+        "iso2": "ar",
+        "dialCode": "54",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ARG",
+        "ie": "91123456789"
+      },
+      {
+        "name_en": "Armenia",
+        "name_ar": "أرمينيا",
+        "iso2": "am",
+        "dialCode": "374",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ARM",
+        "ie": "77123456"
+      },
+      {
+        "name_en": "Australia",
+        "name_ar": "أستراليا",
+        "iso2": "au",
+        "dialCode": "61",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "AUS",
+        "ie": "412345678"
+      },
+      {
+        "name_en": "Austria",
+        "name_ar": "النمسا",
+        "iso2": "at",
+        "dialCode": "43",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "AUT",
+        "ie": "664123456"
+      },
+      {
+        "name_en": "Azerbaijan",
+        "name_ar": "أذربيجان",
+        "iso2": "az",
+        "dialCode": "994",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "AZE",
+        "ie": "401234567"
+      },
+      {
+        "name_en": "Bahamas",
+        "name_ar": "الباهاماس",
+        "iso2": "bs",
+        "dialCode": "1242",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BHS",
+        "ie": "2423591234"
+      },
+      {
+        "name_en": "Bahrain",
+        "name_ar": "البحرين",
+        "iso2": "bh",
+        "dialCode": "973",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BHR",
+        "ie": "36001234"
+      },
+      {
+        "name_en": "Bangladesh",
+        "name_ar": "بنغلاديش",
+        "iso2": "bd",
+        "dialCode": "880",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BGD",
+        "ie": "1812345678"
+      },
+      {
+        "name_en": "Barbados",
+        "name_ar": "بربادوس",
+        "iso2": "bb",
+        "dialCode": "1246",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BRB",
+        "ie": "2462501234"
+      },
+      {
+        "name_en": "Belarus",
+        "name_ar": "روسيا البيضاء",
+        "iso2": "by",
+        "dialCode": "375",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BLR",
+        "ie": "294911911"
+      },
+      {
+        "name_en": "Belgium",
+        "name_ar": "بلجيكا",
+        "iso2": "be",
+        "dialCode": "32",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BEL",
+        "ie": "470123456"
+      },
+      {
+        "name_en": "Belize",
+        "name_ar": "بيليز",
+        "iso2": "bz",
+        "dialCode": "501",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BLZ",
+        "ie": "6221234"
+      },
+      {
+        "name_en": "Benin",
+        "name_ar": "بنين",
+        "iso2": "bj",
+        "dialCode": "229",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BEN",
+        "ie": "90011234"
+      },
+      {
+        "name_en": "Bhutan",
+        "name_ar": "بوتان",
+        "iso2": "bt",
+        "dialCode": "975",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BTN",
+        "ie": "17123456"
+      },
+      {
+        "name_en": "Bolivia",
+        "name_ar": "بوليفيا",
+        "iso2": "bo",
+        "dialCode": "591",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BOL",
+        "ie": "71234567"
+      },
+      {
+        "name_en": "Bosnia and Herzegovina",
+        "name_ar": "البوسنة و الهرسك",
+        "iso2": "ba",
+        "dialCode": "387",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BIH",
+        "ie": "61123456"
+      },
+      {
+        "name_en": "Botswana",
+        "name_ar": "بوتسوانا",
+        "iso2": "bw",
+        "dialCode": "267",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BWA",
+        "ie": "71123456"
+      },
+      {
+        "name_en": "Brazil",
+        "name_ar": "البرازيل",
+        "iso2": "br",
+        "dialCode": "55",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BRA",
+        "ie": "11961234567"
+      },
+      {
+        "name_en": "Brunei",
+        "name_ar": "بروني",
+        "iso2": "bn",
+        "dialCode": "673",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BRN",
+        "ie": "7123456"
+      },
+      {
+        "name_en": "Bulgaria",
+        "name_ar": "بلغاريا",
+        "iso2": "bg",
+        "dialCode": "359",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BGR",
+        "ie": "48123456"
+      },
+      {
+        "name_en": "Burkina Faso",
+        "name_ar": "بوركينا فاسو",
+        "iso2": "bf",
+        "dialCode": "226",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BFA",
+        "ie": "70123456"
+      },
+      {
+        "name_en": "Burundi",
+        "name_ar": "بوروندي",
+        "iso2": "bi",
+        "dialCode": "257",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "BDI",
+        "ie": "79561234"
+      },
+      {
+        "name_en": "Cambodia",
+        "name_ar": "كمبوديا",
+        "iso2": "kh",
+        "dialCode": "855",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "KHM",
+        "ie": "91234567"
+      },
+      {
+        "name_en": "Cameroon",
+        "name_ar": "كاميرون",
+        "iso2": "cm",
+        "dialCode": "237",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "CMR",
+        "ie": "671234567"
+      },
+      {
+        "name_en": "Canada",
+        "name_ar": "كندا",
+        "iso2": "ca",
+        "dialCode": "1",
+        "priority": 1,
+        "areaCodes": [
+          "204",
+          "226",
+          "236",
+          "249",
+          "250",
+          "289",
+          "306",
+          "343",
+          "365",
+          "387",
+          "403",
+          "416",
+          "418",
+          "431",
+          "437",
+          "438",
+          "450",
+          "506",
+          "514",
+          "519",
+          "548",
+          "579",
+          "581",
+          "587",
+          "604",
+          "613",
+          "639",
+          "647",
+          "672",
+          "705",
+          "709",
+          "742",
+          "778",
+          "780",
+          "782",
+          "807",
+          "819",
+          "825",
+          "867",
+          "873",
+          "902",
+          "905"
+        ],
+        "iso3": "CAN",
+        "ie": "5062345678"
+      },
+      {
+        "name_en": "Cape Verde",
+        "name_ar": "الرأس الأخضر",
+        "iso2": "cv",
+        "dialCode": "238",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "CPV",
+        "ie": "9911234"
+      },
+      {
+        "name_en": "Central African Republic",
+        "name_ar": "جمهورية أفريقيا الوسطى",
+        "iso2": "cf",
+        "dialCode": "236",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "CAF",
+        "ie": "70012345"
+      },
+      {
+        "name_en": "Chad",
+        "name_ar": "تشاد",
+        "iso2": "td",
+        "dialCode": "235",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "TCD",
+        "ie": "63012345"
+      },
+      {
+        "name_en": "Chile",
+        "name_ar": "شيلي",
+        "iso2": "cl",
+        "dialCode": "56",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "CHL",
+        "ie": "221234567"
+      },
+      {
+        "name_en": "China",
+        "name_ar": "الصين",
+        "iso2": "cn",
+        "dialCode": "86",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "CHN",
+        "ie": "13123456789"
+      },
+      {
+        "name_en": "Colombia",
+        "name_ar": "كولومبيا",
+        "iso2": "co",
+        "dialCode": "57",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "COL",
+        "ie": "3211234567"
+      },
+      {
+        "name_en": "Comoros",
+        "name_ar": "جزر القمر",
+        "iso2": "km",
+        "dialCode": "269",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "COM",
+        "ie": "3212345"
+      },
+      {
+        "name_en": "Costa Rica",
+        "name_ar": "كوستاريكا",
+        "iso2": "cr",
+        "dialCode": "506",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "CRI",
+        "ie": "83123456"
+      },
+      {
+        "name_en": "Croatia",
+        "name_ar": "كرواتيا",
+        "iso2": "hr",
+        "dialCode": "385",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "HRV",
+        "ie": "921234567"
+      },
+      {
+        "name_en": "Cuba",
+        "name_ar": "كوبا",
+        "iso2": "cu",
+        "dialCode": "53",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "CUB",
+        "ie": "51234567"
+      },
+      {
+        "name_en": "Cyprus",
+        "name_ar": "قبرص",
+        "iso2": "cy",
+        "dialCode": "357",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "CYP",
+        "ie": "96123456"
+      },
+      {
+        "name_en": "Czech Republic",
+        "name_ar": "الجمهورية التشيكية",
+        "iso2": "cz",
+        "dialCode": "420",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "CZE",
+        "ie": "601123456"
+      },
+      {
+        "name_en": "Denmark",
+        "name_ar": "الدانمارك",
+        "iso2": "dk",
+        "dialCode": "45",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "DNK",
+        "ie": "32123456"
+      },
+      {
+        "name_en": "Democratic Republic of the Congo",
+        "name_ar": "جمهورية الكونغو الديمقراطية",
+        "iso2": "cod",
+        "dialCode": "243",
+        "priority": 0,
+        "areaCodes": null
+      },
+      {
+        "name_en": "Djibouti",
+        "name_ar": "جيبوتي",
+        "iso2": "dj",
+        "dialCode": "253",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "DJI",
+        "ie": "77831001"
+      },
+      {
+        "name_en": "Dominica",
+        "name_ar": "دومينيكا",
+        "iso2": "dm",
+        "dialCode": "1767",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "DMA",
+        "ie": "7672251234"
+      },
+      {
+        "name_en": "Dominican Republic",
+        "name_ar": "الجمهورية الدومينيكية",
+        "iso2": "do",
+        "dialCode": "1",
+        "priority": 2,
+        "areaCodes": [
+          "809",
+          "829",
+          "849"
+        ],
+        "iso3": "DOM",
+        "ie": "8092345678"
+      },
+      {
+        "name_en": "Ecuador",
+        "name_ar": "إكوادور",
+        "iso2": "ec",
+        "dialCode": "593",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ECU",
+        "ie": "991234567"
+      },
+      {
+        "name_en": "Egypt",
+        "name_ar": "مصر",
+        "iso2": "eg",
+        "dialCode": "20",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "EGY",
+        "ie": "1001234567"
+      },
+      {
+        "name_en": "East Timor",
+        "name_ar": "تيمور الشرقية",
+        "iso2": "tls",
+        "dialCode": "670",
+        "priority": 0,
+        "areaCodes": null
+      },
+      {
+        "name_en": "El Salvador",
+        "name_ar": "إلسلفادور",
+        "iso2": "sv",
+        "dialCode": "503",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SLV",
+        "ie": "70123456"
+      },
+      {
+        "name_en": "Equatorial Guinea",
+        "name_ar": "غينيا الاستوائي",
+        "iso2": "gq",
+        "dialCode": "240",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GNQ",
+        "ie": "222123456"
+      },
+      {
+        "name_en": "Eritrea",
+        "name_ar": "إريتريا",
+        "iso2": "er",
+        "dialCode": "291",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ERI",
+        "ie": "7123456"
+      },
+      {
+        "name_en": "Estonia",
+        "name_ar": "استونيا",
+        "iso2": "ee",
+        "dialCode": "372",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "EST",
+        "ie": "51234567"
+      },
+      {
+        "name_en": "Eswatini",
+        "name_ar": "مملكة إسواتيني",
+        "iso2": "swz",
+        "dialCode": "268",
+        "priority": 0,
+        "areaCodes": null
+      },
+      {
+        "name_en": "Ethiopia",
+        "name_ar": "أثيوبيا",
+        "iso2": "et",
+        "dialCode": "251",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ETH",
+        "ie": "911234567"
+      },
+      {
+        "name_en": "Fiji",
+        "name_ar": "فيجي",
+        "iso2": "fj",
+        "dialCode": "679",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "FJI",
+        "ie": "7012345"
+      },
+      {
+        "name_en": "Finland",
+        "name_ar": "فنلندا",
+        "iso2": "fi",
+        "dialCode": "358",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "FIN",
+        "ie": "412345678"
+      },
+      {
+        "name_en": "France",
+        "name_ar": "فرنسا",
+        "iso2": "fr",
+        "dialCode": "33",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "FRA",
+        "ie": "612345678"
+      },
+      {
+        "name_en": "Gabon",
+        "name_ar": "الغابون",
+        "iso2": "ga",
+        "dialCode": "241",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GAB",
+        "ie": "06031234"
+      },
+      {
+        "name_en": "Gambia",
+        "name_ar": "غامبيا",
+        "iso2": "gm",
+        "dialCode": "220",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GMB",
+        "ie": "3012345"
+      },
+      {
+        "name_en": "Georgia",
+        "name_ar": "جيورجيا",
+        "iso2": "ge",
+        "dialCode": "995",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GEO",
+        "ie": "555123456"
+      },
+      {
+        "name_en": "Germany",
+        "name_ar": "ألمانيا",
+        "iso2": "de",
+        "dialCode": "49",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "DEU",
+        "ie": "15123456789"
+      },
+      {
+        "name_en": "Ghana",
+        "name_ar": "غانا",
+        "iso2": "gh",
+        "dialCode": "233",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GHA",
+        "ie": "231234567"
+      },
+      {
+        "name_en": "Greece",
+        "name_ar": "اليونان",
+        "iso2": "gr",
+        "dialCode": "30",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GRC",
+        "ie": "6912345678"
+      },
+      {
+        "name_en": "Grenada",
+        "name_ar": "غرينادا",
+        "iso2": "gd",
+        "dialCode": "1473",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GRD",
+        "ie": "4734031234"
+      },
+      {
+        "name_en": "Guatemala",
+        "name_ar": "غواتيمال",
+        "iso2": "gt",
+        "dialCode": "502",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GTM",
+        "ie": "51234567"
+      },
+      {
+        "name_en": "Guinea",
+        "name_ar": "غينيا",
+        "iso2": "gn",
+        "dialCode": "224",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GIN",
+        "ie": "601123456"
+      },
+      {
+        "name_en": "Guinea-Bissau",
+        "name_ar": "غينيا-بيساو",
+        "iso2": "gw",
+        "dialCode": "245",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GNB",
+        "ie": "955012345"
+      },
+      {
+        "name_en": "Guyana",
+        "name_ar": "غيانا",
+        "iso2": "gy",
+        "dialCode": "592",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GUY",
+        "ie": "6091234"
+      },
+      {
+        "name_en": "Haiti",
+        "name_ar": "هايتي",
+        "iso2": "ht",
+        "dialCode": "509",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "HTI",
+        "ie": "34101234"
+      },
+      {
+        "name_en": "Honduras",
+        "name_ar": "هندوراس",
+        "iso2": "hn",
+        "dialCode": "504",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "HND",
+        "ie": "91234567"
+      },
+      {
+        "name_en": "Hungary",
+        "name_ar": "المجر",
+        "iso2": "hu",
+        "dialCode": "36",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "HUN",
+        "ie": "201234567"
+      },
+      {
+        "name_en": "Iceland",
+        "name_ar": "آيسلندا",
+        "iso2": "is",
+        "dialCode": "354",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ISL",
+        "ie": "6111234"
+      },
+      {
+        "name_en": "India",
+        "name_ar": "الهند",
+        "iso2": "in",
+        "dialCode": "91",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "IND",
+        "ie": "8123456789"
+      },
+      {
+        "name_en": "Indonesia",
+        "name_ar": "أندونيسيا",
+        "iso2": "id",
+        "dialCode": "62",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "IDN",
+        "ie": "812345678"
+      },
+      {
+        "name_en": "Iran",
+        "name_ar": "إيران",
+        "iso2": "ir",
+        "dialCode": "98",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "IRN",
+        "ie": "9123456789"
+      },
+      {
+        "name_en": "Iraq",
+        "name_ar": "العراق",
+        "iso2": "iq",
+        "dialCode": "964",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "IRQ",
+        "ie": "7912345678"
+      },
+      {
+        "name_en": "Ireland",
+        "name_ar": "إيرلندا",
+        "iso2": "ie",
+        "dialCode": "353",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "IRL",
+        "ie": "850123456"
+      },
+      {
+        "name_en": "Italy",
+        "name_ar": "إيطاليا",
+        "iso2": "it",
+        "dialCode": "39",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ITA",
+        "ie": "3123456789"
+      },
+      {
+        "name_en": "Ivory Coast",
+        "name_ar": "ساحل العاج",
+        "iso2": "civ",
+        "dialCode": "225",
+        "priority": 0,
+        "areaCodes": null
+      },
+      {
+        "name_en": "Jamaica",
+        "name_ar": "جمايكا",
+        "iso2": "jm",
+        "dialCode": "1876",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "JAM",
+        "ie": "8762101234"
+      },
+      {
+        "name_en": "Japan",
+        "name_ar": "اليابان",
+        "iso2": "jp",
+        "dialCode": "81",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "JPN",
+        "ie": "9012345678"
+      },
+      {
+        "name_en": "Jordan",
+        "name_ar": "الأردن",
+        "iso2": "jo",
+        "dialCode": "962",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "JOR",
+        "ie": "790123456"
+      },
+      {
+        "name_en": "Kazakhstan",
+        "name_ar": "كازاخستان",
+        "iso2": "kz",
+        "dialCode": "7",
+        "priority": 1,
+        "areaCodes": null,
+        "iso3": "KAZ",
+        "ie": "7710009998"
+      },
+      {
+        "name_en": "Kenya",
+        "name_ar": "كينيا",
+        "iso2": "ke",
+        "dialCode": "254",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "KEN",
+        "ie": "712123456"
+      },
+      {
+        "name_en": "Kiribati",
+        "name_ar": "كيريباتي",
+        "iso2": "ki",
+        "dialCode": "686",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "KIR",
+        "ie": "72001234"
+      },
+      {
+        "name_en": "Kuwait",
+        "name_ar": "الكويت",
+        "iso2": "kw",
+        "dialCode": "965",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "KWT",
+        "ie": "50012345"
+      },
+      {
+        "name_en": "Kyrgyzstan",
+        "name_ar": "قيرغيزستان",
+        "iso2": "kg",
+        "dialCode": "996",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "KGZ",
+        "ie": "700123456"
+      },
+      {
+        "name_en": "Laos",
+        "name_ar": "لائوس",
+        "iso2": "la",
+        "dialCode": "856",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LAO",
+        "ie": "2023123456"
+      },
+      {
+        "name_en": "Latvia",
+        "name_ar": "لاتفيا",
+        "iso2": "lv",
+        "dialCode": "371",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LVA",
+        "ie": "21234567"
+      },
+      {
+        "name_en": "Lebanon",
+        "name_ar": "لبنان",
+        "iso2": "lb",
+        "dialCode": "961",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LBN",
+        "ie": "71123456"
+      },
+      {
+        "name_en": "Lesotho",
+        "name_ar": "ليسوتو",
+        "iso2": "ls",
+        "dialCode": "266",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LSO",
+        "ie": "50123456"
+      },
+      {
+        "name_en": "Liberia",
+        "name_ar": "ليبيريا",
+        "iso2": "lr",
+        "dialCode": "231",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LBR",
+        "ie": "770123456"
+      },
+      {
+        "name_en": "Libya",
+        "name_ar": "ليبيا",
+        "iso2": "ly",
+        "dialCode": "218",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LBY",
+        "ie": "912345678"
+      },
+      {
+        "name_en": "Liechtenstein",
+        "name_ar": "ليختنشتين",
+        "iso2": "li",
+        "dialCode": "423",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LIE",
+        "ie": "660234567"
+      },
+      {
+        "name_en": "Lithuania",
+        "name_ar": "لتوانيا",
+        "iso2": "lt",
+        "dialCode": "370",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LTU",
+        "ie": "61234567"
+      },
+      {
+        "name_en": "Luxembourg",
+        "name_ar": "لوكسمبورغ",
+        "iso2": "lu",
+        "dialCode": "352",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LUX",
+        "ie": "628123456"
+      },
+      {
+        "name_en": "Macedonia",
+        "name_ar": "مقدونيا",
+        "iso2": "mk",
+        "dialCode": "389",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MKD",
+        "ie": "72345678"
+      },
+      {
+        "name_en": "Madagascar",
+        "name_ar": "مدغشقر",
+        "iso2": "mg",
+        "dialCode": "261",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MDG",
+        "ie": "321234567"
+      },
+      {
+        "name_en": "Malawi",
+        "name_ar": "مالاوي",
+        "iso2": "mw",
+        "dialCode": "265",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MWI",
+        "ie": "991234567"
+      },
+      {
+        "name_en": "Malaysia",
+        "name_ar": "ماليزيا",
+        "iso2": "my",
+        "dialCode": "60",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MYS",
+        "ie": "123456789"
+      },
+      {
+        "name_en": "Maldives",
+        "name_ar": "المالديف",
+        "iso2": "mv",
+        "dialCode": "960",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MDV",
+        "ie": "7712345"
+      },
+      {
+        "name_en": "Mali",
+        "name_ar": "مالي",
+        "iso2": "ml",
+        "dialCode": "223",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MLI",
+        "ie": "65012345"
+      },
+      {
+        "name_en": "Malta",
+        "name_ar": "مالطا",
+        "iso2": "mt",
+        "dialCode": "356",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MLT",
+        "ie": "96961234"
+      },
+      {
+        "name_en": "Marshall Islands",
+        "name_ar": "جزر مارشال",
+        "iso2": "mh",
+        "dialCode": "692",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MHL",
+        "ie": "2351234"
+      },
+      {
+        "name_en": "Mauritania",
+        "name_ar": "موريتانيا",
+        "iso2": "mr",
+        "dialCode": "222",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MRT",
+        "ie": "22123456"
+      },
+      {
+        "name_en": "Mauritius",
+        "name_ar": "موريشيوس",
+        "iso2": "mu",
+        "dialCode": "230",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MUS",
+        "ie": "52512345"
+      },
+      {
+        "name_en": "Mexico",
+        "name_ar": "المكسيك",
+        "iso2": "mx",
+        "dialCode": "52",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MEX",
+        "ie": "12221234567"
+      },
+      {
+        "name_en": "Micronesia",
+        "name_ar": "مايكرونيزيا",
+        "iso2": "fm",
+        "dialCode": "691",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "FSM",
+        "ie": "3501234"
+      },
+      {
+        "name_en": "Moldova",
+        "name_ar": "مولدافيا",
+        "iso2": "md",
+        "dialCode": "373",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MDA",
+        "ie": "62112345"
+      },
+      {
+        "name_en": "Monaco",
+        "name_ar": "موناكو",
+        "iso2": "mc",
+        "dialCode": "377",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MCO",
+        "ie": "612345678"
+      },
+      {
+        "name_en": "Mongolia",
+        "name_ar": "منغوليا",
+        "iso2": "mn",
+        "dialCode": "976",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MNG",
+        "ie": "88123456"
+      },
+      {
+        "name_en": "Montenegro",
+        "name_ar": "الجبل الأسود",
+        "iso2": "me",
+        "dialCode": "382",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MNE",
+        "ie": "67622901"
+      },
+      {
+        "name_en": "Morocco",
+        "name_ar": "المغرب",
+        "iso2": "ma",
+        "dialCode": "212",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MAR",
+        "ie": "650123456"
+      },
+      {
+        "name_en": "Mozambique",
+        "name_ar": "موزمبيق",
+        "iso2": "mz",
+        "dialCode": "258",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MOZ",
+        "ie": "821234567"
+      },
+      {
+        "name_en": "Myanmar",
+        "name_ar": "ميانمار",
+        "iso2": "mm",
+        "dialCode": "95",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "MMR",
+        "ie": "92123456"
+      },
+      {
+        "name_en": "Namibia",
+        "name_ar": "ناميبيا",
+        "iso2": "na",
+        "dialCode": "264",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "NAM",
+        "ie": "811234567"
+      },
+      {
+        "name_en": "Nauru",
+        "name_ar": "نورو",
+        "iso2": "nr",
+        "dialCode": "674",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "NRU",
+        "ie": "5551234"
+      },
+      {
+        "name_en": "Nepal",
+        "name_ar": "نيبال",
+        "iso2": "np",
+        "dialCode": "977",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "NPL",
+        "ie": "9841234567"
+      },
+      {
+        "name_en": "Netherlands",
+        "name_ar": "هولندا",
+        "iso2": "nl",
+        "dialCode": "31",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "NLD",
+        "ie": "612345678"
+      },
+      {
+        "name_en": "New Zealand",
+        "name_ar": "نيوزيلندا",
+        "iso2": "nz",
+        "dialCode": "64",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "NZL",
+        "ie": "211234567"
+      },
+      {
+        "name_en": "Nicaragua",
+        "name_ar": "نيكاراجوا",
+        "iso2": "ni",
+        "dialCode": "505",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "NIC",
+        "ie": "81234567"
+      },
+      {
+        "name_en": "Niger",
+        "name_ar": "النيجر",
+        "iso2": "ne",
+        "dialCode": "227",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "NER",
+        "ie": "93123456"
+      },
+      {
+        "name_en": "Nigeria",
+        "name_ar": "نيجيريا",
+        "iso2": "ng",
+        "dialCode": "234",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "NGA",
+        "ie": "8021234567"
+      },
+      {
+        "name_en": "North Korea",
+        "name_ar": "كوريا الشمالية",
+        "iso2": "kp",
+        "dialCode": "850",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "PRK",
+        "ie": "1921234567"
+      },
+      {
+        "name_en": "Norway",
+        "name_ar": "النرويج",
+        "iso2": "no",
+        "dialCode": "47",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "NOR",
+        "ie": "40612345"
+      },
+      {
+        "name_en": "Oman",
+        "name_ar": "عمان",
+        "iso2": "om",
+        "dialCode": "968",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "OMN",
+        "ie": "92123456"
+      },
+      {
+        "name_en": "Pakistan",
+        "name_ar": "باكستان",
+        "iso2": "pk",
+        "dialCode": "92",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "PAK",
+        "ie": "3012345678"
+      },
+      {
+        "name_en": "Palau",
+        "name_ar": "بالاو",
+        "iso2": "pw",
+        "dialCode": "680",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "PLW",
+        "ie": "6201234"
+      },
+      {
+        "name_en": "Palestine",
+        "name_ar": "فلسطين",
+        "iso2": "ps",
+        "dialCode": "970",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "PSE",
+        "ie": "599123456"
+      },
+      {
+        "name_en": "Panama",
+        "name_ar": "بنما",
+        "iso2": "pa",
+        "dialCode": "507",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "PAN",
+        "ie": "61234567"
+      },
+      {
+        "name_en": "Papua New Guinea",
+        "name_ar": "بابوا غينيا الجديدة",
+        "iso2": "pg",
+        "dialCode": "675",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "PNG",
+        "ie": "70123456"
+      },
+      {
+        "name_en": "Paraguay",
+        "name_ar": "باراغواي",
+        "iso2": "py",
+        "dialCode": "595",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "PRY",
+        "ie": "961456789"
+      },
+      {
+        "name_en": "Peru",
+        "name_ar": "بيرو",
+        "iso2": "pe",
+        "dialCode": "51",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "PER",
+        "ie": "912345678"
+      },
+      {
+        "name_en": "Philippines",
+        "name_ar": "الفليبين",
+        "iso2": "ph",
+        "dialCode": "63",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "PHL",
+        "ie": "9051234567"
+      },
+      {
+        "name_en": "Poland",
+        "name_ar": "بولونيا",
+        "iso2": "pl",
+        "dialCode": "48",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "POL",
+        "ie": "512345678"
+      },
+      {
+        "name_en": "Portugal",
+        "name_ar": "البرتغال",
+        "iso2": "pt",
+        "dialCode": "351",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "PRT",
+        "ie": "912345678"
+      },
+      {
+        "name_en": "Qatar",
+        "name_ar": "قطر",
+        "iso2": "qa",
+        "dialCode": "974",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "QAT",
+        "ie": "33123456"
+      },
+      {
+        "name_en": "Romania",
+        "name_ar": "رومانيا",
+        "iso2": "ro",
+        "dialCode": "40",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ROU",
+        "ie": "712034567"
+      },
+      {
+        "name_en": "Russia",
+        "name_ar": "روسيا",
+        "iso2": "ru",
+        "dialCode": "7",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "RUS",
+        "ie": "9123456789"
+      },
+      {
+        "name_en": "Rwanda",
+        "name_ar": "رواندا",
+        "iso2": "rw",
+        "dialCode": "250",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "RWA",
+        "ie": "720123456"
+      },
+      {
+        "name_en": "Republic of the Congo",
+        "name_ar": "جمهورية الكونغو",
+        "iso2": "cog",
+        "dialCode": "242",
+        "priority": 1,
+        "areaCodes": null
+      },
+      {
+        "name_en": "Saint Kitts and Nevis",
+        "name_ar": "سانت كيتس ونيفس",
+        "iso2": "kn",
+        "dialCode": "1869",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "KNA",
+        "ie": "8697652917"
+      },
+      {
+        "name_en": "Saint Lucia",
+        "name_ar": "سانت لوسيا",
+        "iso2": "lc",
+        "dialCode": "1758",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LCA",
+        "ie": "7582845678"
+      },
+      {
+        "name_en": "Saint Vincent and the Grenadines",
+        "name_ar": "سانت فنسنت وجزر غرينادين",
+        "iso2": "vc",
+        "dialCode": "1784",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "VCT",
+        "ie": "7844301234"
+      },
+      {
+        "name_en": "Samoa",
+        "name_ar": "ساموا",
+        "iso2": "ws",
+        "dialCode": "685",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "WSM",
+        "ie": "7212345"
+      },
+      {
+        "name_en": "San Marino",
+        "name_ar": "سان مارينو",
+        "iso2": "sm",
+        "dialCode": "378",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SMR",
+        "ie": "66661212"
+      },
+      {
+        "name_en": "Sao Tome and Principe",
+        "name_ar": "ساو تومي وبرينسيبي",
+        "iso2": "st",
+        "dialCode": "239",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "STP",
+        "ie": "9812345"
+      },
+      {
+        "name_en": "Saudi Arabia",
+        "name_ar": "المملكة العربية السعودية",
+        "iso2": "sa",
+        "dialCode": "966",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SAU",
+        "ie": "512345678"
+      },
+      {
+        "name_en": "Senegal",
+        "name_ar": "السنغال",
+        "iso2": "sn",
+        "dialCode": "221",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SEN",
+        "ie": "701234567"
+      },
+      {
+        "name_en": "Serbia",
+        "name_ar": "صربيا",
+        "iso2": "rs",
+        "dialCode": "381",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SRB",
+        "ie": "601234567"
+      },
+      {
+        "name_en": "Seychelles",
+        "name_ar": "سيشيل",
+        "iso2": "sc",
+        "dialCode": "248",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SYC",
+        "ie": "2510123"
+      },
+      {
+        "name_en": "Sierra Leone",
+        "name_ar": "سيراليون",
+        "iso2": "sl",
+        "dialCode": "232",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SLE",
+        "ie": "25123456"
+      },
+      {
+        "name_en": "Singapore",
+        "name_ar": "سنغافورة",
+        "iso2": "sg",
+        "dialCode": "65",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SGP",
+        "ie": "81234567"
+      },
+      {
+        "name_en": "Slovakia",
+        "name_ar": "سلوفاكيا",
+        "iso2": "sk",
+        "dialCode": "421",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SVK",
+        "ie": "912123456"
+      },
+      {
+        "name_en": "Slovenia",
+        "name_ar": "سلوفينيا",
+        "iso2": "si",
+        "dialCode": "386",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SVN",
+        "ie": "31234567"
+      },
+      {
+        "name_en": "Solomon Islands",
+        "name_ar": "جزر سليمان",
+        "iso2": "sb",
+        "dialCode": "677",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SLB",
+        "ie": "7421234"
+      },
+      {
+        "name_en": "Somalia",
+        "name_ar": "الصومال",
+        "iso2": "so",
+        "dialCode": "252",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SOM",
+        "ie": "71123456"
+      },
+      {
+        "name_en": "South Africa",
+        "name_ar": "جنوب أفريقيا",
+        "iso2": "za",
+        "dialCode": "27",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ZAF",
+        "ie": "711234567"
+      },
+      {
+        "name_en": "South Korea",
+        "name_ar": "كوريا الجنوبية",
+        "iso2": "kr",
+        "dialCode": "82",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "KOR",
+        "ie": "1020000000"
+      },
+      {
+        "name_en": "South Sudan",
+        "name_ar": "جنوب السودان",
+        "iso2": "ss",
+        "dialCode": "211",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SSD",
+        "ie": "977123456"
+      },
+      {
+        "name_en": "Spain",
+        "name_ar": "إسبانيا",
+        "iso2": "es",
+        "dialCode": "34",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ESP",
+        "ie": "612345678"
+      },
+      {
+        "name_en": "Sri Lanka",
+        "name_ar": "سريلانكا",
+        "iso2": "lk",
+        "dialCode": "94",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "LKA",
+        "ie": "712345678"
+      },
+      {
+        "name_en": "Sudan",
+        "name_ar": "السودان",
+        "iso2": "sd",
+        "dialCode": "249",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SDN",
+        "ie": "911231234"
+      },
+      {
+        "name_en": "Suriname",
+        "name_ar": "سورينام",
+        "iso2": "sr",
+        "dialCode": "597",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SUR",
+        "ie": "7412345"
+      },
+      {
+        "name_en": "Sweden",
+        "name_ar": "السويد",
+        "iso2": "se",
+        "dialCode": "46",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SWE",
+        "ie": "701234567"
+      },
+      {
+        "name_en": "Switzerland",
+        "name_ar": "سويسرا",
+        "iso2": "ch",
+        "dialCode": "41",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "CHE",
+        "ie": "781234567"
+      },
+      {
+        "name_en": "Syria",
+        "name_ar": "سوريا",
+        "iso2": "sy",
+        "dialCode": "963",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "SYR",
+        "ie": "944567890"
+      },
+      {
+        "name_en": "Tajikistan",
+        "name_ar": "طاجيكستان",
+        "iso2": "tj",
+        "dialCode": "992",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "TJK",
+        "ie": "917123456"
+      },
+      {
+        "name_en": "Tanzania",
+        "name_ar": "تنزانيا",
+        "iso2": "tz",
+        "dialCode": "255",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "TZA",
+        "ie": "621234567"
+      },
+      {
+        "name_en": "Thailand",
+        "name_ar": "تايلندا",
+        "iso2": "th",
+        "dialCode": "66",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "THA",
+        "ie": "812345678"
+      },
+      {
+        "name_en": "Togo",
+        "name_ar": "توغو",
+        "iso2": "tg",
+        "dialCode": "228",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "TGO",
+        "ie": "90112345"
+      },
+      {
+        "name_en": "Tonga",
+        "name_ar": "تونغا",
+        "iso2": "to",
+        "dialCode": "676",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "TON",
+        "ie": "7715123"
+      },
+      {
+        "name_en": "Trinidad and Tobago",
+        "name_ar": "ترينيداد وتوباغو",
+        "iso2": "tt",
+        "dialCode": "1868",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "TTO",
+        "ie": "8682911234"
+      },
+      {
+        "name_en": "Tunisia",
+        "name_ar": "تونس",
+        "iso2": "tn",
+        "dialCode": "216",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "TUN",
+        "ie": "20123456"
+      },
+      {
+        "name_en": "Turkey",
+        "name_ar": "تركيا",
+        "iso2": "tr",
+        "dialCode": "90",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "TUR",
+        "ie": "5012345678"
+      },
+      {
+        "name_en": "Turkmenistan",
+        "name_ar": "تركمانستان",
+        "iso2": "tm",
+        "dialCode": "993",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "TKM",
+        "ie": "66123456"
+      },
+      {
+        "name_en": "Tuvalu",
+        "name_ar": "توفالو",
+        "iso2": "tv",
+        "dialCode": "688",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "TUV",
+        "ie": "901234"
+      },
+      {
+        "name_en": "Uganda",
+        "name_ar": "أوغندا",
+        "iso2": "ug",
+        "dialCode": "256",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "UGA",
+        "ie": "712345678"
+      },
+      {
+        "name_en": "Ukraine",
+        "name_ar": "أوكرانيا",
+        "iso2": "ua",
+        "dialCode": "380",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "UKR",
+        "ie": "501234567"
+      },
+      {
+        "name_en": "United Kingdom",
+        "name_ar": "المملكة المتحدة",
+        "iso2": "gb",
+        "dialCode": "44",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "GBR",
+        "ie": "7400123456"
+      },
+      {
+        "name_en": "United States of America",
+        "name_ar": "الولايات المتحدة",
+        "iso2": "us",
+        "dialCode": "1",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "USA",
+        "ie": "2015550123"
+      },
+      {
+        "name_en": "Uruguay",
+        "name_ar": "أورغواي",
+        "iso2": "uy",
+        "dialCode": "598",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "URY",
+        "ie": "94231234"
+      },
+      {
+        "name_en": "Uzbekistan",
+        "name_ar": "أوزباكستان",
+        "iso2": "uz",
+        "dialCode": "998",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "UZB",
+        "ie": "912345678"
+      },
+      {
+        "name_en": "Vanuatu",
+        "name_ar": "فانواتو",
+        "iso2": "vu",
+        "dialCode": "678",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "VUT",
+        "ie": "5912345"
+      },
+      {
+        "name_en": "Venezuela",
+        "name_ar": "فنزويلا",
+        "iso2": "ve",
+        "dialCode": "58",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "VEN",
+        "ie": "4121234567"
+      },
+      {
+        "name_en": "Vietnam",
+        "name_ar": "فيتنام",
+        "iso2": "vn",
+        "dialCode": "84",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "VNM",
+        "ie": "912345678"
+      },
+      {
+        "name_en": "Yemen",
+        "name_ar": "اليمن",
+        "iso2": "ye",
+        "dialCode": "967",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "YEM",
+        "ie": "712345678"
+      },
+      {
+        "name_en": "Zambia",
+        "name_ar": "زامبيا",
+        "iso2": "zm",
+        "dialCode": "260",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ZMB",
+        "ie": "955123456"
+      },
+      {
+        "name_en": "Zimbabwe",
+        "name_ar": "زمبابوي",
+        "iso2": "zw",
+        "dialCode": "263",
+        "priority": 0,
+        "areaCodes": null,
+        "iso3": "ZWE",
+        "ie": "712345678"
+      }
+    ]
+  }

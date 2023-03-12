@@ -1,0 +1,37 @@
+#skills-questions-container::v-deep {
+  .shared {
+    @apply border-0 w-full;
+  }
+
+  .finished-modal {
+    @apply max-w-[588px] p-0;
+  }
+
+  .unfinished-modal {
+    @apply max-w-[680px] px-4 py-6 md:p-10;
+
+    .modal-title {
+      @apply ltr:font-druk-heavy-italic rtl:font-adapter ltr:leading-10 text-dark-gray text-[2.5rem] uppercase;
+    }
+
+    .modal-subtitle-wrapper {
+      @apply mt-4;
+
+      .modal-subtitle {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-6 text-dark-gray;
+      }
+    }
+  }
+
+  .btn-submit {
+    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base leading-4 px-12 py-4 text-dark-black bg-light-yellow rounded-2xl;
+
+    &:disabled {
+      @apply opacity-50 lg:hover:cursor-not-allowed;
+    }
+  }
+
+  .btn-close {
+    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-dark-black text-base leading-4 ltr:mr-6 rtl:ml-6
+  }
+}

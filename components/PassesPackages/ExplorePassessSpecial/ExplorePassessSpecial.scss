@@ -1,0 +1,53 @@
+
+[dir="ltr"] {
+  .main-bg-layer {
+    background: linear-gradient(90deg, rgba(244, 244, 244, 1) 50%, rgba(255, 255, 255, 1) 50%);
+  }
+}
+
+[dir="rtl"] {
+  .main-bg-layer {
+    background: linear-gradient(-90deg, rgba(244, 244, 244, 1) 50%, rgba(255, 255, 255, 1) 50%);
+  }
+}
+
+#find-your-child-section::v-deep {
+  & .passes-list {
+    @apply opacity-100 lg:opacity-0;
+    li {
+      @apply opacity-100 lg:opacity-0 translate-y-0 lg:translate-y-2;
+    }
+  }
+
+  & .grid-cols-passes-card > .passes-card:nth-child(2) {
+    @apply pt-40;
+  }
+
+  & .passess-carousel {
+    & .slick-list {
+      & .slick-track {
+        .slick-slide {
+          @apply h-[648px];
+          &.slick-active {
+            @apply pt-0 transition-all duration-[400ms];
+            & .passes-card .passes-container {
+              @apply w-full;
+            }
+          }
+
+          &:not(.slick-active) {
+            @apply pt-[5.5rem] transition-all duration-[400ms];
+          }
+
+          & > div .passes-container {
+            @apply mx-auto w-[calc(100%-16px)];
+          }
+        }
+      }
+    }
+  }
+
+  & .dots-container {
+    @apply bottom-[5.75rem];
+  }
+}

@@ -1,0 +1,40 @@
+.page-not-found-main {
+  @apply w-full h-screen;
+
+  .bg-gradient-image {
+    @apply -z-1 bg-center bg-cover bg-no-repeat fixed h-full ltr:left-0 rtl:right-0 top-0 w-full;
+  }
+
+  .section-wrapper {
+    @apply h-full w-full relative flex items-center mx-auto mobiles:px-4 max-w-[40.5rem];
+
+    .title {
+      @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[112px] leading-[96px] text-white;
+    }
+
+    .sub-title-wrapper {
+      @apply mt-6 mb-4;
+
+      .sub-title {
+        @apply ltr:font-druk-text-wide-super-italic rtl:font-adapter text-base text-light-yellow uppercase;
+      }
+    }
+
+    .description-container {
+      @apply mb-8 ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-6 text-white;
+
+      &::v-deep {
+        ul {
+          @apply ltr:pl-6 rtl:pr-6 list-disc;
+        }
+        ol {
+          @apply ltr:pl-6 rtl:pr-6 list-decimal;
+        }
+      }
+    }
+  }
+
+  .gs-base-button-default-styles {
+    @apply pt-[21px] pb-[19px] px-[46px];
+  }
+}

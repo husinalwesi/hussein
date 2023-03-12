@@ -1,0 +1,13 @@
+.error-modal-container {
+    .base-modal-body {
+      @apply max-w-[40.5rem] min-320:py-10 min-550:py-10 py-10;
+      
+      .modal-header {
+        @apply max-w-full text-center;
+      }
+      .gs-base-button-default-styles {
+        @apply  px-4;
+      }
+    }
+  }
+  

@@ -1,0 +1,26 @@
+.action-card-container {
+  @apply flex flex-col relative py-[23px] px-[15px] md:p-[31px];
+
+  .card-header-container {
+    @apply flex justify-between items-center md:items-start;
+
+    .title {
+      @apply ltr:font-druk-heavy-italic rtl:font-adapter ltr:text-[34px] ltr:leading-8 rtl:text-2xl rtl:leading-6 md:ltr:text-[2.5rem] md:ltr:leading-10 text-dark-gray uppercase;
+    }
+  }
+
+  .description {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 max-w-[266px] md:max-w-[360px] md:mt-2 mt-4 text-[#606060] text-sm w-full;
+  }
+
+  .gs-base-button-default-styles {
+    @apply pt-[18px] pb-4 px-[22.5px] md:px-8;
+  }
+
+  img {
+    &.bottom-img {
+      bottom: 32px;
+      top: unset;
+    }
+  }
+}

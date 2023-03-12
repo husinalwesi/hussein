@@ -1,0 +1,94 @@
+.meet-penguin {
+  .title-wrapper {
+    @apply max-w-[648px] px-4 xl:px-0;
+
+    .title {
+      @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter font-normal text-dark-gray text-2xl leading-6 md:text-[2rem] md:leading-8 uppercase;
+    }
+  }
+
+  .description-wrapper {
+    @apply mt-4 max-w-[872px] px-4 xl:px-0;
+
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[0.875rem] leading-6 text-[#606060];
+    }
+  }
+
+  .tabs-list {
+    @apply w-full max-w-[224px] flex flex-col gap-y-4 h-fit list-none relative ltr:border-l-1 rtl:border-r-1 border-solid border-dark-gray border-opacity-10;
+
+    .tab {
+      @apply opacity-50 hover:opacity-100 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold lg:cursor-pointer py-4 text-dark-black ltr:pl-[19px] rtl:pr-[19px] text-base;
+
+      &.active {
+        @apply opacity-100 ltr:border-l-4 rtl:border-r-4 border-solid border-dark-gray ltr:pl-4 rtl:pr-4 ltr:ml-[-1px] rtl:mr-[-1px];
+      }
+    }
+  }
+
+  .penguin-content {
+    &.desktop {
+      @apply flex flex-1 justify-between mobiles:flex-col relative;
+
+      .white-container {
+        @apply h-full ltr:rounded-tl-3xl rtl:rounded-tr-3xl w-[200rem] bg-white absolute top-0 ltr:left-0 rtl:right-0;
+      }
+
+      .info-container {
+        @apply w-full h-full relative flex flex-col justify-center items-center lg:max-w-[312px];
+      }
+    }
+
+    &.mobile-tablet {
+      @apply flex flex-col flex-wrap bg-white;
+
+      .cat-title {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[1rem] leading-6 text-dark-black border-b-4 border-[#142b73] border-solid w-fit;
+      }
+    }
+
+    .image-wrapper {
+      @apply relative w-full lg:w-[424px] h-[343px] md:h-[424px] rtl:scale-x-[-1];
+
+      .penguin-image {
+        @apply w-full h-full ltr:rounded-tl-3xl rtl:rounded-tr-3xl rounded-br-[96px];
+      }
+    }
+
+    .white-rectangle {
+      @apply w-6 h-6 absolute top-16 right-0 z-[1];
+
+      @screen mobiles {
+        transform: rotate(90deg);
+        @apply top-unset right-unset bottom-0 left-4;
+      }
+    }
+
+    .title {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-6 text-[#606060];
+    }
+
+    .extra-info-title {
+      @apply font-caveat-bold leading-6 text-2xl text-dark-gray;
+    }
+
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-6 text-[#606060];
+
+      &::v-deep {
+        strong {
+          @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+        }
+
+        ul {
+          @apply ltr:pl-6 rtl:pr-6 list-disc;
+        }
+
+        ol {
+          @apply ltr:pl-6 rtl:pr-6 list-decimal;
+        }
+      }
+    }
+  }
+}

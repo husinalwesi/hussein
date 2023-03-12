@@ -1,0 +1,24 @@
+.edit-user-profile-box {
+  @apply relative;
+  .header {
+    @apply uppercase ltr:font-druk-heavy-italic rtl:font-adapter leading-10 min-700:text-[2.5rem] text-[2.125rem] text-dark-gray;
+  }
+
+  .btns-action {
+    @apply flex gap-4 flex-wrap mt-4 min-700:mt-0 justify-end w-full;
+
+    .btn-cancel {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+
+      &:disabled {
+        @apply lg:hover:cursor-not-allowed opacity-50;
+      }
+    }
+    .gs-base-button-default-styles {
+      @apply bg-[#ececec] flex gap-3 w-fit items-center whitespace-nowrap justify-center rounded-lg px-4 py-[9px];
+    }
+  }
+}
+.loader-container {
+  @apply bg-white w-full h-full absolute z-[11] flex justify-center items-center rounded-bl-3xl rounded-br-3xl;
+}

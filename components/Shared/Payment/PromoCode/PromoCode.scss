@@ -1,0 +1,84 @@
+#promoCode {
+  @apply bg-white relative rounded-2xl px-4 min-1176:px-6 pt-5 pb-4 border border-solid border-black border-opacity-10 flex;
+  & .loader-container {
+    @apply absolute inset-0 bg-[#ffffffa6] z-10 rounded-2xl;
+  }
+  & .radio-btn-container {
+    @apply w-8;
+    & .radio-btn {
+      @apply inline-block relative w-4 h-4 bg-white rounded-lg top-0.5 border border-solid border-black border-opacity-10 cursor-pointer;
+    }
+  }
+  & .tabContent {
+    @apply flex-1;
+    & .tabTitel {
+      @apply pb-1 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base text-[#191919] cursor-pointer;
+    }
+    & .tabSubTitle {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060];
+    }
+    & .contentDetails {
+      @apply hidden pt-4;
+      & .input-group {
+        @apply relative;
+        & input {
+          @apply outline-none w-full h-12 text-[#1a1a1a] p-4 min-1176:ltr:pr-[5.5rem] min-1176:rtl:pl-[5.5rem] min-1176:rtl:pl-[5.5rem] bg-white rounded-lg border border-solid border-black border-opacity-10 ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm;
+          &::placeholder {
+            @apply text-[#AEAEAE];
+          }
+        }
+        & button {
+          @apply hidden min-1176:block absolute ltr:right-2 rtl:left-2 top-2 ltr:font-druk-text-heavy-italic rtl:font-adapter text-base leading-4 rounded-lg px-4 py-2;
+          &.active {
+            @apply bg-[#FAD903] text-[#1a1a1a] pointer-events-auto;
+          }
+          &.disabled {
+            @apply bg-[#ECECEC] text-[#1a1a1a] pointer-events-none;
+          }
+          &.remove {
+            @apply bg-[#142B73] text-white;
+          }
+        }
+      }
+      & .text-container {
+        @apply flex justify-between mt-2 gap-4 items-center;
+        & p {
+          @apply flex-1 ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs ltr:text-left rtl:text-right  min-1176:text-right;
+          &.text-danger {
+            @apply text-[#DD0028];
+          }
+          &.text-success {
+            @apply text-[#1A1A1A];
+          }
+        }
+        & button {
+          @apply block min-1176:hidden ltr:font-druk-text-heavy-italic rtl:font-adapter text-base leading-4 rounded-lg px-4 py-2 ltr:ml-auto rtl:mr-auto;
+          &.active {
+            @apply bg-[#FAD903] text-[#1a1a1a] pointer-events-auto;
+          }
+          &.disabled {
+            @apply bg-[#ECECEC] text-[#1a1a1a] pointer-events-none;
+          }
+          &.remove {
+            @apply bg-[#142B73] text-white;
+          }
+        }
+      }
+    }
+  }
+  &.active {
+    @apply bg-[#f9f9f9];
+    & .radio-btn {
+      @apply after:content-[""];
+      &::after {
+        @apply absolute top-[0.188rem] ltr:left-[0.188rem] rtl:left-[0.188rem] w-2 h-2 bg-[#142b73] rounded-lg;
+      }
+    }
+    & .contentDetails {
+      @apply block;
+    }
+  }
+  &.ispromoDisabled {
+    @apply opacity-50 pointer-events-none;
+  }
+}

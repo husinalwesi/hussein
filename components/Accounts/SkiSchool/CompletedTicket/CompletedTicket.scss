@@ -1,0 +1,23 @@
+.ticket-img {
+  @apply -top-4 absolute h-fit max-w-[80px] max-h-[81px] md:right-6 ltr:right-4 rtl:left-4 w-fit;
+}
+
+.title-wrapper {
+  @apply mobiles:max-w-[223px];
+
+  .title {
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter leading-8 md:text-[40px] md:leading-10 text-[34px] text-dark-gray uppercase;
+  }
+}
+
+.description-container {
+  @apply flex flex-wrap gap-x-3 gap-y-6 items-center justify-between md:mt-2 mt-4;
+
+  .description {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 min-700:max-w-[360px] text-[#606060] text-sm;
+  }
+
+  .gs-base-button-default-styles {
+    @apply mobiles:px-[44.5px] min-700:pt-[18px] min-700:pb-[16px];
+  }
+}

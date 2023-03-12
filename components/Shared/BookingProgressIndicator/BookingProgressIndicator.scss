@@ -1,0 +1,131 @@
+.booking-progress-indicator-container {
+  @apply relative;
+
+  .img-snowflake {
+    @apply absolute w-[58px] h-[116px] md:w-[89px] md:h-[165px] top-0 rtl:scale-x-[-1] ltr:right-0 rtl:left-0;
+  }
+
+  .card-header {
+    @apply px-[15px] md:px-[31px];
+
+    .title {
+      @apply ltr:font-druk-heavy-italic rtl:font-adapter leading-8 md:text-[40px] md:leading-10 text-[30px] text-dark-gray uppercase;
+    }
+
+    .description-wrapper {
+      @apply min-550:mt-2 max-w-[262px] min-550:max-w-max rtl:mt-4;
+
+      .description {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler md:text-sm md:leading-6 text-[#606060] text-xs;
+      }
+    }
+  }
+
+  .progress-tabs-list {
+    @apply flex justify-between my-6 md:mb-16 mobiles:items-start relative z-10 w-full px-[14px] md:px-14;
+
+    .progress-line {
+      @apply absolute mobiles:top-[40%] top-1/2 ltr:left-0 rtl:right-0 translate-y-1/2 h-[2px] bg-light-yellow -z-1;
+    }
+
+    .circles {
+      @apply flex text-xs relative md:text-sm leading-4 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold items-center justify-center w-10 h-10 rounded-full text-dark-blue bg-white border-2 border-solid border-[#ECECEC];
+
+      &.active {
+        @apply bg-light-yellow border-light-yellow;
+      }
+
+      &.not-active {
+        @apply bg-[#FAD9031A] border-light-yellow;
+
+        .next-step-circle {
+          @apply absolute bg-white h-full ltr:left-0 rtl:right-0 rounded-full top-0 w-full z-[-1];
+        }
+      }
+    }
+
+    .progress-tab-item {
+      @apply flex flex-col translate-y-[13px] justify-center;
+
+      .tab-title {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold md:text-sm md:leading-4 mt-2 text-dark-gray text-xs;
+      }
+    }
+
+    .mid-tab {
+      .circles {
+        margin: 0 auto;
+      }
+
+      @screen mobiles {
+        text-align: center;
+      }
+    }
+
+    .first-tab {
+      align-items: start;
+
+      @screen mobiles {
+        @apply rtl:text-right ltr:text-left;
+
+        &.with-max-width {
+          max-width: 55px;
+        }
+      }
+    }
+
+    .last-tab {
+      align-items: end;
+
+      @screen mobiles {
+        @apply ltr:text-right rtl:text-left;
+        &.with-max-width {
+          max-width: 57px;
+        }
+      }
+    }
+
+    &.step-wizard {
+      justify-content: center;
+      gap: 127px;
+
+      .progress-tab-item {
+        align-items: center;
+      }
+
+      @screen mobiles {
+        gap: 59px;
+      }
+    }
+
+    &::before {
+      @apply absolute content-[''] mobiles:top-[40%] -z-1 w-full h-[2px] top-1/2 ltr:left-0 rtl:right-0 translate-y-1/2 bg-[#ECECEC];
+    }
+  }
+
+  .divider-dashed {
+    @apply h-px w-full opacity-20;
+    background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+    background-size: 8px 100%;
+  }
+
+  .card-footer-container {
+    @apply flex flex-row md:gap-4 flex-wrap items-center px-4;
+
+    .warning-msg-wrapper {
+      @apply w-full min-700:max-w-[597px] mb-8 min-700:mb-0;
+
+      .warning-msg {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 mobiles:w-full text-sm text-dark-gray;
+      }
+    }
+
+    .action-btn-wrapper {
+      @apply flex items-end justify-center min-700:w-fit w-full;
+
+      .gs-base-button-default-styles {
+        @apply px-[22px] md:px-6 py-4 rounded-xl text-dark-black;
+      }
+    }
+  }
+}

@@ -1,0 +1,119 @@
+// Todo: Enhance and order all the styles.
+.header-container {
+  @apply w-full fixed top-0 left-0 right-0 z-[90] lg:z-[161] h-fit;
+
+  .navbar-wrapper {
+    @apply relative w-full flex flex-col;
+
+    .white-layer {
+      @apply absolute bg-white h-[72px] lg:hidden w-full z-[2];
+    }
+
+    .navbar {
+      @apply flex h-[4.5rem] items-center justify-between min-1176:px-15 px-4 w-full bg-transparent transition-colors duration-300;
+
+      .logo-container {
+        @apply flex gap-4 items-center;
+
+        &.center-logo {
+          @apply flex-1 gap-0 lg:flex-none;
+
+          a {
+            @apply mx-auto;
+          }
+        }
+
+        .sidebar-toggler-btn {
+          @apply flex border-1 mobile:z-[4] border-[#DFDFDF] border-solid h-10 items-center justify-center lg:hidden p-2 rounded-[0.8125rem] text-white w-10;
+        }
+      }
+
+      &-actions-container {
+        @apply flex items-center h-full;
+
+        .items-sidebar-wrapper {
+          @apply h-[100%] z-[1];
+
+          @screen mobile {
+            @apply fixed bg-white hidden ltr:left-0 rtl:right-0 overflow-y-auto pt-[4.5rem] right-0 justify-between top-0 w-full flex-col;
+
+            &.active {
+              @apply flex;
+            }
+          }
+        }
+
+        .access-btns-container {
+          @apply flex flex-col h-fit mt-8 px-4;
+
+          .sign-up-btn-wrapper {
+            @apply flex justify-center mt-6;
+
+            .btn-signup {
+              @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold leading-4 text-[#0D4F94] h-8 text-base w-fit;
+            }
+          }
+
+          .gs-base-button-default-styles {
+            @apply leading-4 text-dark-black p-4 w-full;
+          }
+        }
+
+        .timer-text-wrapper {
+          @apply absolute bg-light-yellow border-1 border-solid border-[#E2C508] min-320:whitespace-nowrap flex h-fit items-center min-w-[209px] p-[7px] ltr:right-0 rtl:left-0 rounded-lg top-14 w-fit z-[0];
+
+          .timer-text {
+            @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 text-dark-black text-[11px] uppercase;
+          }
+
+          .rectangle-indicator-img {
+            @apply absolute h-3 max-w-[12px] max-h-[12px] top-[-6px] w-3;
+
+            &.right-position {
+              @apply ltr:right-[68px] rtl:left-[68px];
+            }
+
+            &.left-position {
+              @apply ltr:right-[13px] rtl:left-[13px] lg:ltr:left-[58px] lg:rtl:right-[19px];
+            }
+          }
+
+          &.mobile-visually-hidden {
+            @apply mobile:hidden;
+          }
+        }
+      }
+    }
+
+    &.inverted {
+      @apply bg-white bg-opacity-[0.98] shadow-light-black transition-colors duration-300;
+    }
+  }
+
+  &.highest-order {
+    @apply z-[1500] bg-white;
+  }
+
+  &.opened {
+    .navbar-wrapper {
+      @apply fixed top-0 left-0 right-0;
+    }
+  }
+
+  &.scrollUp {
+    transform: translateY(-999px);
+    -webkit-transition: all 0.7s;
+    -moz-transition: all 0.7s;
+    -ms-transition: all 0.7s;
+    -o-transition: all 0.7s;
+    transition: all 0.7s;
+    transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+  }
+
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+  transition-timing-function: cubic-bezier(0.65, 0.05, 0.36, 1);
+}

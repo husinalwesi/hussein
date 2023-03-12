@@ -1,0 +1,63 @@
+.profile-card {
+  &-wrapper {
+    box-shadow: 0px 20px 56px 2px rgba(0, 0, 0, 0.08);
+    @apply w-full p-1 rounded-2xl bg-white max-w-[10.25rem] min-700:max-w-[15.9375rem];
+  }
+
+  &-container {
+    @apply border-1 border-[#0A143238] border-dashed flex flex-col items-center p-3 pt-5 rounded-xl h-full;
+
+    .image-wrapper {
+      @apply flex justify-center;
+      height: fit-content !important;
+
+      img {
+        @apply rounded-full h-[5.25rem] w-[5.25rem] max-h-[5.25rem] max-w-[5.25rem];
+
+        @screen lg {
+          @apply h-[7.9375rem] w-[7.9375rem] max-h-[7.9375rem] max-w-[7.9375rem];
+        }
+      }
+    }
+
+    .card-body {
+      @apply flex flex-col flex-1 items-center mb-6 mt-2;
+
+      .profile-title {
+        @apply ltr:font-caveat-bold rtl:font-noto-sans-arabic-semi-bold leading-6 text-[1.125rem] text-dark-gray;
+      }
+
+      .description-wrapper {
+        @apply flex-1 mb-4 mt-2 text-center;
+
+        .description {
+          @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 text-[#606060] text-sm;
+        }
+      }
+
+      .icons-skills-container {
+        @apply flex gap-x-4;
+
+        .icon-skill {
+          @apply h-[2.5625rem] w-fit max-w-[2.6875rem];
+        }
+      }
+    }
+
+    .btn-open-modal {
+      @apply bg-[#142B73] flex ltr:font-druk-text-heavy-italic rtl:font-noto-sans-arabic-bold justify-center ltr:leading-4 rtl:leading-5 pb-[0.4375rem] pt-[0.5625rem] rounded-lg text-base text-white w-full;
+    }
+
+    @screen min-700 {
+      @apply p-5 pt-7;
+
+      .card-body {
+        @apply mt-4;
+
+        .profile-title {
+          @apply text-2xl;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,73 @@
+.cards-carousel-section {
+  @apply flex justify-center min-700:py-20 min-700:pb-0 w-full;
+
+  .content-contianer {
+    @apply w-full max-w-screen-ski-dubai-content-max relative;
+
+    .title {
+      @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter px-4 xl:px-0 text-dark-gray text-2xl leading-6 min-550:text-[2rem] min-550:leading-8 uppercase;
+    }
+
+    .cards-carousel-container {
+      @apply min-700:px-4;
+
+      &::v-deep {
+        @apply transition-all;
+
+        .cards-carousel {
+          position: unset;
+
+          .slick-list {
+            @apply min-700:overflow-hidden min-700:pb-20 overflow-visible;
+
+            .slick-track {
+              @apply flex;
+
+              //div:first-child {
+              //  @apply h-full;
+              //}
+
+              .slick-slide {
+                height: inherit !important;
+
+                &.slick-active {
+                  &:not(:first-child) {
+                    @apply xl:ml-[0.625rem];
+                  }
+                }
+
+                &:not(.slick-active) {
+                  @apply opacity-50 transition-all;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .carousel-custom-dots-wrapper {
+        @apply w-full flex justify-center relative mt-5 min-700:hidden;
+
+        .custom-dots-container {
+          @apply w-full max-w-[2.375rem] flex items-center overflow-hidden;
+
+          .dots {
+            @apply flex items-center transition-all duration-700;
+
+            span {
+              @apply h-1 bg-lightest-grey w-1 rounded-full mx-[3px] transition-all duration-700;
+
+              &.active {
+                @apply h-2 w-2 rounded-full opacity-100 bg-dark-blue transition-all duration-700;
+              }
+            }
+          }
+        }
+      }
+
+      @media only screen and (min-width: 1280px) {
+        padding: 0;
+      }
+    }
+  }
+}

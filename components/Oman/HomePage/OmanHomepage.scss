@@ -1,0 +1,7 @@
+.snow-oman-main {
+  @apply relative min-h-screen h-full w-full;
+
+  .bg-homepage {
+    @apply -z-1 bg-center bg-cover bg-gradient-dark-purple-desktop bg-no-repeat fixed h-full ltr:left-0 rtl:right-0 top-0 w-full;
+  }
+}

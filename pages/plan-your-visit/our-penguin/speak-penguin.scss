@@ -1,0 +1,54 @@
+.speak-penguin-main {
+  @apply overflow-hidden;
+
+  .text-container {
+    @apply flex-1 justify-center h-full flex flex-col;
+
+    .title {
+      @apply w-full min-900:text-6xl text-white uppercase ltr:font-druk-wide-heavy-italic rtl:font-adapter min-320:ltr:text-[32px] rtl:leading-[unset] min-700:text-5xl text-3xl;
+    }
+
+    .sub-title {
+      @apply ltr:font-caveat-bold rtl:font-noto-sans-arabic-semi-bold leading-6 text-2xl;
+    }
+
+    &.without-img {
+      @apply max-w-[872px];
+    }
+  }
+
+  .image-wrapper {
+    @apply hidden md:flex md:w-[20rem] min-900:w-[21.25rem] h-full items-end;
+  }
+
+  .title {
+    @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter font-normal text-dark-gray text-2xl leading-6 md:text-[2rem] md:leading-8 uppercase;
+    &.white-title {
+      @apply text-white;
+    }
+
+    @screen mobiles {
+      @apply text-[1.5rem];
+    }
+  }
+
+  .subtitle {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-[0.875rem] leading-6 text-[#606060];
+  }
+
+  #packages-carousel-container::v-deep {
+    @apply pb-0 pt-10 lg:pt-[4.5rem];
+
+    .container-carousel .packages-carousel {
+      @apply p-0 lg:pt-20;
+      .slick-prev,
+      .slick-next {
+        @apply top-4;
+      }
+    }
+  }
+
+  .plan-your-visit-section {
+    @apply 3xl:mx-auto flex items-center max-w-screen-3xl mb-[97px] min-700:mb-20 mobiles:mt-[4rem] mt-[8.5rem] w-full;
+  }
+}

@@ -1,0 +1,20 @@
+#payment-page {
+  @apply relative;
+  & .title {
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter mb-2 text-[2.5rem] leading-10 uppercase text-[#1a1a1a];
+  }
+  & .sub-title {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler mb-8 text-sm leading-4 text-[#1a1a1a];
+  }
+  & .list {
+    @apply mt-4 flex flex-col gap-4;
+    & .dashed-line {
+      @apply w-full h-px block opacity-20 mt-0 mb-4 min-1176:mt-2;
+      background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+      background-size: 8px 100%;
+    }
+  }
+}
+.loader-container {
+  @apply bg-[#ffffffba] w-full h-full absolute z-[11] flex justify-center items-center;
+}

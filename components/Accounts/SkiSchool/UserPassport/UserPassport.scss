@@ -1,0 +1,79 @@
+.user-passport-container {
+  @apply px-[15px] py-[23px] md:p-[31px];
+
+  .passport-details-container {
+    @apply w-full;
+
+    .card-header {
+      @apply w-full;
+
+      .title-wrapper {
+        @apply flex gap-4 min-550:gap-6 items-start;
+
+        .title {
+          @apply ltr:font-druk-heavy-italic rtl:font-adapter ltr:leading-8 md:ltr:text-[2.5rem] md:ltr:leading-10 ltr:text-[34px] rtl:text-[2rem] rtl:leading-9 text-dark-gray uppercase;
+        }
+
+        .qr-code-image {
+          @apply border-1 border-solid border-[#0A14321A] p-[7px] rounded-lg lg:hover:cursor-pointer;
+        }
+      }
+
+      .description-wrapper {
+        @apply mt-2 rtl:max-w-[728px];
+
+        .description {
+          @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 md:text-sm text-[#606060] text-xs;
+        }
+      }
+    }
+
+    &.passport-badge-indicator {
+      @apply flex gap-3 justify-between flex-wrap;
+
+      .card-header {
+        @apply max-w-[214px] min-550:max-w-max;
+      }
+    }
+  }
+
+  .divider-dashed {
+    margin: 16px 0px !important;
+  }
+
+  .next-lesson-details-container {
+    @apply flex flex-col;
+
+    .title {
+      @apply text-[#191919] ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base;
+    }
+
+    .date-time-container {
+      @apply mt-3 flex gap-x-2;
+
+      .date {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060];
+      }
+
+      .time-wrapper {
+        @apply px-1 flex justify-center bg-light-yellow rounded-[4px];
+
+        .time {
+          @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-black;
+        }
+      }
+    }
+  }
+
+  .gs-base-button-default-styles {
+    @apply pt-[17px] pb-[15px] px-[23px] rounded-xl mt-6 min-700:mt-4;
+  }
+
+  &::v-deep {
+    .base-modal-wrapper {
+      .base-modal-body {
+        @apply py-8 px-4 md:p-[31px] w-full max-w-[648px];
+      }
+    }
+  }
+}

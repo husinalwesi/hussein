@@ -1,0 +1,26 @@
+.card-container::v-deep .card-content-wrapper {
+    @apply px-0 min-550:px-0;
+}
+#add-ons {
+    @apply relative;
+    & .loader-container {
+        @apply absolute inset-0 bg-[#ffffffa6] z-10;
+    }
+    & .title {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xl leading-6 text-[#191919] px-4 lg:px-8;
+    }
+    & .sub-title {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-4 text-[#1A1A1A] px-4 lg:px-8;
+    }
+    & .dashed-line {
+        @apply w-[calc(100%-2rem)] lg:w-[calc(100%-4rem)] h-px block opacity-20 my-6 lg:my-8 mx-auto;
+        background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+        background-size: 8px 100%;
+    }
+    & .addons-ul {
+        @apply flex flex-row flex-wrap gap-4;
+        & li {
+            @apply w-full lg:w-[17.687rem];
+        }
+    }
+}

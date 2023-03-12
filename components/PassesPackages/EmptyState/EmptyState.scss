@@ -1,0 +1,23 @@
+.empty-state-section {
+  @apply flex flex-col items-center min-700:my-20 mobiles:px-4 my-10;
+
+  .title-wrapper {
+    @apply max-w-[648px] text-center;
+
+    .title {
+      @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter leading-6 min-700:leading-8 min-700:text-[2rem] text-2xl text-dark-gray uppercase;
+    }
+  }
+
+  .description-wrapper {
+    @apply max-w-[536px] mt-4;
+
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 text-[#606060] text-sm;
+    }
+  }
+
+  .explore-link {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-[14px] mt-6 text-center text-dark-gray text-sm;
+  }
+}

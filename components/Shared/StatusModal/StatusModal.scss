@@ -1,0 +1,56 @@
+.badge-info {
+  @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold leading-4 text-[0.75rem];
+  margin: 0 auto;
+  padding: 8px 10px;
+  border-radius: 18px;
+  width: max-content;
+
+  &.success-bg {
+    background-color: #58b1501a;
+    color: #58b150;
+  }
+  &.error-bg {
+    background-color: #ff173d1a;
+    color: #ff173d;
+  }
+  &.warning-bg {
+    background-color: #ff96031a;
+    color: #ff9603;
+  }
+}
+.primary-title {
+  @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[34px] leading-8 md:text-[2.5rem] md:leading-[2.5rem] text-center text-[#1A1A1A] uppercase;
+}
+
+.modal-subtitle {
+  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs md:text-sm md:leading-6	text-center	text-[#606060] md:text-dark-gray;
+
+  &.description {
+    @apply text-dark-gray max-w-[287px] md:max-w-[568px];
+  }
+}
+.btn-cancel {
+  @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 text-dark-gray;
+}
+
+.w-submit-btn {
+  @apply bg-[#FAD903] ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-base leading-4 text-center text-dark-gray;
+  padding: 1.063rem 0.906rem 0.938rem 0.906rem;
+  margin-inline-start: 1.5rem;
+  border-radius: 16px;
+}
+
+// .status-modal{
+::v-deep {
+  .base-modal-wrapper {
+    .base-modal-body {
+      @apply pt-10 pb-8 px-4 md:p-10 w-full max-w-[648px] mobiles:max-w-[343px];
+    }
+  }
+}
+// }
+
+.section-border {
+  opacity: 0.2;
+  border-bottom: 1px dashed #1a1a1a;
+}

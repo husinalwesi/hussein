@@ -1,0 +1,73 @@
+.activity-carousel-container {
+  @apply h-[27.25rem] md:h-[45rem] md:-mx-px;
+
+  .activity-carousel {
+    .activities-container {
+      @apply h-[27.25rem] md:h-[45rem] w-full bg-no-repeat bg-center bg-cover;
+
+      .active-activity-wrapper {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        @apply h-full w-full flex flex-col justify-center items-center;
+
+        .title-wrapper {
+          @apply text-center max-w-[21.063rem] md:max-w-[34.688rem];
+
+          h2 {
+            @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter text-[1.7rem] leading-7 tsm:leading-[2.625rem] md:text-[3.5rem] md:leading-[3.5rem] tsm:text-[2.125rem] text-white uppercase;
+          }
+        }
+
+        .details-wrapper {
+          @apply max-w-[17.5rem] tsm:max-w-[20.188rem] md:max-w-[33.5rem] text-center pt-4 pb-8;
+
+          p {
+            @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm tsm:text-base md:text-base text-white;
+          }
+        }
+      }
+    }
+
+    &::v-deep .custom-dot-class {
+      display: flex !important;
+      @apply absolute bottom-[1.203rem] gap-x-[0.831rem] h-fit items-center justify-center md:flex-col md:gap-x-0 md:gap-y-4 md:h-full md:right-10 md:top-0 md:w-fit lg:right-16 w-full;
+
+      li {
+        @apply m-0 w-[0.375rem] h-[0.375rem] md:w-2 md:h-2;
+
+        button {
+          @apply p-0 w-[0.375rem] h-[0.375rem] md:w-2 md:h-2;
+          &::before {
+            @apply backdrop-blur-lg
+          bg-white
+          bg-opacity-20
+          border-1
+          border-opacity-20
+          border-white
+          flex
+          h-[0.375rem]
+          items-center
+          justify-center
+          leading-0.5rem
+          md:h-2 md:w-2
+          opacity-100
+          rounded-full
+          text-transparent
+          w-[0.375rem];
+          }
+        }
+
+        &.slick-active {
+          @apply m-0;
+
+          button::before {
+            @apply border-3 md:border-4 border-light-yellow rounded-full text-[.25rem]  opacity-100 scale-[2] text-dark-gray;
+          }
+        }
+      }
+    }
+  }
+
+  .gs-base-button-default-styles {
+    @apply tsm:px-[2.375rem] md:px-[2.563rem] leading-[0.875rem];
+  }
+}

@@ -1,0 +1,98 @@
+.mafpay-form {
+  .card-inputs-container {
+    .card-content-fields-container {
+      @apply flex gap-2 md:gap-4 flex-col md:flex-row;
+    }
+
+    .card-input-field {
+      @apply relative;
+
+      input {
+        @apply outline-none w-full h-12 text-dark-gray py-4 text-sm leading-4 bg-white rounded-lg border border-solid border-black border-opacity-10;
+
+        &.invalid {
+          @apply border-[#DD0028];
+        }
+        &::placeholder {
+          @apply text-[#AEAEAE];
+        }
+      }
+
+      .invalid input {
+        @apply border-[#DD0028];
+      }
+
+      &.card-holder-name-input-container {
+        @apply mb-2;
+
+        input {
+          @apply w-full px-4;
+        }
+      }
+      &.card-number-input-wrapper {
+        @apply flex-1;
+
+        .card-number input {
+          direction: ltr;
+          @apply ltr:pl-12 rtl:pr-12 ltr:pr-4 rtl:pl-4 rtl:text-right;
+        }
+
+        .ccicon {
+          @apply absolute top-4 ltr:left-4 rtl:right-4 w-6 h-[0.9375rem];
+        }
+      }
+      &.card-expiry-input-wrapper {
+        @apply flex-1 md:max-w-[5.875rem];
+
+        .card-expiry input {
+          @apply px-4;
+        }
+      }
+      &.card-cvv-input-wrapper {
+        @apply flex-1 md:max-w-[8.875rem];
+
+        .card-cvv input {
+          @apply ltr:pl-4 rtl:pr-4 ltr:pr-9 rtl:pl-9;
+        }
+
+        .card-cvc-component {
+          .cvc-help {
+            @apply absolute ltr:right-3 rtl:left-3 top-3 m-0;
+
+            .tooltip-label {
+              @apply relative block w-6 h-6 overflow-hidden text-white;
+
+              &:after {
+                @apply content-['?'] left-0 top-0 absolute text-dark-gray w-6 h-6 text-sm leading-4 flex justify-center items-center bg-[#ECECEC] ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold rounded-full;
+              }
+            }
+          }
+          .card-cvc-container svg {
+            @apply hidden;
+          }
+        }
+      }
+
+      & .card-type {
+        @apply absolute left-4 top-4 flex gap-1;
+      }
+    }
+
+    .card-validity-inputs-container {
+      @apply flex gap-2 md:gap-4;
+    }
+  }
+
+  .card-submit {
+    @apply ltr:font-druk-text-super-italic rtl:font-adapter font-extrabold w-fit h-8 flex items-center justify-center bg-dark-blue rounded-lg text-base leading-4 uppercase text-white px-4;
+
+    &:disabled {
+      @apply opacity-50 lg:hover:cursor-not-allowed;
+    }
+  }
+
+  .error-message {
+    @apply hidden;
+  }
+}
+//

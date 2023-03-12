@@ -1,0 +1,39 @@
+.contact-form-container {
+  @apply max-w-[424px] flex flex-col mx-auto;
+
+  .form-description-wrapper {
+    @apply leading-6 ltr:font-inter-reguler mb-6 rtl:font-noto-sans-arabic-reguler text-[#606060] text-sm;
+
+    &::v-deep {
+      h1 {
+        @apply text-2xl rtl:leading-[unset];
+      }
+
+      strong {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+      }
+
+      ul {
+        @apply ltr:pl-4 rtl:pr-4 list-disc;
+      }
+
+      ol {
+        @apply ltr:pl-4 rtl:pr-4 list-decimal;
+      }
+    }
+  }
+
+  .submit-btn-wrapper {
+    @apply flex justify-center min-700:justify-end md:mt-10 mt-12;
+
+    .gs-base-button-default-styles {
+      @apply py-5 px-20 ltr:font-inter-bold rtl:font-noto-sans-arabic-bold;
+    }
+
+    &.loader-active {
+      .gs-base-button-default-styles {
+        @apply py-[17px] px-[70px];
+      }
+    }
+  }
+}

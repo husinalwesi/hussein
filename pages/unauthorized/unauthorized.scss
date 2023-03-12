@@ -1,0 +1,27 @@
+.unauthorized-main {
+    @apply w-full h-screen;
+
+    .bg-gradient-image {
+      @apply -z-1 bg-center bg-cover bg-no-repeat fixed h-full ltr:left-0 rtl:right-0 top-0 w-full;
+    }
+
+    .section-wrapper {
+      @apply h-full w-full relative flex items-center justify-center mobiles:px-4;
+
+      .title {
+        @apply mobiles:text-6xl ltr:font-druk-heavy-italic rtl:font-adapter text-[112px] leading-[96px] text-white;
+      }
+
+      .sub-title-wrapper {
+        @apply mt-6 mb-4;
+
+        .sub-title {
+          @apply ltr:font-druk-text-wide-super-italic rtl:font-adapter text-base text-light-yellow uppercase;
+        }
+      }
+    }
+
+    .gs-base-button-default-styles {
+      @apply pt-[21px] pb-[19px] px-[46px];
+    }
+  }

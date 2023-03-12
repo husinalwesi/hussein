@@ -1,0 +1,7 @@
+.continue-shopping-link {
+  @apply flex ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold items-center leading-4 text-[0.875rem] text-dark-gray;
+
+  img {
+    @apply h-[0.625rem] ltr:mr-[0.313rem] rtl:ml-[0.313rem] w-[0.625rem];
+  }
+}

@@ -1,0 +1,23 @@
+.sizes-modal {
+  .title {
+    @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[1rem] leading-6 text-[#1A1A1A];
+  }
+
+  .dashed-border {
+    border-bottom: 1px dashed #1a1a1a4f;
+  }
+
+  table {
+    td {
+      padding: 16px;
+    }
+
+    th {
+      padding: 4px;
+    }
+  }
+
+  .btn-close {
+    @apply bg-light-yellow ltr:font-inter-bold rtl:font-noto-sans-arabic-bold px-[2rem] pt-4 pb-[1.125rem] text-base text-dark-gray rounded-xl leading-[0.875rem];
+  }
+}

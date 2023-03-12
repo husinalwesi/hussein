@@ -1,0 +1,40 @@
+.share-payment-summary-card {
+  @apply mb-8;
+
+  .title {
+    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-xl leading-6 text-[#191919];
+  }
+
+  .total-price-details-container {
+    @apply border-t-1 border-b-1 border-dark-gray border-opacity-20 border-dashed mb-4 mt-6 py-4;
+
+    .vat-total {
+      @apply flex flex-wrap justify-between;
+
+      p {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060];
+      }
+    }
+
+    .total-price {
+      @apply flex flex-wrap justify-between mt-1 text-[#191919];
+    }
+    &.sub-total {
+      @apply border-b-0 pb-0 -mb-3;
+      & .total-price {
+        @apply mt-0 mb-1;
+      }
+    }
+  }
+
+  .share-points {
+    @apply flex flex-wrap justify-between;
+
+    p {
+      @apply text-xs text-[#606060];
+    }
+  }
+  &.without-share-section .total-price-details-container:not(.sub-total){
+    @apply border-b-0 pb-0 mb-0;
+  }
+}

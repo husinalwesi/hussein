@@ -1,0 +1,335 @@
+#booking-bar::v-deep {
+  & .findTicketBarBackShadow {
+    @apply hidden lg:block;
+  }
+
+  & #findTicketButton {
+    @apply flex flex-col
+    overflow-visible
+    w-full
+    fixed
+    px-0 bg-white ltr:pl-0 rtl:pr-0
+    pt-4
+    left-0
+    right-0
+    mx-auto
+    pb-[1.063rem]
+    bottom-0 z-[100];
+    & .findTicketButton {
+      @apply ltr:font-druk-text-heavy-italic rtl:font-adapter
+      h-14
+      uppercase
+      rounded-2xl
+      text-base
+      leading-[0.875rem]
+      pt-[0.125rem]
+      w-[90%]
+      mx-auto
+      transition-all duration-1000;
+    }
+  }
+
+  & #shadow {
+    @apply block lg:hidden h-screen fixed w-full inset-0 -z-1;
+    & #dark-shadow {
+      @apply bg-booking-bar-back-shadow h-full opacity-0;
+    }
+  }
+
+  & .findTicketBarBackShadow {
+    @apply fixed top-full right-0 bottom-0 left-0 z-[100];
+    & #findTicketBar {
+      @apply before:content-['']
+      before:absolute
+      before:h-1
+      before:w-12
+      before:left-0
+      before:right-0
+      before:top-[-0.813rem]
+      before:bg-[#ECEEEF]
+      before:rounded-3xl
+      before:mx-auto lg:before:hidden before:opacity-0 before:transition-opacity before:duration-[366ms] before:delay-100           fixed
+      w-full
+      -bottom-px
+      lg:bottom-0
+      bg-transparent
+      p-0
+      lg:py-0
+      mt-0
+      lg:mt-[-4.063rem]
+      top-0
+      lg:top-0;
+      &.mobile-ddl-enabled {
+        @apply before:opacity-100;
+      }
+
+      & .booking-bar-unorder-item-container {
+        @apply lg:w-full
+        flex flex-col
+        lg:flex-row
+        justify-between
+        h-full;
+
+        &.step-1 > .booking-bar-item:nth-child(2) .ddl {
+          @apply pt-[1.375rem] lg:pt-0;
+        }
+
+        &.step-1 > .booking-bar-item:nth-child(3) .ddl {
+          @apply pt-[1.375rem] lg:pt-0;
+        }
+
+        &.step-2 > .booking-bar-item:nth-child(2) .ddl {
+          @apply pt-8 lg:pt-0;
+        }
+
+        &.step-2 > .booking-bar-item:nth-child(3) .ddl {
+          @apply pt-[1.375rem] lg:pt-0;
+        }
+
+        &.step-3 > .booking-bar-item:nth-child(2) .ddl {
+          @apply pt-[1.438rem] lg:pt-0;
+        }
+
+        & > .booking-bar-item:first-child {
+          @apply border-0;
+        }
+      }
+
+      & > div {
+        @apply shadow-none lg:shadow-booking-bar-desktop             w-auto
+        lg:w-[95%]
+        max-w-[1320px]
+        bg-transparent
+        lg:bg-white
+        rounded-tr-2xl
+        mx-0
+        lg:mx-auto
+        h-full
+        rounded-tl-3xl;
+        & .dots {
+          @apply after:absolute
+          after:h-8
+          after:w-8
+          ltr:after:left-[-1.125rem]
+          ltr:after:right-[-1.125rem]
+          after:top-[1.063rem]
+          after:text-[#5e5e5e]
+          after:tracking-widest
+          after:transform
+          after:-rotate-90 content-none lg:ltr:after:content-['......'] lg:rtl:after:content-['......'];
+        }
+
+        & .mobile-section-title {
+          @apply relative block lg:hidden ltr:font-druk-wide-heavy-italic rtl:font-adapter text-dark-gray uppercase text-[1.313rem] leading-6;
+          &#experience-text-booking-bar-mobile p {
+            @apply min-h-[3rem];
+          }
+          &#date-text-booking-bar-mobile p {
+            @apply min-h-[3rem];
+          }          
+        }
+
+        & .section-title {
+          @apply text-[#5e5e5e]
+          ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler
+          text-sm
+          leading-4
+          mt-[-0.188rem]
+          mb-1
+          cursor-pointer;
+        }
+
+        & .section-value {
+          @apply text-[#1a1a1a] ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 relative;
+        }
+
+        & .arrow-btn {
+          @apply flex self-center rounded-full w-8 h-8 bg-[#ececec] transition-all duration-[333ms] z-10;
+          & svg {
+            @apply mx-auto transition-all duration-[333ms] mt-[0.438rem];
+          }
+        }
+
+        & .ddl {
+          @apply z-[inherit] lg:-z-1
+          block
+          absolute
+          top-0
+          bottom-16
+          w-full
+          py-8 lg:py-0
+          min-h-[100px]
+          bg-white
+          translate-y-[5.625rem] lg:translate-y-[100%] px-6 lg:px-0
+          rounded-tl-2xl
+          rounded-tr-2xl
+          overflow-scroll lg:overflow-auto transition-all duration-500  lg:transition-none lg:duration-[0ms];
+          &.experienceTab{
+            @apply lg:max-h-[70vh];
+            & .experience-list{
+              @apply lg:pb-4;
+            }
+          }
+          &.activeStep {
+            @apply lg:shadow-booking-bar-desktop shadow-none;
+            & > div:last-child {
+              @apply pointer-events-auto lg:pointer-events-auto;
+            }
+          }
+
+          &:not(.activeStep) > div:last-child {
+            @apply pointer-events-none lg:pointer-events-auto;
+          }
+
+          &::-webkit-scrollbar {
+            @apply hidden;
+          }
+
+          -ms-overflow-style: none; /* IE and Edge */
+          scrollbar-width: none; /* Firefox */
+
+          &.people-ddl {
+            @apply w-[calc(100%+1px)];
+          }
+        }
+
+        & .booking-bar-item {
+          @apply flex flex-col
+          lg:flex-row
+          overflow-visible
+          w-full
+          absolute
+          lg:relative
+          px-0 bg-white;
+          &.booking-bar-item-with-ddl {
+            @apply h-full
+            shadow-booking-bar-desktop
+            rounded-tl-3xl rounded-tr-3xl
+            lg:shadow-none
+            border border-solid border-booking-bar
+            lg:border-0;
+            & .main-tab {
+              @apply hidden
+              lg:flex
+              ltr:text-left rtl:text-right
+              w-full
+              cursor-pointer;
+              & .tab-details {
+                @apply flex flex-col self-center flex-1 z-10;
+              }
+
+              &.empty-card-error {
+                .section-title,
+                .section-value {
+                  @apply text-light-red;
+                }
+
+                .arrow-btn {
+                  @apply bg-light-red bg-opacity-20;
+
+                  svg {
+                    @apply fill-[#F11818];
+                  }
+                }
+              }
+            }
+          }
+
+          &.findTicketContainer {
+            @apply ltr:pl-0 rtl:pr-0
+            lg:pl-px
+            pt-4
+            lg:pt-0
+            z-10
+            left-0
+            right-0
+            mx-auto
+            lg:bg-transparent
+            pb-[1.063rem]
+            bottom-0
+            lg:pb-0 lg:left-auto lg:right-auto lg:mx-0;
+            & .findTicketButton {
+              @apply ltr:font-druk-text-heavy-italic rtl:font-adapter
+              h-14
+              lg:h-16
+              uppercase
+              rounded-2xl
+              lg:ltr:rounded-tl-none lg:rtl:rounded-tr-none lg:ltr:rounded-bl-none lg:rtl:rounded-br-none lg:ltr:rounded-br-none lg:rtl:rounded-bl-none
+              text-base
+              leading-[0.875rem]
+              pt-[0.125rem]
+              w-[90%]
+              lg:w-full
+              mx-auto
+              lg:mx-0
+              transition-all duration-1000;
+            }
+          }
+
+          & .corner {
+            @apply hidden lg:block absolute
+            w-full
+            ltr:left-0
+            rtl:right-0
+            top-0
+            bg-white h-[4.063rem];
+          }
+
+          &.activeDDL {
+            .arrow-btn {
+              @apply bg-light-yellow;
+              & svg {
+                @apply rotate-180;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  & .mobile-section-title-container{
+    @apply min-h-[3rem] lg:min-h-[unset];
+      & .full-opacity{
+        opacity: 1 !important;
+        @apply  transition-opacity duration-[830ms];    
+      }
+      & .half-opacity{
+        opacity: 0.4 !important;
+        @apply opacity-40 transition-opacity duration-[830ms];
+      }
+    }
+}
+
+#booking-bar.initialized:not(.mobile-ddl-container-enabled) {
+  & .findTicketBarBackShadow {
+    @apply lg:fixed lg:transition-position lg:duration-[666ms] lg:ease-[cubic-bezier(0.33,0,0,1)];
+    & #findTicketBar {
+      @apply lg:translate-y-0 lg:transition-transform lg:duration-[666ms] lg:ease-[cubic-bezier(0.33,0,0,1)];
+    }
+  }
+
+  & #findTicketButton {
+    @apply translate-y-0 transition-transform duration-[666ms] ease-[cubic-bezier(0.33,0,0,1)];
+  }
+
+  &.animate-hide-booking-bar {
+    & .findTicketBarBackShadow {
+      @apply lg:relative;
+      & #findTicketBar {
+        @apply lg:translate-y-[4.5rem];
+      }
+    }
+
+    & #findTicketButton {
+      @apply translate-y-[5.563rem];
+    }
+
+    & .ddl {
+      display: none !important;
+    }
+  }
+}
+
+#booking-bar.mobile-ddl-container-enabled .findTicketBarBackShadow {
+  @apply block;
+}

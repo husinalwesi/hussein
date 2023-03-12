@@ -1,0 +1,110 @@
+.add-guests {
+  margin-top: -154px;
+  color: #1a1a1a;
+  padding-bottom: 80px;
+
+  .page-title {
+    @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter text-white uppercase;
+
+    font-size: 32px;
+
+    @screen mobiles {
+      font-size: 22px;
+    }
+  }
+
+  .card-title {
+    @apply uppercase ltr:font-druk-heavy-italic rtl:font-adapter md:px-4 text-[2.5rem];
+
+    .sub-title {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+      font-size: 14px;
+      text-transform: initial;
+      color: #606060;
+      @screen mobiles {
+        font-size: 12px;
+      }
+    }
+
+    @screen mobiles {
+      font-size: 34px;
+    }
+  }
+
+  .action-details {
+    color: #606060;
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+    font-size: 12px;
+
+    .sub-action {
+      color: #191919;
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+      font-size: 14px;
+    }
+  }
+
+  .guest-card {
+    @apply justify-center;
+    background: rgba(196, 196, 196, 0.1);
+    border-radius: 16px;
+    padding: 16px 24px;
+
+    .name {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-base;
+    }
+
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs;
+      color: #606060;
+    }
+
+    .selected-guest{
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-dark-gray;
+
+      &.placeholder{
+        @apply opacity-50;
+      }
+    }
+
+    .guest-drop-down {
+      @apply ltr:right-[24px] rtl:left-[24px];
+      width: 292px;
+      background: #fff;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      padding: 16px;
+      z-index: 999;
+      top: 60px;
+      @screen mobiles {
+        width: 292px;
+        top: 90px;
+        right: 0;
+      }
+
+      .list-item {
+        @apply ltr:font-inter-semi-bold  rtl:font-noto-sans-arabic-semi-bold text-xs text-dark-gray lg:cursor-pointer;
+        padding: 16px 0;
+
+        &.selected,
+        &:hover {
+          background: #142b73;
+          border-radius: 12px;
+          color: #fff;
+        }
+      }
+
+      .add-new {
+        @apply mt-2 pt-4 px-4;
+        border-top: 1px dashed rgba(26, 26, 26, 0.2);
+
+        .btn-add-card {
+          @apply flex gap-x-2 items-center ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-4 text-[#606060];
+
+          .icon-wrapper {
+            @apply lg:cursor-pointer bg-[#ECECEC] flex h-6 items-center justify-center rounded-full w-6;
+          }
+        }
+      }
+    }
+  }
+}

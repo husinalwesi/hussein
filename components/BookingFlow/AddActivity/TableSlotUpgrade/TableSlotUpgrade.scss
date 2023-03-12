@@ -1,0 +1,58 @@
+.time-slot-table-container {
+  @apply my-6 lg:my-8 px-4 lg:px-8;
+  & .time-slot-table {
+    @apply bg-[#f9f9f9] border border-solid border-[#eeeeee] rounded-2xl my-6 lg:mt-4 lg:mb-8 flex flex-row p-[0.9rem] lg:p-4 flex-wrap lg:flex-nowrap min-h-[14rem] lg:min-h-[9rem];
+    & .content-holder {
+      @apply px-4 flex-1;
+      & > p:first-child {
+        @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 lg:text-base text-[#191919] capitalize;
+      }
+
+      & .description {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060] pt-2;
+      }
+    }
+
+    & .slot-list-container {
+      @apply relative w-full lg:w-[18.75rem] pt-4 lg:pt-0;
+      & .unavailable-date-message {
+        @apply w-[calc(100%+2rem)] lg:w-[19.75rem] h-36 absolute -bottom-4 lg:bottom-0 ltr:-right-4 rtl:-left-4 top-[unset] lg:-top-4 bg-white opacity-[0.97] border border-solid border-[#eeeeee]  flex items-center justify-center rounded-tr-none rounded-br-2xl rounded-bl-2xl lg:ltr:rounded-tr-2xl lg:rtl:rounded-tl-2xl lg:ltr:rounded-br-2xl lg:rtl:rounded-bl-2xl lg:ltr:rounded-bl-none lg:rtl:rounded-br-none lg:border-t-0 lg:ltr:border-r-0 lg:rtl:border-l-0;
+        & p {
+          @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-sm leading-4 flex text-[#dd0028] text-center max-w-[12.75rem];
+        }
+      }
+    }
+
+    &.slotsUnavailable {
+      @apply min-h-[unset] lg:min-h-[9rem];
+      & .unavailable-date-message-box {
+        @apply ltr:right-0 rtl:left-0 lg:-right-4 relative lg:absolute ltr:-left-4 lg:ltr:left-0   rtl:-right-4 lg:rtl:right-0;
+      }
+
+      & .slot-list-container {
+        @apply pt-0;
+      }
+
+      & .slot-list-items {
+        @apply hidden;
+      }
+    }
+    & .mobile-description{
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-[#606060] pt-3 lg:hidden w-full;
+    }
+    & .upgrade-ticket-button{
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-center text-white p-2 bg-[#142B73] rounded-2xl mt-2 lg:mt-0;
+      // ml-20 lg:ml-0
+    }
+  }
+
+  & .custom-title {
+    @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-xl leading-6 text-[#191919] hidden lg:block;
+  }
+
+  & .dashed-line {
+    @apply w-full h-px block opacity-20;
+    background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+    background-size: 8px 100%;
+  }
+}

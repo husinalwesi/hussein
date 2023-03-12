@@ -1,0 +1,68 @@
+.membership-features-modal-wrapper {
+  .header-content-container {
+    @apply flex justify-between gap-4 flex-col lg:flex-row mb-4;
+
+    .title {
+      @apply ltr:font-druk-heavy-italic rtl:font-adapter leading-8 md:text-[40px] md:leading-10 text-[34px] text-dark-gray ltr:text-left rtl:text-right  uppercase;
+    }
+    .price {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold leading-6 mt-2 text-[#191919] text-xl rtl:mt-4;
+    }
+
+    .membership-image-wrapper {
+      @apply order-1 lg:order-2;
+
+      .membership-image {
+        @apply w-[59px] h-[59px] lg:w-[80px] lg:h-[80px] rounded-2xl;
+      }
+    }
+  }
+
+  .membership-description {
+    @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-6 text-dark-gray text-sm;
+  }
+
+  .divider-dashed-line {
+    @apply h-px w-full opacity-20;
+    background-image: linear-gradient(to right, transparent 50%, #1a1a1a 50%);
+    background-size: 8px 100%;
+  }
+
+  .includes-list {
+    @apply flex flex-col gap-4 mb-8;
+
+    .check-mark-wrapper {
+      @apply bg-[#142b73] flex h-6 items-center justify-center rounded-full w-6;
+      min-width: 1.5rem;
+      min-height: 1.5rem;
+    }
+
+    .include-point {
+      @apply flex ltr:font-inter-bold rtl:font-noto-sans-arabic-bold gap-4 text-[#191919] text-base mt-4;
+    }
+  }
+
+  .actions-container {
+    @apply flex items-end justify-end md:justify-end gap-x-6;
+
+    .btn-action {
+      @apply bg-light-yellow ltr:font-inter-bold rtl:font-noto-sans-arabic-bold leading-4 pb-[15px] pt-[17px] px-[22px] relative rounded-xl text-base text-dark-gray;
+
+      &:disabled {
+        @apply lg:hover:cursor-not-allowed opacity-50;
+      }
+    }
+
+    .btn-close {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold leading-4 pb-[15px] pt-[17px] relative text-dark-gray ltr:text-right rtl:text-left  text-sm;
+    }
+  }
+
+  &::v-deep {
+    .base-modal-wrapper {
+      .base-modal-body {
+        @apply lg:min-w-[40.5rem] max-w-[40.5rem] min-320:p-8 min-550:p-8 p-8;
+      }
+    }
+  }
+}

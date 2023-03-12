@@ -1,0 +1,42 @@
+.memberships-main {
+  &::v-deep {
+    .hero-section-wrapper {
+      @apply h-fit min-700:h-[27rem] bg-center bg-cover bg-no-repeat;
+
+      .hero-section-content {
+        @apply flex min-700:py-0 px-4 pb-12 pt-[7.75rem];
+
+        .text-container {
+          @apply flex-1 justify-center h-full flex flex-col;
+
+          .title {
+            @apply w-full min-900:text-6xl text-white uppercase ltr:font-druk-wide-heavy-italic rtl:font-adapter min-320:text-[32px] min-700:text-5xl text-3xl;
+          }
+          .sub-title {
+            @apply ltr:font-caveat-bold rtl:font-noto-sans-arabic-semi-bold leading-6 text-2xl;
+          }
+        }
+
+        .image-wrapper {
+          @apply hidden md:flex md:w-[20rem] min-900:w-[22.5rem] h-full items-end;
+        }
+      }
+    }
+
+    .passes-section-wrapper {
+      @apply h-fit;
+
+      .passes-section-content {
+        @apply pt-9 pb-16 min-700:pt-20 min-700:pb-44;
+
+        .title {
+          @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter leading-6 md:text-[2rem] md:leading-8 text-dark-gray text-2xl uppercase px-4 min-1176:px-0;
+        }
+      }
+    }
+
+    .mobile-app-section-wrapper {
+      @apply 3xl:mx-auto flex items-center max-w-screen-3xl mb-16 min-700:mb-20 w-full;
+    }
+  }
+}

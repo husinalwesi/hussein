@@ -1,0 +1,97 @@
+.hero-section::v-deep {
+  @apply flex h-screen relative justify-center items-center mx-auto max-w-1xl overflow-hidden w-full;
+
+  .hero-content-container {
+    @apply flex flex-wrap w-full relative justify-center;
+
+    .text-container {
+      @apply px-4 min-1120:px-0 text-center;
+
+      .title {
+        @apply flex-col ltr:font-druk-wide-heavy-italic rtl:font-bukra inline-flex text-4rem  mobiles:rtl:text-[3rem]  text-white uppercase;
+
+        .highlighted {
+          @apply text-light-yellow p-2;
+        }
+
+        .not-highlighted {
+          @apply p-2 mb-[-1.125rem];
+        }
+
+        @screen min-700 {
+          @apply ltr:text-[6.25rem] rtl:text-[6rem] leading-[5.25rem] whitespace-nowrap;
+
+          .highlighted {
+            @apply ltr:ml-[12.5rem] rtl:ml-0 rtl:mr-[12.5rem];
+          }
+        }
+
+        @screen min-1120 {
+          @apply ltr:text-[10.5rem] rtl:text-[9.438rem] leading-[8.625rem];
+
+          .highlighted {
+            @apply ltr:ml-[17.5rem] rtl:ml-0 rtl:mr-[17.5rem];
+          }
+        }
+      }
+
+      .subtitle-wrapper {
+        @apply mt-2 md:mt-[1.438rem] flex w-full ltr:ml-8 rtl:ml-0;
+
+        .subtitle {
+          @apply ltr:font-druk-text-wide-super-italic rtl:font-adapter leading-4 min-550:leading-6 min-550:text-xl text-sm text-white uppercase;
+
+          .highlighted {
+            @apply text-light-yellow;
+          }
+        }
+
+        @screen min-700 {
+          @apply ltr:ml-[14.625rem] rtl:mr-[14.625rem];
+        }
+
+        @screen min-1120 {
+          @apply ltr:ml-[19.5rem] rtl:mr-[19.5rem];
+        }
+      }
+
+      @screen min-700 {
+        @apply ltr:text-left rtl:text-right ;
+      }
+    }
+  }
+
+  .image-wrapper {
+    @apply flex justify-center max-w-[32rem] mt-8 w-full;
+
+    @screen lg {
+      @apply absolute items-center mt-0 ltr:right-1 rtl:left-1 w-fit;
+    }
+
+    @screen min-1120 {
+      max-width: 44.375rem;
+      @apply mt-[-17px];
+    }
+
+    img {
+      @apply h-fit max-h-[26.25rem] w-fit opacity-0;
+    }
+  }
+
+  .scroll-to-continue {
+    @apply absolute bottom-[6.5rem] flex flex-col items-center lg:bottom-[5.5625rem] mx-auto w-fit text-center;
+
+    .scroll-text {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-xs text-white lg:cursor-pointer;
+    }
+
+    .indicator {
+      @apply h-8 mt-2 w-0.5 bg-white bg-opacity-20 relative;
+    }
+  }
+
+  .highlighted,
+  .not-highlighted {
+    @apply invisible;
+  }
+}

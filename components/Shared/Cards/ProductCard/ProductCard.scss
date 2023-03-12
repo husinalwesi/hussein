@@ -1,0 +1,73 @@
+.product-card-container {
+  box-shadow: 0px 24px 32px -24px rgba(0, 0, 0, 0.24);
+  @apply bg-white border-1 border-solid border-black border-opacity-10 box-border h-fit relative rounded-3xl w-full;
+
+  .card {
+    &-title {
+      @apply leading-10 rtl:text-[2rem] ltr:text-[2.5rem]  uppercase ltr:font-druk-heavy-italic rtl:font-adapter;
+    }
+
+    &-header {
+      &-with-image {
+        @apply h-44 w-full relative mb-6;
+
+        img {
+          @apply w-full h-full rounded-tr-3xl rounded-tl-3xl;
+        }
+
+        .title-container {
+          background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.6) 100%);
+          @apply flex h-full w-full items-end ltr:left-0 rtl:right-0 md:px-[2.4375rem] px-[1.4375rem] py-4 top-0 absolute;
+
+          h3 {
+            @apply text-white;
+          }
+        }
+      }
+
+      &-without-image {
+        @apply md:p-[2.4375rem] md:pb-0 rtl:mb-4 ltr:mb-2 md:rtl:mb-8 md:ltr:mb-6 p-[1.4375rem] pt-[1.9375rem] pb-0 w-full;
+
+        h3 {
+          @apply text-dark-gray;
+        }
+      }
+    }
+  }
+
+  .card-body-container {
+    @apply md:p-[2.4375rem] md:pt-0 p-[1.4375rem] pt-0 pb-[1.9375rem];
+
+    .card-paragraph {
+      @apply leading-6 text-[#606060] text-sm ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+
+      &::v-deep {
+        ul {
+          @apply ltr:pl-6 rtl:pr-6 list-disc;
+        }
+
+        ol {
+          @apply ltr:pl-6 rtl:pr-6 list-decimal;
+        }
+      }
+    }
+
+    .qr-code-img-wrapper {
+      @apply h-[120px] rounded-lg w-[120px] ltr:ml-7 rtl:mr-7 lg:ml-20;
+
+      img {
+        @apply w-full h-full rounded-lg;
+      }
+    }
+
+    .cta-link {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold leading-4 text-[#191919] text-sm;
+    }
+  }
+
+  &::v-deep {
+    strong {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold;
+    }
+  }
+}

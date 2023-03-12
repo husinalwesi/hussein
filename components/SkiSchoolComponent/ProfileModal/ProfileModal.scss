@@ -1,0 +1,89 @@
+::v-deep {
+  .base-modal-wrapper {
+    .base-modal-body {
+      @apply max-w-full min-550:max-w-[26.5rem] p-2 relative;
+
+      .profile-modal {
+        &-content-container {
+          @apply flex flex-col items-center md:p-6 pb-6 pt-8 px-4 text-center relative;
+
+          .dashed-border-wrapper {
+            @apply absolute h-full top-0 w-full;
+
+            .dashed-border {
+              @apply border-1 border-dashed h-full rounded-[1.25rem] w-full border-[#0A143238];
+            }
+          }
+
+          .description-wrapper {
+            @apply bg-light-yellow -mx-6 px-6 mt-6 py-4;
+
+            .description {
+              @apply leading-6 text-dark-gray text-xl uppercase max-w-[22.5rem];
+            }
+
+            @screen min-700 {
+              @apply -mx-8 px-8;
+            }
+          }
+
+          .profile-notes-container {
+            @apply mb-8 mt-6 text-[#191919] text-base z-[1];
+          }
+
+          .icons-skills-container {
+            @apply flex gap-x-4 z-[1];
+
+            .icon-skill {
+              @apply h-[2.5625rem] max-w-[2.6875rem] w-fit;
+            }
+          }
+
+          .btn-close {
+            @apply bg-[#142B73] flex justify-center mt-6 leading-4 pb-[0.6875rem] pt-[0.8125rem] rounded-lg text-base text-white w-full z-[1];
+          }
+        }
+
+        &-header {
+          @apply z-[1];
+
+          .profile-image-wrapper {
+            @apply h-fit flex justify-center;
+
+            img {
+              @apply h-[5.25rem] rounded-full w-[5.25rem] max-h-[5.25rem] max-w-[5.25rem];
+
+              @screen lg {
+                @apply h-[7.9375rem] w-[7.9375rem] max-h-[7.9375rem] max-w-[7.9375rem];
+              }
+            }
+          }
+
+          .title-wrapper {
+            @apply mt-6;
+
+            .title {
+              @apply leading-6 text-2xl text-dark-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.profile-modal-content-container,
+.profile-modal-header {
+  .description {
+    @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter;
+  }
+  .title {
+    @apply ltr:font-caveat-bold rtl:font-noto-sans-arabic-semi-bold rtl:font-semibold leading-6 text-2xl text-dark-gray;
+  }
+  .btn-close {
+    @apply ltr:font-druk-text-heavy-italic rtl:font-adapter;
+  }
+  .dashed-border-wrapper {
+    @apply ltr:left-0 rtl:right-0;
+  }
+}

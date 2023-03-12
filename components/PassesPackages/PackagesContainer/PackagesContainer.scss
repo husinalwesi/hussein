@@ -1,0 +1,79 @@
+#packages-carousel-container::v-deep {
+  @apply overflow-hidden pb-[1.375rem] lg:pb-20;
+  & .container-carousel {
+    & .title {
+      @apply ltr:font-druk-wide-heavy-italic rtl:font-adapter text-2xl leading-6 lg:text-[2rem] lg:leading-8
+      uppercase text-dark-gray w-full max-w-[1096px] mx-auto mb-[-2.438rem] pt-[1.688rem]
+      px-4 pb-6 lg:px-[2.5%] lg:mx-auto lg:py-0 xl:px-0;
+    }
+
+    @apply transition-all;
+    & .packages-carousel {
+      @apply mx-auto max-w-[1096px] overflow-visible z-50 lg:pt-20 scale-90 min-1120:scale-100;
+      .slick-dots {
+        @apply bottom-1.5 ltr:-left-px rtl:-right-px block lg:hidden;
+        & li {
+          @apply w-2 h-2 mx-0.5;
+          & button {
+            @apply w-2 h-2 p-0;
+            &:before {
+              @apply h-2 opacity-100 text-lightest-grey text-0.25rem leading-0.5rem w-0.563rem;
+            }
+          }
+
+          &.slick-active button:before {
+            @apply h-2 opacity-100 text-dark-blue text-0.5rem leading-0.563rem w-0.563rem;
+          }
+        }
+      }
+
+      & .slick-prev,
+      & .slick-next {
+        @apply ltr:left-unset rtl:right-unset z-[1] top-0 w-12 h-12 rounded-full hidden lg:block absolute;
+        &:before {
+          @apply opacity-100 block w-12 h-12 pt-[0.625rem];
+          content: url("data:image/svg+xml,%0A%3Csvg width='9' height='10' viewBox='0 0 9 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.68315 8.51155C4.30582 8.88886 3.69406 8.88886 3.31673 8.51155C2.9394 8.13424 2.9394 7.5225 3.31673 7.14519L5.46201 5L3.31673 2.85481C2.9394 2.4775 2.9394 1.86576 3.31673 1.48845C3.69406 1.11114 4.30582 1.11114 4.68315 1.48845L7.51164 4.31682C7.88897 4.69413 7.88897 5.30587 7.51164 5.68318L4.68315 8.51155Z' fill='%231A1A1A'/%3E%3C/svg%3E%0A");
+        }
+
+        &.slick-disabled {
+          @apply bg-lighter-gray lg:hover:cursor-not-allowed;
+        }
+
+        &:not(.slick-disabled) {
+          @apply bg-light-yellow;
+        }
+      }
+
+      & .slick-prev {
+        @apply ltr:right-14 rtl:left-14 rtl:-rotate-180 rtl:-mt-10;
+        &::before {
+          @apply rotate-180;
+        }
+      }
+
+      & .slick-next {
+        @apply ltr:right-0 rtl:left-0 rtl:-rotate-180 rtl:-mt-10;
+      }
+
+      & .slick-list {
+        @apply mx-auto w-[calc(100%+8px)] lg:w-[calc(100%+40px)] overflow-visible;
+        & > .slick-track > .slick-slide {
+          & .package-card {
+            @apply px-0 max-w-[calc(100%-8px)] lg:max-w-[calc(100%-40px)];
+          }
+
+          &:not(.slick-active) {
+            @apply opacity-50 transition-all;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sub-title {
+  @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-granite-gray;
+  font-size: 14px;
+  text-transform: initial;
+  line-height: 1.5;
+}

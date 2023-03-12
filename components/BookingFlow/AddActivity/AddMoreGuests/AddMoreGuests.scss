@@ -1,0 +1,16 @@
+.add-more-guests {
+    @apply flex relative px-4 lg:px-8;
+    & .add-more-guests-button-container {
+        @apply flex flex-row items-center gap-2;
+        & .add-more-text {
+            @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-sm leading-4 text-[#606060] cursor-pointer;
+        }
+    }
+    & .drop-down-list {
+        @apply absolute w-full min-550:w-[360px] ltr:left-0 lg:ltr:left-2 rtl:right-0 lg:rtl:right-2 top-10 bg-white border border-solid border-black border-opacity-10 -z-1 opacity-0 hidden rounded-lg;
+        box-shadow: 0px 8px 32px -8px rgba(0, 0, 0, 0.14);
+        &.ddlEnabled {
+            @apply z-[1] opacity-100 block;
+        }
+    }
+}

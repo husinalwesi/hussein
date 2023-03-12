@@ -1,0 +1,130 @@
+@import "assets/css/variables";
+
+html[env="snow-oman"] {
+
+  .package-card {
+    .package-card-container {
+      background: $oman-card-bg;
+    }
+
+    .bg-curve {
+      background-color: $oman-card-bg;
+    }
+
+    .collapse-content {
+      background-color: $oman-card-bg;
+    }
+
+    .package-footer {
+      background-color: $oman-card-bg;
+    }
+  }
+}
+
+
+.package-card {
+  @apply outline-none flex flex-col w-full relative md:max-w-[1096px] overflow-visible px-4 xl:px-0 z-10;
+  & .package-card-container {
+    @apply flex flex-row flex-wrap bg-[#142b73] px-6 lg:px-[4.5rem] pt-8 lg:pt-12 pb-[0.625rem] lg:pb-0 rounded-tr-3xl rounded-tl-3xl relative overflow-hidden rounded-br-[0.313rem] rounded-bl-[0.313rem] lg:rounded-br-[0.438rem] lg:rounded-bl-[0.438rem] z-10;
+    & .package-title {
+      @apply ltr:font-druk-heavy-italic rtl:font-adapter uppercase text-white ltr:text-[2.5rem] rtl:text-[2rem] leading-10 ltr:pr-[3.25rem] rtl:pl-[3.25rem] lg:ltr:pr-0 lg:rtl:pl-0;
+    }
+
+    & .package-description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-white opacity-80 text-base leading-6 pt-[0.975rem] ltr:pr-6 rtl:pl-6 lg:ltr:pr-0 lg:rtl:pl-0;
+    }
+
+    .what-to-expect {
+      -webkit-transition: all 0.1s ease-out;
+      -moz-transition: all 0.1s ease-out;
+      -o-transition: all 0.1s ease-out;
+      -ms-transition: all 0.1s ease-out;
+      transition: all 0.1s ease-out;
+      @apply pt-[1.438rem] lg:pt-8 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold relative text-white text-sm leading-[0.875rem] inline-block;
+
+      &:before,
+      &:after {
+        @apply bg-light-yellow absolute bottom-[-6px] w-0 h-0.5 ltr:left-0 rtl:right-0 opacity-0 rounded-[27px] content-[''];
+
+        -webkit-transition: all 0.1s ease-out;
+        -moz-transition: all 0.1s ease-out;
+        -o-transition: all 0.1s ease-out;
+        -ms-transition: all 0.1s ease-out;
+        transition: all 0.1s ease-out;
+      }
+
+      @screen lg {
+        &:hover {
+          &:before,
+          &:after {
+            @apply opacity-100 w-full;
+          }
+        }
+      }
+
+      @screen mobiles {
+        @apply pb-1 border-b-1 border-solid border-white;
+      }
+    }
+  }
+
+  & .bg-curve {
+    @apply bg-[#152a73] mx-auto h-16 lg:h-20 w-[calc(100%-1.563rem)] lg:w-[calc(100%-2.188rem)];
+  }
+
+  & .dashed-line {
+    @apply absolute ltr:left-0 rtl:right-0 mx-auto ltr:right-0 rtl:left-0 top-[1.875rem] lg:top-9 w-[calc(100%-theme(space.16))] lg:w-[90%];
+    &::before {
+      @apply w-full h-px block opacity-20;
+      content: "";
+      background-image: url('data:image/svg+xml,%3csvg width="100%25" height="100%25" xmlns="http://www.w3.org/2000/svg"%3e%3crect width="100%25" height="100%25" fill="none" stroke="white" stroke-width="2" stroke-dasharray="1%2c 7" stroke-dashoffset="1" stroke-linecap="square"/%3e%3c/svg%3e');
+    }
+  }
+
+  & .buy-ticket {
+    @apply bg-light-yellow text-center text-dark-gray pointer-events-auto relative flex justify-center items-center flex-1 ltr:font-inter-bold rtl:font-noto-sans-arabic-bold py-5 rounded-2xl leading-3 text-xs min-320:text-1rem whitespace-nowrap min-h-[3.5rem] ltr:ml-[0.313rem] rtl:mr-[0.313rem] ltr:-mr-2 rtl:-ml-2 ltr:pr-px rtl:pl-px lg:ltr:pr-0 lg:rtl:pl-0 transition-all;
+  }
+
+  & .list-ul {
+    & > p {
+      @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-white text-xl leading-6;
+    }
+
+    & .list-icon {
+      @apply w-6 h-6 text-center rounded-full inline-block align-top;
+    }
+
+    & .list-title {
+      @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-white text-base leading-6 inline-block capitalize w-[calc(100%-29px)];
+    }
+  }
+
+  & .middle-arrow-container {
+    @apply relative -mt-1 -z-1  h-[3.75rem] lg:h-20;
+    & .middle-arrow {
+      @apply opacity-0 -z-1 bg-white absolute w-10 h-10 rounded-full -top-5 left-0 right-0 mx-auto cursor-pointer invisible;
+    }
+
+    & .corneres div {
+      @apply absolute -top-px lg:top-[-0.188rem] -z-1;
+    }
+  }
+
+  & .collapse-content {
+    @apply bg-[#142b73] px-2 pt-0 lg:px-12 relative overflow-hidden z-10 lg:-z-1 rounded-br-3xl rounded-bl-3xl rounded-tr-[0.75rem] rounded-tl-[0.75rem] mt-[-0.563rem] lg:mt-[-1.188rem] lg:rounded-tr-[0.875rem] lg:rounded-tl-[0.875rem];
+    & .package-footer {
+      @apply flex flex-row flex-wrap bg-[#142b73] pb-6 z-10 px-6 rounded-2xl;
+      & .price-container {
+        @apply ltr:font-druk-heavy-italic rtl:font-adapter text-white uppercase text-[2rem] min-320:text-[2.5rem] leading-10 mt-0 ltr:ml-0 rtl:mr-0;
+      }
+
+      & .per-person {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs ltr:leading-4 rtl:mt-3 text-white opacity-70;
+      }
+
+      & .buy-ticket-container {
+        @apply flex w-auto lg:w-[61%] flex-1 ltr:pl-[0.875rem] rtl:pr-[0.875rem] lg:flex-none lg:pl-0;
+      }
+    }
+  }
+}

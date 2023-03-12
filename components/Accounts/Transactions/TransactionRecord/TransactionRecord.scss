@@ -1,0 +1,111 @@
+.transaction-record-container {
+  @apply bg-[#C4C4C4] bg-opacity-10 border-0 border-solid border-[#E6E6E6] md:bg-[#F9F9F9] md:bg-opacity-100 md:border-1 md:px-[23px] md:py-[15px] px-4 py-[14px] rounded-2xl;
+
+  .record-general-info-container {
+    @apply flex w-fit flex-col md:flex-row flex-wrap gap-x-14;
+
+    .day-date {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-4 md:ltr:font-inter-semi-bold md:text-sm text-dark-gray text-xs;
+    }
+    .location-name {
+      @apply text-[#191919] md:text-dark-gray text-base leading-5 md:text-sm md:leading-4 ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold capitalize;
+    }
+  }
+
+  .transaction-total-price-container {
+    @apply flex gap-x-[7px] flex-1 justify-end md:gap-x-4 items-center;
+
+    .vat-text {
+      @apply text-[#606060] ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs mobiles:hidden;
+    }
+    .total-price {
+      @apply text-dark-gray text-xs ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+    }
+  }
+
+  .transaction-details-container {
+    @apply mt-[26px] md:mt-2 flex flex-col md:flex-row gap-y-3;
+
+    .reserved-events {
+      @apply flex flex-col flex-1 gap-y-6 md:gap-y-8 md:ltr:border-r-1 md:rtl:border-l-1 border-opacity-10 border-dashed border-dark-gray border-0 md:ltr:pr-5 md:rtl:pl-5 min-900:ltr:pr-12 min-900:rtl:pl-12;
+
+      .reserved-event {
+        .title {
+          @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-[18px] min-700:text-[20px] leading-6 text-[#191919];
+        }
+
+        .activities-wrapper {
+          @apply flex flex-col gap-y-4 mt-6;
+
+          .activity-container {
+            @apply pb-2 md:pb-6;
+
+            .activity-name {
+              @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[#191919] text-base;
+            }
+
+            .guests {
+              @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler min-w-[56px] ltr:mr-2 rtl:ml-2 text-xs text-[#606060] whitespace-nowrap capitalize;
+            }
+
+            .times-wrapper {
+              @apply flex flex-wrap md:grid md:grid-cols-2 gap-x-2 gap-y-1;
+
+              .time-wrapper {
+                @apply px-1 flex justify-center bg-light-yellow rounded-[4px];
+
+                .time {
+                  @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-xs text-black;
+                }
+              }
+            }
+
+            &:not(:last-child) {
+              @apply border-b-1 border-dark-gray border-opacity-10 border-dashed;
+            }
+          }
+        }
+      }
+    }
+
+    .transaction-value-details-container {
+      @apply md:w-fit w-full ltr:pl-0 md:ltr:pl-4 rtl:pr-0 md:rtl:pr-4 mt-8 md:mt-0;
+
+      .booking-reference-container {
+        @apply border-b-1 border-dashed border-dark-gray border-opacity-20 ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler md:pb-0 md:border-0 pb-2 text-xs text-[#606060];
+
+        .booking-reference {
+          @apply mt-1 text-base ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold text-[#191919];
+        }
+      }
+
+      .transaction-value-details {
+        @apply mt-5 md:min-w-[305px] md:max-w-max;
+
+        .transaction-value {
+          @apply border-b-1 border-dashed border-dark-gray border-opacity-20 flex ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler justify-between md:gap-x-8 pb-4 text-xs text-[#606060];
+
+          &::v-deep {
+            .share-points {
+              &-text {
+                @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-bold text-[#B5064D];
+              }
+
+              &-value {
+                @apply md:ltr:font-inter-semi-bold md:rtl:font-noto-sans-arabic-semi-bold;
+              }
+            }
+          }
+
+          &:not(:first-child) {
+            @apply pt-6;
+          }
+
+          &:last-child {
+            @apply border-b-0 md:border-b-1;
+          }
+        }
+      }
+    }
+  }
+}

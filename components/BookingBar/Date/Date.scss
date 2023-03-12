@@ -1,0 +1,273 @@
+.booking-bar-datepicker-wrapper {
+  @apply mt-6 lg:mt-0 lg:h-[344px];
+
+  &.camp {
+    overflow: hidden;
+    & .mx-datepicker::v-deep .mx-datepicker-main .mx-calendar-header-label {
+      margin-top: -8px;
+      display: block;
+    }
+  }
+  &.weekCamp .mx-datepicker::v-deep .mx-datepicker-main tbody .mx-date-row td.cell {
+    &.active.main-camp > div {
+      @apply rounded-t-full rounded-b-none;
+    }
+    &.cell.active-end > div {
+      @apply rounded-t-none rounded-b-full;
+    }
+    &.in-range > div::before {
+      @apply ltr:left-0 rtl:right-0;
+      display: block;
+      width: 32px;
+      height: 44px;
+      background-color: #fad903;
+      position: absolute;
+      top: -6px;
+      border-radius: 0;
+    }
+    & div::before {
+      transition: unset;
+    }
+    &.main-camp.in-range > div {
+      &::before {
+        top: -8px;
+        @apply ltr:-left-0.5 rtl:-right-0.5;
+      }
+      &::after {
+        @apply ltr:left-[-1px] rtl:right-[-1px];        
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: -1px;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+    }
+  }
+
+  &.dayCamp .mx-datepicker::v-deep .mx-datepicker-main tbody .mx-date-row td.cell {
+    &.active.main-camp > div {
+      @apply ltr:rounded-tl-full ltr:rounded-tr-none ltr:rounded-br-none ltr:rounded-bl-full rtl:rounded-tl-none rtl:rounded-tr-full rtl:rounded-br-full rtl:rounded-bl-none;
+    }
+    &.cell.active-end > div {
+      @apply ltr:rounded-tl-none ltr:rounded-tr-full ltr:rounded-br-full ltr:rounded-bl-none rtl:rounded-tl-full rtl:rounded-tr-none rtl:rounded-br-none rtl:rounded-bl-full;
+    }
+    &.in-range > div::before {
+      display: block;
+      @apply ltr:left-[-18px] rtl:right-[-18px] w-[70px] min-420:w-[94px] md:w-[70px] 1xl:w-24 min-420:ltr:-left-8 min-420:rtl:-right-8 md:ltr:left-[-20px]  md:rtl:right-[-20px] 1xl:ltr:-left-8 1xl:rtl:-right-8;
+      height: 32px;
+      background-color: #fbd900;
+      position: absolute;
+      top: 0px;
+      border-radius: 0;
+    }
+    & div::before {
+      transition: unset;
+    }
+    &.main-camp.in-range > div {
+      &::before {
+        top: -2px;
+      }
+      &::after {
+        @apply ltr:left-[-1px] rtl:right-[-1px];
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: -1px;
+        border-radius: 50%;
+        border: 2px solid white;
+      }
+    }
+  }
+
+  .mx-datepicker::v-deep {
+    .mx-datepicker-main {
+      @apply bg-transparent border-transparent text-transparent;
+
+      thead {
+        @apply relative;
+
+        tr {
+          @apply lg:absolute lg:-top-10 lg:flex lg:items-center lg:w-full;
+
+          th {
+            @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-5 lg:flex lg:flex-1 lg:items-center lg:justify-center text-base text-dark-gray;
+          }
+        }
+      }
+
+      tbody .mx-date-row td {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-5 text-[#757575];
+
+        &:hover {
+          @apply md:bg-transparent;
+
+          div {
+            @apply md:bg-[#0380C2] md:bg-opacity-10;
+          }
+        }
+
+        div {
+          @apply flex h-[2.125rem] items-center relative justify-center mx-auto rounded-full small-laptop:h-7 small-laptop:text-sm small-laptop:w-7 text-base w-[2.125rem];
+
+          &::before {
+            transition: all 0.33s cubic-bezier(0.33, 0, 0, 1);
+            @apply absolute h-0 ltr:left-1/2 rtl:right-1/2 rounded-full top-1/2 w-0 -z-1 content-[""];
+          }
+        }
+
+        &.cell.active:not(.main-camp):not(.sub-camp) {
+          transition: color 0.33s cubic-bezier(0.33, 0, 0, 1);
+          @apply bg-transparent  text-dark-gray ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+          div::before {
+            @apply bg-light-yellow h-full ltr:left-0 rtl:right-0 top-0 w-full;
+          }
+        }
+
+        &.cell.sub-camp {
+          @apply pointer-events-none;
+        }
+
+        &.cell.active.main-camp {
+          background-color: transparent;
+          @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-bold;
+          & > div {
+            background-color: #fad903;
+            border-color: transparent;
+            color: #1a1a1a;
+          }
+        }
+
+        &.cell.in-range {
+          background-color: transparent;
+          color: #000000;
+          @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+          & > div {
+            background-color: #fad903;
+            border-radius: unset;
+          }
+        }
+
+        &.cell.active-end {
+          background-color: transparent;
+          @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-bold;
+          & > div {
+            background-color: #fad903;
+            border-color: transparent;
+            color: #1a1a1a;
+          }
+        }
+
+        &.cell.active.main-camp:hover,
+        &.cell.in-range:hover,
+        &.cell.active-end:hover {
+          background-color: transparent;
+        }
+        &.cell.active.main-camp:hover > div,
+        &.cell.in-range:hover > div,
+        &.cell.active-end:hover > div {
+          background-color: #fad903;
+        }
+
+        &.cell.highlight {
+          transition: color 0.33s cubic-bezier(0.33, 0, 0, 1);
+          @apply bg-transparent text-dark-gray ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold;
+          div::before {
+            @apply bg-[#fad90161] h-full ltr:left-0 rtl:right-0 top-0 w-full;
+          }
+        }
+
+        &.not-current-month:not(.main-camp):not(.sub-camp):not(.in-range) {
+          @apply text-[#ececec];
+        }
+
+        &.cell.highlight.not-current-month {
+          color: #1A1A1A !important;
+        }
+
+        & > div {
+          width: 2rem;
+          height: 2rem;
+        }
+        &.main-camp > div {
+          border: 2px solid #fad903;
+          border-radius: 50%;
+          @apply ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-bold;
+          color: #1a1a1a;
+        }
+      }
+
+      .mx-calendar {
+        @apply 1xl:px-6 p-0 small-laptop:p-2 w-full xl:px-2 xl:py-4;
+
+        &-content {
+          @apply lg:mb-2 lg:mt-15  my-6 tsm:px-[0.875rem];
+
+          .mx-table-year,
+          .mx-table-month {
+            @apply text-dark-gray ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler;
+
+            .cell:not(.main-camp):not(.sub-camp) {
+              @apply hover:rounded-2xl;
+
+              &.active {
+                @apply bg-light-yellow ltr:font-inter-semi-bold rtl:font-noto-sans-arabic-semi-bold rounded-2xl text-dark-gray;
+              }
+            }
+          }
+
+          .cell.disabled {
+            @apply bg-transparent text-[#ececec];
+          }
+        }
+
+        &-header {
+          @apply px-1 tsm:px-6 tablet:px-10;
+
+          .mx-btn-icon {
+            &-right .mx-icon-right {
+              @apply before:border-l-3 before:border-t-3 before:ltr:left-[-1px] before:rtl:right-[-1px] before:top-0 flex items-center justify-center;
+            }
+
+            &-left .mx-icon-left {
+              @apply before:border-l-3 before:border-t-3 before:right-[-1px] before:top-0 flex items-center justify-center;
+            }
+
+            &-right,
+            &-left {
+              @apply duration-300 hover:bg-light-yellow p-0 rounded-full text-center transition-all w-8 bg-[#ECECEC] h-8 text-dark-gray;
+            }
+
+            &-double-left,
+            &-double-right {
+              @apply hidden;
+            }
+          }
+
+          &-label {
+            button,
+            span {
+              @apply ltr:font-inter-bold rtl:font-noto-sans-arabic-semi-bold text-base text-dark-gray;
+            }
+          }
+        }
+      }
+    }
+
+    &.double-arrows {
+      .mx-datepicker-main .mx-calendar-header .mx-btn-icon {
+        &-double-left,
+        &-double-right {
+          @apply block lg:hover:text-dark-blue;
+        }
+      }
+    }
+  }
+}
+.extra-text {
+  @apply absolute left-0 right-0 top-[3.25rem] lg:top-11 ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-center text-[#606060] w-[calc(100%-9rem)] block mx-auto;
+}

@@ -1,0 +1,39 @@
+.sub-account-form-modal {
+  &::v-deep {
+    .base-modal-wrapper {
+      .base-modal-body {
+        @apply w-full max-w-[39.5rem] py-10 px-4 min-700:px-10 min-700:py-8;
+      }
+    }
+  }
+
+  .modal-title {
+    @apply ltr:font-druk-heavy-italic rtl:font-adapter text-[34px] leading-8 min-700:leading-10 min-700:text-[40px] text-dark-gray uppercase;
+  }
+  .description-wrapper {
+    @apply ltr:mt-2 rtl:mt-4;
+
+    .description {
+      @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler leading-4 max-w-[296px] min-700:max-w-[512px] text-dark-gray text-xs min-700:text-sm;
+    }
+  }
+
+  .btn-submit {
+    @apply bg-light-yellow flex rounded-xl py-4 ltr:font-inter-bold rtl:font-noto-sans-arabic-bold justify-center text-1rem text-dark-gray px-8;
+
+    &:disabled {
+      @apply opacity-50 cursor-not-allowed;
+    }
+  }
+
+  .modals-container {
+    &::v-deep {
+      .modal-overlay {
+        @apply z-[202];
+      }
+      .base-modal-wrapper {
+        @apply z-[203];
+      }
+    }
+  }
+}

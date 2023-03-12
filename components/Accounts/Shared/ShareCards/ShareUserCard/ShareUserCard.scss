@@ -1,0 +1,68 @@
+[dir="rtl"] {
+  .share-card-wrapper {
+    .maf-share-logo-wrapper {
+      transform: scale(-1, 1);
+
+      img {
+        transform: scale(-1, 1);
+      }
+    }
+  }
+}
+
+.share-card-wrapper {
+  @apply mobile:px-2;
+
+  .shadow {
+    box-shadow: 0px 24px 32px -24px rgba(0, 0, 0, 0.24);
+    @apply absolute top-0 ltr:left-0 rtl:right-0 w-full h-full;
+  }
+
+  .share-card-container {
+    box-shadow: 0px 24px 32px -24px rgba(0, 0, 0, 0.24);
+    @apply relative flex items-center justify-between bg-[#b5064d] text-white px-8 py-6 rounded-3xl md:overflow-hidden
+    mobile:px-6 mobiles:flex-col mobiles:items-start mobiles:py-[20px] min-h-[10.625rem];
+
+    .user-name {
+      @apply ltr:font-marselis-pro rtl:font-noto-sans-arabic-reguler text-2xl h-fit mobiles:leading-7 mobiles:max-w-[154px];
+    }
+
+    .maf-share-logo-wrapper {
+      @apply rtl:scale-x-[-1] absolute bg-center bg-cover bg-no-repeat flex h-[97px] ltr:justify-end rtl:justify-start md:h-[130px] md:pr-8 md:pt-[49px] md:top-[-27px] md:w-[130px] pr-6 pt-6 ltr:right-0 rtl:left-0 rounded-tr-3xl top-0 w-[97px];
+
+      img {
+        @apply w-[29px] h-[34px] md:w-10 md:h-12 rtl:scale-x-[-1];
+      }
+    }
+
+    .share-points-text {
+      @apply ltr:font-marselis-pro rtl:font-noto-sans-arabic-reguler text-sm leading-4 tracking-[-0.01em];
+    }
+
+    .user-share-points {
+      @apply ltr:font-marselis-pro-bold rtl:font-noto-sans-arabic-bold mt-[2px] text-[20px] leading-6;
+    }
+
+    .bar-code-img-wrapper {
+      @apply pt-0 lg:pt-[4.5rem] relative z-[1] mobiles:ltr:pr-0 mobiles:rtl:pl-0 mt-6 lg:mt-0 mobiles:w-full;
+      & .bar-code-img-container {
+        @apply bg-white w-[13.625rem] h-[7.625rem] flex flex-col gap-2 items-center justify-center rounded-lg;
+        & img {
+          @apply w-[10.625rem] h-[3.125rem];
+        }
+
+        & p {
+          @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs text-center text-[#191919] tracking-[0.188rem];
+        }
+      }
+
+      & .share-id {
+        @apply ltr:font-inter-reguler rtl:font-noto-sans-arabic-reguler text-xs ltr:text-left rtl:text-right  lg:text-center text-white;
+      }
+    }
+  }
+
+  .card-container {
+    @apply border-0;
+  }
+}
